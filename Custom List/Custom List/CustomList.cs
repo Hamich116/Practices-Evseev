@@ -43,10 +43,10 @@ namespace Praktika6
             list = new T[0];
         }
         
-        public CustomList<T> Clone()
-        {
+        //public CustomList<T> Clone()
+        //{
             
-        }
+        //}
 
         /*
         public bool Contains(T item)
@@ -66,19 +66,17 @@ namespace Praktika6
 
         }
         */
-        /*
+        
         public int IndexOf(T item)
         {
-            for (int i = 0; i < list.Length; i++)
+            int indexOf = -1;
+            for (int i = 0; i < this.list.Length; i++)
             {
-                if (list[i] == item)
-                {
-                    return item;
-                }
+                if (list[i].Equals(item)) indexOf = i;
             }
-            return -1;
+            return indexOf;
         }
-        */
+        
         /*
         public void Insert(int index, T item)
         {

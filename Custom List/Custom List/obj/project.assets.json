@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hamich\\Desktop\\Custom List\\Custom List\\Custom List.csproj",
+      "projectUniqueName": "C:\\Users\\Hamich\\Documents\\GitHub\\Practices-Evseev\\Custom List\\Custom List\\Custom List.csproj",
       "projectName": "Custom List",
-      "projectPath": "C:\\Users\\Hamich\\Desktop\\Custom List\\Custom List\\Custom List.csproj",
+      "projectPath": "C:\\Users\\Hamich\\Documents\\GitHub\\Practices-Evseev\\Custom List\\Custom List\\Custom List.csproj",
       "packagesPath": "C:\\Users\\Hamich\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hamich\\Desktop\\Custom List\\Custom List\\obj\\",
+      "outputPath": "C:\\Users\\Hamich\\Documents\\GitHub\\Practices-Evseev\\Custom List\\Custom List\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Microsoft\\Xamarin\\NuGet\\"
