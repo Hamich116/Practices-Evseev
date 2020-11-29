@@ -25,20 +25,14 @@ namespace Praktika6
             {
                 Console.WriteLine(item);
             }
-            /* customList2.AddRange(customList1);*/ // ошибка
-
-            //customList2.Remove(2);
-            //foreach (var item in customList2)
-            //{
-            //    Console.WriteLine(item);
-            //}
-
-            //customList3.Clear();
-            //foreach (var item in customList3)
-            //{
-            //    Console.WriteLine(item);
-            //}
-            //Console.WriteLine(customList1.IndexOf(125) ); 
+            Console.WriteLine("Специально для Эмиля:");
+            Console.WriteLine(customList1.IndexOf(30));
+            Console.WriteLine("Делаю невозможное:");
+            customList1.InsertRange(1, customList4);
+            foreach (var item in customList1)
+            {
+                Console.WriteLine(item);
+            }
         }
     }
 }

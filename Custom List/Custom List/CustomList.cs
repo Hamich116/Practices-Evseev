@@ -42,11 +42,16 @@ namespace Praktika6
         {
             list = new T[0];
         }
-        
-        //public CustomList<T> Clone()
-        //{
-            
-        //}
+
+        public CustomList<T> Clone()
+        {
+            CustomList<T> customlist = new CustomList<T>();
+            for (int i = 0; i < list.Length; i++)
+            {
+                customlist.Add(list[i]);
+            }
+            return customlist;
+        }
 
         /*
         public bool Contains(T item)
@@ -81,12 +86,33 @@ namespace Praktika6
             list = newList;
 
         }
-        /*
+        
         public void InsertRange(int index, IEnumerable<T> collection)
         {
-
+            int counter = 0;
+            int length = 0;
+            foreach (var item in collection)
+            {
+                length++;
+            }
+            T[] newList = new T[list.Length + length];
+            for (int i = 0; i < index; i++)
+            {
+                newList[i] = list[i];
+            }
+            foreach (var item in collection)
+            {
+                newList[index + counter] = item;
+                counter++;
+            }
+            
+            for (int i = index + length; i < newList.Length; i++)
+            {
+                newList[i] = list[i - length];
+            }
+            list = newList;
         }
-        */
+        
         public void Remove(T item)
         {
             int index = Array.IndexOf(list, item);
