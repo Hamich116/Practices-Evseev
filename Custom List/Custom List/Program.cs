@@ -39,6 +39,12 @@ namespace Praktika6
             {
                 Console.WriteLine(item);
             }
+            Console.WriteLine("AddRange");
+            customList2.AddRange(customList4);
+            foreach (var item in customList2)
+            {
+                Console.WriteLine(item);
+            }
         }
     }
 }

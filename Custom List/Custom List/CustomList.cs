@@ -30,10 +30,19 @@ namespace Praktika6
         
         public void AddRange(IEnumerable<T> collection)
         {
-            
-            T[] newList = new T[list.Length + 1];
+            int counter = 0; 
+            int length = 0;
+            foreach (var item in collection)
+            {
+                length++;
+            }
+            T[] newList = new T[list.Length + length];
             list.CopyTo(newList, 0);
-            newList[list.Length] = (T)collection;
+            foreach (var item in collection)
+            {
+                newList[list.Length + counter] = item;
+                counter++;
+            }
             list = newList;
             
         }
