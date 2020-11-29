@@ -62,12 +62,19 @@ namespace Praktika6
             return customlist;
         }
 
-        /*
+
         public bool Contains(T item)
         {
-
+            for (int i = 0; i < this.list.Length; i++)
+            {
+                if (list[i].Equals(item))
+                {
+                    return true;
+                }
+            }
+            return false;
         }
-        */
+
 
         public int IndexOf(T item)
         {

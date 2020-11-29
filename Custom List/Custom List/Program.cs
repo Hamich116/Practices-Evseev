@@ -51,6 +51,12 @@ namespace Praktika6
             {
                 Console.WriteLine(item);
             }
+            Console.WriteLine("Клон");
+            CustomList<int> customList5 = customList3.Clone();
+            foreach (var item in customList5)
+            {
+                Console.WriteLine(item);
+            }
         }
     }
 }
