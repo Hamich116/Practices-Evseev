@@ -14,7 +14,7 @@ namespace Praktika6
             CustomList<int> customList4 = new CustomList<int>() { 187, 48, 78 };
             
             customList1.Add(15);
-            customList1.Insert(2, 30);
+            customList1.Insert(3, 30);
             foreach (var item in customList1)
             {
                 Console.WriteLine(item);
