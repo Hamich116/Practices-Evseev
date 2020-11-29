@@ -54,19 +54,7 @@ namespace Praktika6
 
         }
         */
-        /*
-        public int IndexOf(T item, int index, int count)
-        {
 
-        }
-        */
-        /*
-        public int IndexOf(T item, int index)
-        {
-
-        }
-        */
-        
         public int IndexOf(T item)
         {
             int indexOf = -1;
