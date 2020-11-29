@@ -28,8 +28,14 @@ namespace Praktika6
             Console.WriteLine("Специально для Эмиля:");
             Console.WriteLine(customList1.IndexOf(30));
             Console.WriteLine("Делаю невозможное:");
-            customList1.InsertRange(1, customList4);
+            customList1.InsertRange(2, customList4);
             foreach (var item in customList1)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine("Переделываю Эмиля Reverse");
+            customList2.Reverse();
+            foreach(var item in customList2)
             {
                 Console.WriteLine(item);
             }

@@ -141,16 +141,16 @@ namespace Praktika6
             }
             list = newList;
         }
-        /*
-        public void Reverse(int index, int count)
-        {
 
-        }
         public void Reverse()
         {
-
+            T[] newList = new T[list.Length];
+            for (int i = 0; i < newList.Length; i++)
+            {
+                newList[newList.Length - i - 1] = list[i];
+            }
+            list = newList;
         }
-        */
 
         public IEnumerator<T> GetEnumerator()
         {
