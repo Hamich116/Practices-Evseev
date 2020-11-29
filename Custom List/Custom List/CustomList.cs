@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Praktika6
 {
-    class CustomList<T> : IEnumerable<T>, ICloneable
+    class CustomList<T> : IEnumerable<T>
     {
 
         private int capasity = 1;
@@ -124,17 +124,7 @@ namespace Praktika6
         
         public void Remove(T item)
         {
-            int index = Array.IndexOf(list, item);
-            if (index == -1) return;
-            T[] newList = new T[list.Length - 1];
-            int offset = 0;
-            for (int i = 0; i < list.Length; i++)
-            {
-                if (i == index) { offset++; continue; }
-                newList[i - offset] = list[i];
-            }
-            list = newList;
-
+            RemoveAt(IndexOf(item));
         }
         public void RemoveAt(int index)
         {
@@ -171,9 +161,5 @@ namespace Praktika6
             return list.GetEnumerator();
         }
 
-        object ICloneable.Clone()
-        {
-            return list.Clone();
-        }
     }
 }

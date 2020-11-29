@@ -45,6 +45,12 @@ namespace Praktika6
             {
                 Console.WriteLine(item);
             }
+            Console.WriteLine("Remove");
+            customList2.Remove(5);
+            foreach (var item in customList2)
+            {
+                Console.WriteLine(item);
+            }
         }
     }
 }
