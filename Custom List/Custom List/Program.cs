@@ -19,15 +19,20 @@ namespace Praktika6
             {
                 Console.WriteLine(item);
             }
-
-           /* customList2.AddRange(customList1);*/ // ошибка
+            Console.WriteLine("Произошел RemoveAt");
+            customList1.RemoveAt(1);
+            foreach (var item in customList1)
+            {
+                Console.WriteLine(item);
+            }
+            /* customList2.AddRange(customList1);*/ // ошибка
 
             //customList2.Remove(2);
             //foreach (var item in customList2)
             //{
             //    Console.WriteLine(item);
             //}
-            
+
             //customList3.Clear();
             //foreach (var item in customList3)
             //{

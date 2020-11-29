@@ -99,13 +99,23 @@ namespace Praktika6
                 newList[i - offset] = list[i];
             }
             list = newList;
-        }
 
-        /*
-        public int RemoveAll(Predicate<T> match)
+        }
+        public void RemoveAt(int index)
         {
 
+            T[] newList = new T[list.Length - 1];
+            for (int i = 0; i < index; i++)
+            {
+                newList[i] = list[i];
+            }
+            for (int i = index; i < newList.Length; i++)
+            {
+                newList[i] = list[i + 1];
+            }
+            list = newList;
         }
+        /*
         public void Reverse(int index, int count)
         {
 
