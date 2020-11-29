@@ -65,11 +65,23 @@ namespace Praktika6
             return indexOf;
         }
         
-        /*
+        
         public void Insert(int index, T item)
         {
+            T[] newList = new T[list.Length + 1];
+            for (int i = 0; i < index; i++)
+            {
+                newList[i] = list[i];
+            }
+            newList[index] = item;
+            for (int i = index + 1; i < newList.Length; i++)
+            {
+                newList[i] = list[i - 1];
+            }
+            list = newList;
 
         }
+        /*
         public void InsertRange(int index, IEnumerable<T> collection)
         {
 

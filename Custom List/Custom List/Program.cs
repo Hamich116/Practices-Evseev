@@ -14,6 +14,7 @@ namespace Praktika6
             CustomList<int> customList4 = new CustomList<int>() { 187, 48, 78 };
             
             customList1.Add(15);
+            customList1.Insert(2, 30);
             foreach (var item in customList1)
             {
                 Console.WriteLine(item);
@@ -27,12 +28,12 @@ namespace Praktika6
             //    Console.WriteLine(item);
             //}
             
-            customList3.Clear();
-            foreach (var item in customList3)
-            {
-                Console.WriteLine(item);
-            }
-            Console.WriteLine(customList1.IndexOf(125) ); 
+            //customList3.Clear();
+            //foreach (var item in customList3)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            //Console.WriteLine(customList1.IndexOf(125) ); 
         }
     }
 }
