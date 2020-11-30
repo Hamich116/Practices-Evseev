@@ -1,0 +1,13 @@
+C:\Users\Hamich\Desktop\учеба\Praktika3\Praktika3\bin\Debug\netcoreapp3.1\Praktika3.exe
+C:\Users\Hamich\Desktop\учеба\Praktika3\Praktika3\bin\Debug\netcoreapp3.1\Praktika3.deps.json
+C:\Users\Hamich\Desktop\учеба\Praktika3\Praktika3\bin\Debug\netcoreapp3.1\Praktika3.runtimeconfig.json
+C:\Users\Hamich\Desktop\учеба\Praktika3\Praktika3\bin\Debug\netcoreapp3.1\Praktika3.runtimeconfig.dev.json
+C:\Users\Hamich\Desktop\учеба\Praktika3\Praktika3\bin\Debug\netcoreapp3.1\Praktika3.dll
+C:\Users\Hamich\Desktop\учеба\Praktika3\Praktika3\bin\Debug\netcoreapp3.1\Praktika3.pdb
+C:\Users\Hamich\Desktop\учеба\Praktika3\Praktika3\obj\Debug\netcoreapp3.1\Praktika3.csprojAssemblyReference.cache
+C:\Users\Hamich\Desktop\учеба\Praktika3\Praktika3\obj\Debug\netcoreapp3.1\Praktika3.AssemblyInfoInputs.cache
+C:\Users\Hamich\Desktop\учеба\Praktika3\Praktika3\obj\Debug\netcoreapp3.1\Praktika3.AssemblyInfo.cs
+C:\Users\Hamich\Desktop\учеба\Praktika3\Praktika3\obj\Debug\netcoreapp3.1\Praktika3.csproj.CoreCompileInputs.cache
+C:\Users\Hamich\Desktop\учеба\Praktika3\Praktika3\obj\Debug\netcoreapp3.1\Praktika3.dll
+C:\Users\Hamich\Desktop\учеба\Praktika3\Praktika3\obj\Debug\netcoreapp3.1\Praktika3.pdb
+C:\Users\Hamich\Desktop\учеба\Praktika3\Praktika3\obj\Debug\netcoreapp3.1\Praktika3.genruntimeconfig.cache

@@ -1,0 +1,13 @@
+C:\Users\Hamich\Desktop\учеба\Heroes sword and magic\Heroes sword and magic\bin\Debug\netcoreapp3.1\Heroes sword and magic.exe
+C:\Users\Hamich\Desktop\учеба\Heroes sword and magic\Heroes sword and magic\bin\Debug\netcoreapp3.1\Heroes sword and magic.deps.json
+C:\Users\Hamich\Desktop\учеба\Heroes sword and magic\Heroes sword and magic\bin\Debug\netcoreapp3.1\Heroes sword and magic.runtimeconfig.json
+C:\Users\Hamich\Desktop\учеба\Heroes sword and magic\Heroes sword and magic\bin\Debug\netcoreapp3.1\Heroes sword and magic.runtimeconfig.dev.json
+C:\Users\Hamich\Desktop\учеба\Heroes sword and magic\Heroes sword and magic\bin\Debug\netcoreapp3.1\Heroes sword and magic.dll
+C:\Users\Hamich\Desktop\учеба\Heroes sword and magic\Heroes sword and magic\bin\Debug\netcoreapp3.1\Heroes sword and magic.pdb
+C:\Users\Hamich\Desktop\учеба\Heroes sword and magic\Heroes sword and magic\obj\Debug\netcoreapp3.1\Heroes sword and magic.csprojAssemblyReference.cache
+C:\Users\Hamich\Desktop\учеба\Heroes sword and magic\Heroes sword and magic\obj\Debug\netcoreapp3.1\Heroes sword and magic.AssemblyInfoInputs.cache
+C:\Users\Hamich\Desktop\учеба\Heroes sword and magic\Heroes sword and magic\obj\Debug\netcoreapp3.1\Heroes sword and magic.AssemblyInfo.cs
+C:\Users\Hamich\Desktop\учеба\Heroes sword and magic\Heroes sword and magic\obj\Debug\netcoreapp3.1\Heroes sword and magic.csproj.CoreCompileInputs.cache
+C:\Users\Hamich\Desktop\учеба\Heroes sword and magic\Heroes sword and magic\obj\Debug\netcoreapp3.1\Heroes sword and magic.dll
+C:\Users\Hamich\Desktop\учеба\Heroes sword and magic\Heroes sword and magic\obj\Debug\netcoreapp3.1\Heroes sword and magic.pdb
+C:\Users\Hamich\Desktop\учеба\Heroes sword and magic\Heroes sword and magic\obj\Debug\netcoreapp3.1\Heroes sword and magic.genruntimeconfig.cache
