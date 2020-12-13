@@ -8,8 +8,8 @@ namespace TestDelegates
         {
             TextField war = new TextField("Я незнаю что здесь можно написать", Color.Blue);
 
-            war.CompleteText(war);
-            
+            TextField.CompleteText(war);
+
         }
     }
 }

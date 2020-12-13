@@ -22,18 +22,18 @@ namespace TestDelegates
 
         private ChangeText change = ChangeColor + new ChangeText(ChangeSizeText);
 
-        public void CompleteText(TextField textField)
+        public static void CompleteText(TextField textField)
         {
             int OldLenght = textField.Length;
             Console.WriteLine(textField.Text);
             for(; ; )
             {
-                textField.Text += Convert.ToString(Console.ReadLine());
+                textField.Text += " " + Convert.ToString(Console.ReadLine());
                 textField.Length = textField.Text.Length;
                 if (textField.Length != OldLenght)
                 {
                     Console.WriteLine(textField.Text);
-                    change(textField);
+                    textField.change(textField);
                     Console.WriteLine($"Цвет изменился на {textField.Color}" );
                     Console.WriteLine($"Размер текста изменился на {textField.SizeText}");
                     break;

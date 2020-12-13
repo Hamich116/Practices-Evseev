@@ -11,3 +11,16 @@ C:\Users\Hamich\source\repos\TestDelegates\TestDelegates\obj\Debug\netcoreapp3.1
 C:\Users\Hamich\source\repos\TestDelegates\TestDelegates\obj\Debug\netcoreapp3.1\TestDelegates.dll
 C:\Users\Hamich\source\repos\TestDelegates\TestDelegates\obj\Debug\netcoreapp3.1\TestDelegates.pdb
 C:\Users\Hamich\source\repos\TestDelegates\TestDelegates\obj\Debug\netcoreapp3.1\TestDelegates.genruntimeconfig.cache
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\TestDelegates\TestDelegates\bin\Debug\netcoreapp3.1\TestDelegates.exe
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\TestDelegates\TestDelegates\bin\Debug\netcoreapp3.1\TestDelegates.deps.json
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\TestDelegates\TestDelegates\bin\Debug\netcoreapp3.1\TestDelegates.runtimeconfig.json
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\TestDelegates\TestDelegates\bin\Debug\netcoreapp3.1\TestDelegates.runtimeconfig.dev.json
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\TestDelegates\TestDelegates\bin\Debug\netcoreapp3.1\TestDelegates.dll
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\TestDelegates\TestDelegates\bin\Debug\netcoreapp3.1\TestDelegates.pdb
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\TestDelegates\TestDelegates\obj\Debug\netcoreapp3.1\TestDelegates.csprojAssemblyReference.cache
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\TestDelegates\TestDelegates\obj\Debug\netcoreapp3.1\TestDelegates.AssemblyInfoInputs.cache
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\TestDelegates\TestDelegates\obj\Debug\netcoreapp3.1\TestDelegates.AssemblyInfo.cs
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\TestDelegates\TestDelegates\obj\Debug\netcoreapp3.1\TestDelegates.csproj.CoreCompileInputs.cache
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\TestDelegates\TestDelegates\obj\Debug\netcoreapp3.1\TestDelegates.dll
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\TestDelegates\TestDelegates\obj\Debug\netcoreapp3.1\TestDelegates.pdb
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\TestDelegates\TestDelegates\obj\Debug\netcoreapp3.1\TestDelegates.genruntimeconfig.cache
