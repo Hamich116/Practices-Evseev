@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hamich\\source\\repos\\TestDelegates\\TestDelegates\\TestDelegates.csproj",
+      "projectUniqueName": "C:\\Users\\Hamich\\Documents\\GitHub\\Practices-Evseev\\TestDelegates\\TestDelegates\\TestDelegates.csproj",
       "projectName": "TestDelegates",
-      "projectPath": "C:\\Users\\Hamich\\source\\repos\\TestDelegates\\TestDelegates\\TestDelegates.csproj",
+      "projectPath": "C:\\Users\\Hamich\\Documents\\GitHub\\Practices-Evseev\\TestDelegates\\TestDelegates\\TestDelegates.csproj",
       "packagesPath": "C:\\Users\\Hamich\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hamich\\source\\repos\\TestDelegates\\TestDelegates\\obj\\",
+      "outputPath": "C:\\Users\\Hamich\\Documents\\GitHub\\Practices-Evseev\\TestDelegates\\TestDelegates\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Microsoft\\Xamarin\\NuGet\\"
