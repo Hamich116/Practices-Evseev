@@ -4,15 +4,17 @@ using System.Text;
 
 namespace TestDelegates
 {
-    
-    class TextField
+    public delegate void ChangeText(TextField textField);
+
+    public class TextField
     {
-        public delegate void ChangeText(TextField textField);
+        
         public string Text { get; set; } = "Изначальный текст";
         public Color Color { get; set; } = Color.Black;
         public int Length { get; private set; }
         public int SizeText { get; set; } = 30;
-        
+        public ChangeText ToChange;
+
         public TextField(string Text, Color Color)
         {
             this.Text = Text;
@@ -20,38 +22,36 @@ namespace TestDelegates
             this.Length = Text.Length;
         }
 
-        private ChangeText change = ChangeColor + new ChangeText(ChangeSizeText);
+        
 
-        public static void CompleteText(TextField textField)
+        public void CompleteText()
         {
-            int OldLenght = textField.Length;
-            Console.WriteLine(textField.Text);
-            for(; ; )
+            int OldLenght = Length;
+            Console.WriteLine(Text);
+            for (; ; )
             {
-                textField.Text += " " + Convert.ToString(Console.ReadLine());
-                textField.Length = textField.Text.Length;
-                if (textField.Length != OldLenght)
+                Text += Console.ReadLine();
+                Length = Text.Length;
+                if (this.Length != OldLenght)
                 {
-                    Console.WriteLine(textField.Text);
-                    textField.change(textField);
-                    Console.WriteLine($"Цвет изменился на {textField.Color}" );
-                    Console.WriteLine($"Размер текста изменился на {textField.SizeText}");
+                    Console.WriteLine(Text);
                     break;
                 }
             }
-            
-        }
 
-        static public void ChangeColor(TextField textField)
+        }
+        public static void ChangeColor(TextField textField)
         {
             textField.Color++;
+            Console.WriteLine($"Цвет изменился на {textField.Color}");
         }
 
-        static public void ChangeSizeText(TextField textField)
+        public static void ChangeSizeText(TextField textField)
         {
             Random rnd = new Random();
             textField.SizeText = rnd.Next(10, 64);
+            Console.WriteLine($"Размер текста изменился на {textField.SizeText}");
         }
     }
-    
+
 }

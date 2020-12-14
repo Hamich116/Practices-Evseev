@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TestDelegates
 {
-    enum Color
+    public enum Color
     {
         Black,
         Red,
