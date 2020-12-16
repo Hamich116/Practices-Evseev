@@ -5,14 +5,13 @@ using System.Text;
 
 namespace TextBlockProj
 {
-    public delegate void Action(string oldText, string newText);
     public class TextBlock
     {
         string name;
         string text;
         Color textColor;
         Font textFont;
-        public Action textEvent;
+        public Action <string, string> textEvent;
 
         public string Name
         {

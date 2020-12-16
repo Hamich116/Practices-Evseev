@@ -22,3 +22,16 @@ D:\csharpProjs\TextBlockProj\TextBlockProj\obj\Debug\netcoreapp3.1\TextBlockProj
 D:\csharpProjs\TextBlockProj\TextBlockProj\obj\Debug\netcoreapp3.1\TextBlockProj.dll
 D:\csharpProjs\TextBlockProj\TextBlockProj\obj\Debug\netcoreapp3.1\TextBlockProj.pdb
 D:\csharpProjs\TextBlockProj\TextBlockProj\obj\Debug\netcoreapp3.1\TextBlockProj.genruntimeconfig.cache
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\SUPER_HARD_PRAKTIK_BASED ON ASKAR_DELEGATES\TextBlockProj\bin\Debug\netcoreapp3.1\TextBlockProj.exe
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\SUPER_HARD_PRAKTIK_BASED ON ASKAR_DELEGATES\TextBlockProj\bin\Debug\netcoreapp3.1\TextBlockProj.deps.json
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\SUPER_HARD_PRAKTIK_BASED ON ASKAR_DELEGATES\TextBlockProj\bin\Debug\netcoreapp3.1\TextBlockProj.runtimeconfig.json
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\SUPER_HARD_PRAKTIK_BASED ON ASKAR_DELEGATES\TextBlockProj\bin\Debug\netcoreapp3.1\TextBlockProj.runtimeconfig.dev.json
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\SUPER_HARD_PRAKTIK_BASED ON ASKAR_DELEGATES\TextBlockProj\bin\Debug\netcoreapp3.1\TextBlockProj.dll
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\SUPER_HARD_PRAKTIK_BASED ON ASKAR_DELEGATES\TextBlockProj\bin\Debug\netcoreapp3.1\TextBlockProj.pdb
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\SUPER_HARD_PRAKTIK_BASED ON ASKAR_DELEGATES\TextBlockProj\obj\Debug\netcoreapp3.1\TextBlockProj.csprojAssemblyReference.cache
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\SUPER_HARD_PRAKTIK_BASED ON ASKAR_DELEGATES\TextBlockProj\obj\Debug\netcoreapp3.1\TextBlockProj.AssemblyInfoInputs.cache
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\SUPER_HARD_PRAKTIK_BASED ON ASKAR_DELEGATES\TextBlockProj\obj\Debug\netcoreapp3.1\TextBlockProj.AssemblyInfo.cs
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\SUPER_HARD_PRAKTIK_BASED ON ASKAR_DELEGATES\TextBlockProj\obj\Debug\netcoreapp3.1\TextBlockProj.csproj.CoreCompileInputs.cache
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\SUPER_HARD_PRAKTIK_BASED ON ASKAR_DELEGATES\TextBlockProj\obj\Debug\netcoreapp3.1\TextBlockProj.dll
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\SUPER_HARD_PRAKTIK_BASED ON ASKAR_DELEGATES\TextBlockProj\obj\Debug\netcoreapp3.1\TextBlockProj.pdb
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\SUPER_HARD_PRAKTIK_BASED ON ASKAR_DELEGATES\TextBlockProj\obj\Debug\netcoreapp3.1\TextBlockProj.genruntimeconfig.cache

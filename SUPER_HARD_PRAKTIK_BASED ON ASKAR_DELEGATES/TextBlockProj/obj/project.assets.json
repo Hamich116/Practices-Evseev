@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hamich\\Desktop\\TextBlockProj\\TextBlockProj\\TextBlockProj.csproj",
+      "projectUniqueName": "C:\\Users\\Hamich\\Documents\\GitHub\\Practices-Evseev\\SUPER_HARD_PRAKTIK_BASED ON ASKAR_DELEGATES\\TextBlockProj\\TextBlockProj.csproj",
       "projectName": "TextBlockProj",
-      "projectPath": "C:\\Users\\Hamich\\Desktop\\TextBlockProj\\TextBlockProj\\TextBlockProj.csproj",
+      "projectPath": "C:\\Users\\Hamich\\Documents\\GitHub\\Practices-Evseev\\SUPER_HARD_PRAKTIK_BASED ON ASKAR_DELEGATES\\TextBlockProj\\TextBlockProj.csproj",
       "packagesPath": "C:\\Users\\Hamich\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hamich\\Desktop\\TextBlockProj\\TextBlockProj\\obj\\",
+      "outputPath": "C:\\Users\\Hamich\\Documents\\GitHub\\Practices-Evseev\\SUPER_HARD_PRAKTIK_BASED ON ASKAR_DELEGATES\\TextBlockProj\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Microsoft\\Xamarin\\NuGet\\"
