@@ -1,0 +1,13 @@
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\9prk\9prk\obj\Debug\netcoreapp3.1\9prk.csprojAssemblyReference.cache
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\9prk\9prk\obj\Debug\netcoreapp3.1\9prk.AssemblyInfoInputs.cache
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\9prk\9prk\obj\Debug\netcoreapp3.1\9prk.AssemblyInfo.cs
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\9prk\9prk\obj\Debug\netcoreapp3.1\9prk.csproj.CoreCompileInputs.cache
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\9prk\9prk\bin\Debug\netcoreapp3.1\9prk.exe
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\9prk\9prk\bin\Debug\netcoreapp3.1\9prk.deps.json
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\9prk\9prk\bin\Debug\netcoreapp3.1\9prk.runtimeconfig.json
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\9prk\9prk\bin\Debug\netcoreapp3.1\9prk.runtimeconfig.dev.json
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\9prk\9prk\bin\Debug\netcoreapp3.1\9prk.dll
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\9prk\9prk\bin\Debug\netcoreapp3.1\9prk.pdb
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\9prk\9prk\obj\Debug\netcoreapp3.1\9prk.dll
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\9prk\9prk\obj\Debug\netcoreapp3.1\9prk.pdb
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\9prk\9prk\obj\Debug\netcoreapp3.1\9prk.genruntimeconfig.cache
