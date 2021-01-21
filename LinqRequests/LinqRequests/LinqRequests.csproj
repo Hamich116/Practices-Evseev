@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="AirDataSource">
+      <HintPath>..\AirDataSource.dll</HintPath>
+    </Reference>
+    <Reference Include="AirModel">
+      <HintPath>..\AirModel.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

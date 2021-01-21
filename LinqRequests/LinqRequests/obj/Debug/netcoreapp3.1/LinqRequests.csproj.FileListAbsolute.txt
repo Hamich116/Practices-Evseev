@@ -1,0 +1,16 @@
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\LinqRequests\LinqRequests\bin\Debug\netcoreapp3.1\LinqRequests.exe
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\LinqRequests\LinqRequests\bin\Debug\netcoreapp3.1\LinqRequests.deps.json
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\LinqRequests\LinqRequests\bin\Debug\netcoreapp3.1\LinqRequests.runtimeconfig.json
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\LinqRequests\LinqRequests\bin\Debug\netcoreapp3.1\LinqRequests.runtimeconfig.dev.json
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\LinqRequests\LinqRequests\bin\Debug\netcoreapp3.1\LinqRequests.dll
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\LinqRequests\LinqRequests\bin\Debug\netcoreapp3.1\LinqRequests.pdb
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\LinqRequests\LinqRequests\bin\Debug\netcoreapp3.1\AirDataSource.dll
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\LinqRequests\LinqRequests\bin\Debug\netcoreapp3.1\AirModel.dll
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\LinqRequests\LinqRequests\obj\Debug\netcoreapp3.1\LinqRequests.csprojAssemblyReference.cache
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\LinqRequests\LinqRequests\obj\Debug\netcoreapp3.1\LinqRequests.AssemblyInfoInputs.cache
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\LinqRequests\LinqRequests\obj\Debug\netcoreapp3.1\LinqRequests.AssemblyInfo.cs
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\LinqRequests\LinqRequests\obj\Debug\netcoreapp3.1\LinqRequests.csproj.CoreCompileInputs.cache
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\LinqRequests\LinqRequests\obj\Debug\netcoreapp3.1\LinqRequests.csproj.CopyComplete
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\LinqRequests\LinqRequests\obj\Debug\netcoreapp3.1\LinqRequests.dll
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\LinqRequests\LinqRequests\obj\Debug\netcoreapp3.1\LinqRequests.pdb
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\LinqRequests\LinqRequests\obj\Debug\netcoreapp3.1\LinqRequests.genruntimeconfig.cache
