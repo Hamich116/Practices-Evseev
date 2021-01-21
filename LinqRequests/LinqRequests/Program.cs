@@ -93,7 +93,29 @@ namespace LinqRequests
 
             //5
             Console.WriteLine("Пункт пятый:");
-            //? хз пока что нет актуальных билетов,лучше не трогать
+            DateTime actulTime = new DateTime(2020, 06, 30);
+            var sortedClients = from client in Clients
+                                join ticket in Tickets on client.Id equals ticket.ClientId
+                                join flight in Flights on ticket.FlightId equals flight.Id
+                                orderby client.LastName,client.FirstName
+                                select new
+                                {
+                                    client.Id,
+                                    client.FirstName,
+                                    client.LastName,
+                                    ticketId = ticket.Id,
+                                    flight.DepartureDate
+                                };
+
+            var clientWithTickets = from client in sortedClients
+                                    where client.DepartureDate > actulTime
+                                    select client;
+            foreach (var client in clientWithTickets)
+            {
+                Console.WriteLine($"Id пассажира: {client.Id}, Полное имя: {client.FirstName} {client.LastName}" +
+                    $", Дата отбытия: {client.DepartureDate}");
+            }
+                                    
 
             Console.WriteLine("Пункт шестой: ");
             var sortedPlanes = from plane in Planes
