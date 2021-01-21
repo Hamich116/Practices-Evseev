@@ -39,6 +39,7 @@ namespace LinqRequests
 
             //3
             Console.WriteLine("Пункт третий: ");
+
             var informationFlight = from flight in Flights
                                     join flightCrew in FlightCrews on flight.Id equals flightCrew.FlightId
                                     join airportArrival in Airports on flight.AirportArrivalId equals airportArrival.Id
@@ -58,7 +59,7 @@ namespace LinqRequests
                                         flight.ArrivalDate,
                                         flight.DepartureDate,
                                         IdCrew = flightCrew.Id,
-                                        employees = Employees
+                                        
                                     };
             foreach (var fullFlight in informationFlight)
             {
@@ -68,10 +69,6 @@ namespace LinqRequests
                 Console.WriteLine($"Дата отбытия: {fullFlight.DepartureDate}, Аэропорт отбытия: {fullFlight.airportDeparture}" +
                     $", Город отбытия {fullFlight.cityDeparture}, Страна отбытия {fullFlight.countryDeparture}");
                 Console.WriteLine($"Id экипажа: {fullFlight.IdCrew}, Сотрудники: ");
-                for (int i = 0; i < fullFlight.employees.Count; i++)
-                {
-                    Console.WriteLine($"{i + 1}: {fullFlight.employees[i].LastName}");
-                }
             }
             //4
             Console.WriteLine("Пункт четвертый:");
