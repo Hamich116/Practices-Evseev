@@ -22,7 +22,7 @@ namespace LinqRequests
             Console.WriteLine("Пункт первый: ");
             var average = Tickets.Average(ticket => ticket.Cost);
             int averageCost = Convert.ToInt32(average); // для красивого вывода
-            Console.WriteLine($"Среднее стоимость билета: {averageCost}");
+            Console.WriteLine($"Среднее стоимость билета: {averageCost} рублей");
 
             //2
 
@@ -73,6 +73,26 @@ namespace LinqRequests
                     Console.WriteLine($"{i+1}: {fullFlight.employees[i].LastName}");
                 }
             }
+
+            Console.WriteLine("Пункт четвертый:");
+            var fullEmployee = from employee in Employees
+                               join position in Positions on employee.PositionId equals position.Id
+                               select new
+                               {
+                                   employee.Id,
+                                   employee.FirstName,
+                                   employee.LastName,
+                                   employee.WorkExperience,
+                                   positionName = position.Name
+                               };
+            foreach (var employee in fullEmployee)
+            {
+                Console.WriteLine($"Id сотрудника: {employee.Id}, Полное имя сотрудника: {employee.FirstName}" +
+                    $"{employee.LastName}, Стаж работы: {employee.WorkExperience} лет, Занимаемая должность: {employee.positionName}");
+            }
+
+            Console.WriteLine("Пункт пятый:");
+            //? хз пока что нет актуальных билетов,лучше не трогать
         }
     }
 }
