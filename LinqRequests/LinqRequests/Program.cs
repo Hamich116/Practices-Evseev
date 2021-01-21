@@ -59,7 +59,7 @@ namespace LinqRequests
                                         flight.DepartureDate,
                                         IdCrew = flightCrew.Id,
                                         employees = Employees
-                              };
+                                    };
             foreach (var fullFlight in informationFlight)
             {
                 Console.WriteLine($"Id рейса: {fullFlight.Id}, модель самолета: {fullFlight.ModelName}");
@@ -70,10 +70,10 @@ namespace LinqRequests
                 Console.WriteLine($"Id экипажа: {fullFlight.IdCrew}, Сотрудники: ");
                 for (int i = 0; i < fullFlight.employees.Count; i++)
                 {
-                    Console.WriteLine($"{i+1}: {fullFlight.employees[i].LastName}");
+                    Console.WriteLine($"{i + 1}: {fullFlight.employees[i].LastName}");
                 }
             }
-
+            //4
             Console.WriteLine("Пункт четвертый:");
             var fullEmployee = from employee in Employees
                                join position in Positions on employee.PositionId equals position.Id
@@ -91,8 +91,19 @@ namespace LinqRequests
                     $"{employee.LastName}, Стаж работы: {employee.WorkExperience} лет, Занимаемая должность: {employee.positionName}");
             }
 
+            //5
             Console.WriteLine("Пункт пятый:");
             //? хз пока что нет актуальных билетов,лучше не трогать
+
+            Console.WriteLine("Пункт шестой: ");
+            var sortedPlanes = from plane in Planes
+                               orderby plane.FlightHours, plane.IssueYear, plane.Capacity
+                               select plane;
+            foreach (var plane in sortedPlanes)
+            {
+                Console.WriteLine($"Id самолета: {plane.Id}, Количество часов в полете: {plane.FlightHours}" +
+                    $", Год выпуска: {plane.IssueYear}, Вместимость самолета: {plane.Capacity}");
+            }
         }
     }
 }
