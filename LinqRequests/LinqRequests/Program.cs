@@ -104,6 +104,19 @@ namespace LinqRequests
                 Console.WriteLine($"Id самолета: {plane.Id}, Количество часов в полете: {plane.FlightHours}" +
                     $", Год выпуска: {plane.IssueYear}, Вместимость самолета: {plane.Capacity}");
             }
+            Console.WriteLine("Пункт седьмой:");
+            var planeArrival = from flight in Flights
+                               group flight by flight.DepartureDate;
+            foreach (var plane in planeArrival)
+            {
+                Console.WriteLine("Дата прибытия " + plane.Key);
+                foreach (var item in plane)
+                {
+                    Console.WriteLine("Id прибывшего самолета " + item.PlaneId);
+                }
+            }
+
+
         }
     }
 }
