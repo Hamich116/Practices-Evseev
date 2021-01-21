@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/tgWjqFP2HJF/G67a2kQYaSDnTXx5gNIS4pEDqxrJ4oJrp4z+oec+B3ncNr24W6B7fcE31bBgVaNZOu7bXV3Gw==",
+  "dgSpecHash": "sQiVkU4kr63LDchIlhl21FzEtHy0IrtQoC5OpE4mIXvg3hRTfe0cqyQOSxyU2agojoqVZ7th12sk6B3ffeOCKg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Hamich\\Desktop\\учеба\\Heroes sword and magic\\Heroes sword and magic\\Heroes sword and magic.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Hamich\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.3\\microsoft.aspnetcore.app.ref.3.1.3.nupkg.sha512",
-    "C:\\Users\\Hamich\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
-    "C:\\Users\\Hamich\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\Hamich\\Documents\\GitHub\\Practices-Evseev\\Heroes sword and magic\\Heroes sword and magic\\Heroes sword and magic.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
