@@ -45,7 +45,7 @@ namespace LinqRequests
                                select plane;
                                
             Console.WriteLine($"Количество самолетов с вместимостью больше {n} человек: {countPlanes}");
-            Console.WriteLine("1.1");
+            Console.WriteLine("2.1");
             Console.WriteLine($"Количество самолетов с вместимостью больше {n} человек: {countPlanes1.Count()}");
 
             //3
