@@ -119,7 +119,20 @@ namespace LinqRequests
                 Console.WriteLine($"Id сотрудника: {employee.Id}, Полное имя сотрудника: {employee.FirstName}" +
                     $"{employee.LastName}, Стаж работы: {employee.WorkExperience} лет, Занимаемая должность: {employee.positionName}");
             }
-
+            Console.WriteLine("4.1");
+            var fullEmployee1 = Employees.Join(Positions, e => e.PositionId, f => f.Id, (e, f) => new
+            {
+                e.Id,
+                e.FirstName,
+                e.LastName,
+                e.WorkExperience,
+                f.Name
+            });
+            foreach (var employee in fullEmployee1)
+            {
+                Console.WriteLine($"Id сотрудника: {employee.Id}, Полное имя сотрудника: {employee.FirstName}" +
+                    $"{employee.LastName}, Стаж работы: {employee.WorkExperience} лет, Занимаемая должность: {employee.Name}");
+            }
             //5
             Console.WriteLine("Пункт пятый:");
             DateTime actulTime = new DateTime(2020, 06, 30);
@@ -144,7 +157,28 @@ namespace LinqRequests
                 Console.WriteLine($"Id пассажира: {client.Id}, Полное имя: {client.FirstName} {client.LastName}" +
                     $", Дата отбытия: {client.DepartureDate}");
             }
-                                    
+            Console.WriteLine("5.1");
+            var clientWithTickets1 = Clients.Join(Tickets, s => s.Id, t => t.ClientId, (s, t) => new
+            {
+                s.Id,
+                s.FirstName,
+                s.LastName,
+                ticketId = t.Id,
+                t.FlightId
+            }).Join(Flights, s => s.FlightId, f => f.Id, (s, f) => new
+            {
+                s.Id,
+                s.FirstName,
+                s.LastName,
+                ticketId = s.Id,
+                f.DepartureDate
+            }).OrderBy(s => s.LastName).ThenBy(s => s.FirstName).Where(s => s.DepartureDate > actulTime);
+            foreach (var client in clientWithTickets1)
+            {
+                Console.WriteLine($"Id пассажира: {client.Id}, Полное имя: {client.FirstName} {client.LastName}" +
+                    $", Дата отбытия: {client.DepartureDate}");
+            }
+
             //6
             Console.WriteLine("Пункт шестой: ");
             var sortedPlanes = from plane in Planes
@@ -155,16 +189,53 @@ namespace LinqRequests
                 Console.WriteLine($"Id самолета: {plane.Id}, Количество часов в полете: {plane.FlightHours}" +
                     $", Год выпуска: {plane.IssueYear}, Вместимость самолета: {plane.Capacity}");
             }
+            Console.WriteLine("6.1");
+            var sortedPlanes1 = Planes.OrderBy(p => p.FlightHours).ThenBy(p => p.IssueYear).ThenBy(p => p.Capacity);
+            foreach (var plane in sortedPlanes1)
+            {
+                Console.WriteLine($"Id самолета: {plane.Id}, Количество часов в полете: {plane.FlightHours}" +
+                    $", Год выпуска: {plane.IssueYear}, Вместимость самолета: {plane.Capacity}");
+            }
             //7
             Console.WriteLine("Пункт седьмой:");
             var planeArrival = from flight in Flights
                                group flight by flight.DepartureDate;
             foreach (var plane in planeArrival)
             {
+                int counter = 0;
                 Console.WriteLine("Дата прибытия " + plane.Key);
                 foreach (var item in plane)
                 {
+                    counter += 1;
                     Console.WriteLine("Id прибывшего самолета " + item.PlaneId);
+                }
+                if (counter > 1)
+                {
+                    Console.WriteLine($"Прилетевших самолетов: {counter}");
+                }
+                else
+                {
+                    Console.WriteLine("Нет еще самолетов прилетевших сюда");
+                }
+            }
+            Console.WriteLine("7.1");
+            var planeArrival1 = Flights.GroupBy(f => f.DepartureDate);
+            foreach (var plane in planeArrival1)
+            {
+                int counter = 0;
+                Console.WriteLine("Дата прибытия " + plane.Key);
+                foreach (var item in plane)
+                {
+                    counter += 1;
+                    Console.WriteLine("Id прибывшего самолета " + item.PlaneId);
+                }
+                if (counter > 1)
+                {
+                    Console.WriteLine($"Прилетевших самолетов: {counter}");
+                }
+                else
+                {
+                    Console.WriteLine("Нет еще самолетов прилетевших сюда");
                 }
             }
 
