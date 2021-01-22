@@ -21,8 +21,13 @@ namespace LinqRequests
             //}
             Console.WriteLine("Пункт первый: ");
             var average = Tickets.Average(ticket => ticket.Cost);
-            int averageCost = Convert.ToInt32(average); // для красивого вывода
+            int averageCost = Convert.ToInt32(average);
             Console.WriteLine($"Среднее стоимость билета: {averageCost} рублей");
+            Console.WriteLine("1.1");
+            var average1 = from ticket in Tickets
+                           select Tickets.Average(t => t.Cost);
+            int averageCost1 = Convert.ToInt32(average);
+            Console.WriteLine($"Среднее стоимость билета: {averageCost1} рублей");
 
             //2
 
@@ -35,40 +40,67 @@ namespace LinqRequests
             Console.WriteLine("Пункт второй: ");
             int n = 150;
             var countPlanes = Planes.Where(plane => plane.Capacity > n).Count();
-            Console.WriteLine($"Количество самолетов с вместимостью {n} человек: {countPlanes}");
+            var countPlanes1 = from plane in Planes
+                               where plane.Capacity > n
+                               select plane;
+                               
+            Console.WriteLine($"Количество самолетов с вместимостью больше {n} человек: {countPlanes}");
+            Console.WriteLine("1.1");
+            Console.WriteLine($"Количество самолетов с вместимостью больше {n} человек: {countPlanes1.Count()}");
 
             //3
             Console.WriteLine("Пункт третий: ");
 
             var informationFlight = from flight in Flights
                                     join flightCrew in FlightCrews on flight.Id equals flightCrew.FlightId
-                                    join airportArrival in Airports on flight.AirportArrivalId equals airportArrival.Id
-                                    join airportDeparture in Airports on flight.AirportDepartureId equals airportDeparture.Id
-                                    join plane in Planes on flight.PlaneId equals plane.Id
                                     join employee in Employees on flightCrew.EmployeeId equals employee.Id
                                     select new
                                     {
                                         flight.Id,
-                                        plane.ModelName,
-                                        airportArrival = airportArrival.Name,
-                                        cityArrival = airportArrival.City,
-                                        countryArrival = airportArrival.Country,
-                                        airportDeparture = airportDeparture.Name,
-                                        cityDeparture = airportDeparture.City,
-                                        countryDeparture = airportDeparture.Country,
+                                        flight.PlaneId,
+                                        flight.AirportArrivalId,
+                                        flight.AirportDepartureId,
                                         flight.ArrivalDate,
                                         flight.DepartureDate,
                                         IdCrew = flightCrew.Id,
+                                        employeeName = employee.LastName
                                         
                                     };
             foreach (var fullFlight in informationFlight)
             {
-                Console.WriteLine($"Id рейса: {fullFlight.Id}, модель самолета: {fullFlight.ModelName}");
-                Console.WriteLine($"Дата прибытия: {fullFlight.ArrivalDate}, Аэропорт прибытия: {fullFlight.airportArrival}" +
-                    $", Город прибытия {fullFlight.cityArrival}, Страна прибытия {fullFlight.countryArrival}");
-                Console.WriteLine($"Дата отбытия: {fullFlight.DepartureDate}, Аэропорт отбытия: {fullFlight.airportDeparture}" +
-                    $", Город отбытия {fullFlight.cityDeparture}, Страна отбытия {fullFlight.countryDeparture}");
-                Console.WriteLine($"Id экипажа: {fullFlight.IdCrew}, Сотрудники: ");
+                Console.WriteLine($"Id рейса: {fullFlight.Id}, модель самолета: {fullFlight.PlaneId}");
+                Console.WriteLine($"Дата прибытия: {fullFlight.ArrivalDate}, Аэропорт прибытия: {fullFlight.AirportArrivalId}");
+                Console.WriteLine($"Дата отбытия: {fullFlight.DepartureDate}, Аэропорт отбытия: {fullFlight.AirportArrivalId}");
+                Console.WriteLine($"Id экипажа: {fullFlight.IdCrew}, Сотрудник: {fullFlight.employeeName}");
+            }
+
+            Console.WriteLine("3.1");
+            var informationFlight1 = Flights.Join(FlightCrews, f => f.Id, c => c.FlightId, (f, c) => new
+            {
+                f.Id,
+                f.PlaneId,
+                f.AirportArrivalId,
+                f.AirportDepartureId,
+                f.ArrivalDate,
+                f.DepartureDate,
+                IdCrew = c.Id
+            }).Join(Employees, f => f.IdCrew, e => e.Id, (f, e) => new
+            {
+                f.Id,
+                f.PlaneId,
+                f.AirportArrivalId,
+                f.AirportDepartureId,
+                f.ArrivalDate,
+                f.DepartureDate,
+                f.IdCrew,
+                e.LastName
+            });
+            foreach (var fullFlight in informationFlight1)
+            {
+                Console.WriteLine($"Id рейса: {fullFlight.Id}, модель самолета: {fullFlight.PlaneId}");
+                Console.WriteLine($"Дата прибытия: {fullFlight.ArrivalDate}, Аэропорт прибытия: {fullFlight.AirportArrivalId}");
+                Console.WriteLine($"Дата отбытия: {fullFlight.DepartureDate}, Аэропорт отбытия: {fullFlight.AirportArrivalId}");
+                Console.WriteLine($"Id экипажа: {fullFlight.IdCrew}, Сотрудник: {fullFlight.LastName}");
             }
             //4
             Console.WriteLine("Пункт четвертый:");
@@ -113,7 +145,7 @@ namespace LinqRequests
                     $", Дата отбытия: {client.DepartureDate}");
             }
                                     
-
+            //6
             Console.WriteLine("Пункт шестой: ");
             var sortedPlanes = from plane in Planes
                                orderby plane.FlightHours, plane.IssueYear, plane.Capacity
@@ -123,6 +155,7 @@ namespace LinqRequests
                 Console.WriteLine($"Id самолета: {plane.Id}, Количество часов в полете: {plane.FlightHours}" +
                     $", Год выпуска: {plane.IssueYear}, Вместимость самолета: {plane.Capacity}");
             }
+            //7
             Console.WriteLine("Пункт седьмой:");
             var planeArrival = from flight in Flights
                                group flight by flight.DepartureDate;
