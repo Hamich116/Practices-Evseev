@@ -21,13 +21,11 @@ namespace LinqRequests
             //}
             Console.WriteLine("Пункт первый: ");
             var average = Tickets.Average(ticket => ticket.Cost);
-            int averageCost = Convert.ToInt32(average);
-            Console.WriteLine($"Среднее стоимость билета: {averageCost} рублей");
+            Console.WriteLine($"Среднее стоимость билета: {average} рублей");
             Console.WriteLine("1.1");
-            var average1 = from ticket in Tickets
-                           select Tickets.Average(t => t.Cost);
-            int averageCost1 = Convert.ToInt32(average);
-            Console.WriteLine($"Среднее стоимость билета: {averageCost1} рублей");
+            var average1 = (from ticket in Tickets
+                            select ticket.Cost).Average();
+            Console.WriteLine($"Среднее стоимость билета: {average1} рублей");
 
             //2
 
@@ -40,13 +38,13 @@ namespace LinqRequests
             Console.WriteLine("Пункт второй: ");
             int n = 150;
             var countPlanes = Planes.Where(plane => plane.Capacity > n).Count();
-            var countPlanes1 = from plane in Planes
-                               where plane.Capacity > n
-                               select plane;
+            var countPlanes1 = (from plane in Planes
+                                where plane.Capacity > n
+                                select plane).Count();
                                
             Console.WriteLine($"Количество самолетов с вместимостью больше {n} человек: {countPlanes}");
             Console.WriteLine("2.1");
-            Console.WriteLine($"Количество самолетов с вместимостью больше {n} человек: {countPlanes1.Count()}");
+            Console.WriteLine($"Количество самолетов с вместимостью больше {n} человек: {countPlanes1}");
 
             //3
             Console.WriteLine("Пункт третий: ");
@@ -139,14 +137,15 @@ namespace LinqRequests
             var sortedClients = from client in Clients
                                 join ticket in Tickets on client.Id equals ticket.ClientId
                                 join flight in Flights on ticket.FlightId equals flight.Id
-                                orderby client.LastName,client.FirstName
+                                orderby client.BirthDate
                                 select new
                                 {
                                     client.Id,
                                     client.FirstName,
                                     client.LastName,
                                     ticketId = ticket.Id,
-                                    flight.DepartureDate
+                                    flight.DepartureDate,
+                                    client.BirthDate
                                 };
 
             var clientWithTickets = from client in sortedClients
@@ -155,7 +154,7 @@ namespace LinqRequests
             foreach (var client in clientWithTickets)
             {
                 Console.WriteLine($"Id пассажира: {client.Id}, Полное имя: {client.FirstName} {client.LastName}" +
-                    $", Дата отбытия: {client.DepartureDate}");
+                    $", Дата рождения: {client.BirthDate}, Дата отбытия: {client.DepartureDate}");
             }
             Console.WriteLine("5.1");
             var clientWithTickets1 = Clients.Join(Tickets, s => s.Id, t => t.ClientId, (s, t) => new
@@ -164,19 +163,21 @@ namespace LinqRequests
                 s.FirstName,
                 s.LastName,
                 ticketId = t.Id,
-                t.FlightId
+                t.FlightId,
+                s.BirthDate
             }).Join(Flights, s => s.FlightId, f => f.Id, (s, f) => new
             {
                 s.Id,
                 s.FirstName,
                 s.LastName,
                 ticketId = s.Id,
+                s.BirthDate,
                 f.DepartureDate
-            }).OrderBy(s => s.LastName).ThenBy(s => s.FirstName).Where(s => s.DepartureDate > actulTime);
+            }).OrderBy(s => s.BirthDate).Where(s => s.DepartureDate > actulTime);
             foreach (var client in clientWithTickets1)
             {
                 Console.WriteLine($"Id пассажира: {client.Id}, Полное имя: {client.FirstName} {client.LastName}" +
-                    $", Дата отбытия: {client.DepartureDate}");
+                    $", Дата рождения: {client.BirthDate}, Дата отбытия: {client.DepartureDate}");
             }
 
             //6
