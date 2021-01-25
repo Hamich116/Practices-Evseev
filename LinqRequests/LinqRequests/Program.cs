@@ -199,48 +199,7 @@ namespace LinqRequests
             }
             //7
             Console.WriteLine("Пункт седьмой:");
-            var planeArrival = from flight in Flights
-                               group flight by flight.DepartureDate;
-            foreach (var plane in planeArrival)
-            {
-                int counter = 0;
-                Console.WriteLine("Дата прибытия " + plane.Key);
-                foreach (var item in plane)
-                {
-                    counter += 1;
-                    Console.WriteLine("Id прибывшего самолета " + item.PlaneId);
-                }
-                if (counter > 1)
-                {
-                    Console.WriteLine($"Прилетевших самолетов: {counter}");
-                }
-                else
-                {
-                    Console.WriteLine("Нет еще самолетов прилетевших сюда");
-                }
-            }
-            Console.WriteLine("7.1");
-            var planeArrival1 = Flights.GroupBy(f => f.DepartureDate);
-            foreach (var plane in planeArrival1)
-            {
-                int counter = 0;
-                Console.WriteLine("Дата прибытия " + plane.Key);
-                foreach (var item in plane)
-                {
-                    counter += 1;
-                    Console.WriteLine("Id прибывшего самолета " + item.PlaneId);
-                }
-                if (counter > 1)
-                {
-                    Console.WriteLine($"Прилетевших самолетов: {counter}");
-                }
-                else
-                {
-                    Console.WriteLine("Нет еще самолетов прилетевших сюда");
-                }
-            }
-
-
+            
         }
     }
 }
