@@ -1,0 +1,16 @@
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\GroupedAirLinq\GroupedAirLinq\bin\Debug\netcoreapp3.1\GroupedAirLinq.exe
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\GroupedAirLinq\GroupedAirLinq\bin\Debug\netcoreapp3.1\GroupedAirLinq.deps.json
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\GroupedAirLinq\GroupedAirLinq\bin\Debug\netcoreapp3.1\GroupedAirLinq.runtimeconfig.json
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\GroupedAirLinq\GroupedAirLinq\bin\Debug\netcoreapp3.1\GroupedAirLinq.runtimeconfig.dev.json
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\GroupedAirLinq\GroupedAirLinq\bin\Debug\netcoreapp3.1\GroupedAirLinq.dll
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\GroupedAirLinq\GroupedAirLinq\bin\Debug\netcoreapp3.1\GroupedAirLinq.pdb
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\GroupedAirLinq\GroupedAirLinq\bin\Debug\netcoreapp3.1\AirDataSource.dll
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\GroupedAirLinq\GroupedAirLinq\bin\Debug\netcoreapp3.1\AirModel.dll
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\GroupedAirLinq\GroupedAirLinq\obj\Debug\netcoreapp3.1\GroupedAirLinq.csprojAssemblyReference.cache
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\GroupedAirLinq\GroupedAirLinq\obj\Debug\netcoreapp3.1\GroupedAirLinq.AssemblyInfoInputs.cache
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\GroupedAirLinq\GroupedAirLinq\obj\Debug\netcoreapp3.1\GroupedAirLinq.AssemblyInfo.cs
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\GroupedAirLinq\GroupedAirLinq\obj\Debug\netcoreapp3.1\GroupedAirLinq.csproj.CoreCompileInputs.cache
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\GroupedAirLinq\GroupedAirLinq\obj\Debug\netcoreapp3.1\GroupedAirLinq.csproj.CopyComplete
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\GroupedAirLinq\GroupedAirLinq\obj\Debug\netcoreapp3.1\GroupedAirLinq.dll
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\GroupedAirLinq\GroupedAirLinq\obj\Debug\netcoreapp3.1\GroupedAirLinq.pdb
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\GroupedAirLinq\GroupedAirLinq\obj\Debug\netcoreapp3.1\GroupedAirLinq.genruntimeconfig.cache
