@@ -60,15 +60,16 @@ namespace GroupedAirLinq
                 }
             }
             Console.WriteLine("2.2");
-            var groupTicketViaPlace1 = Tickets.OrderBy(ticket => ticket.Cost).GroupBy(ticket => ticket.Row).GroupBy(ticket => new
+            var groupTicketViaPlace1 = Tickets.OrderBy(ticket => ticket.Cost).GroupBy(ticket => ticket.Row).Select(ticket => new
             {
-
+                ticket.Key,
+                groupPlace = ticket.GroupBy(t => t.Place)
             });
 
             foreach (var row in groupTicketViaPlace1)
             {
                 Console.WriteLine("Ряд: " + row.Key);
-                foreach (var place in row.Key.groupTicket1)
+                foreach (var place in row.groupPlace)
                 {
                     Console.WriteLine("Место: " + place.Key);
                     foreach (var ticket in place)
