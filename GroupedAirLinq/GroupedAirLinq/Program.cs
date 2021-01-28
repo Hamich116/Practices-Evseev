@@ -78,6 +78,67 @@ namespace GroupedAirLinq
                     }
                 }
             }
+            Console.WriteLine("3.1");
+
+            int n = 1000;
+            var groupReadyFlyPlane = from CountPlaneHours in Planes
+                                     where CountPlaneHours.FlightHours < n
+                                     select CountPlaneHours;
+            var groupReadyIsFly = from groupReady in groupReadyFlyPlane
+                                  group groupReady by groupReady.IsFlyReady;
+
+            foreach (var ready in groupReadyIsFly)
+            {
+                if (ready.Key)
+                {
+                    Console.WriteLine("Готовы к полету");
+                }
+                else
+                {
+                    Console.WriteLine("Не готовы к полету");
+                }
+                
+                foreach (var plane in ready)
+                {
+                    
+                    if (plane.IsFlyReady)
+                    {
+                        Console.WriteLine($"Name plane - {plane.ModelName}");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Name plane - {plane.ModelName}");
+                    }
+                }
+            }
+            
+            Console.WriteLine("3.2");
+
+            var groupReadyIsFly1 = Planes.Where(p => p.FlightHours < n).GroupBy(f => f.IsFlyReady);
+            foreach (var ready in groupReadyIsFly1)
+            {
+                if (ready.Key)
+                {
+                    Console.WriteLine("Готовы к полету");
+                }
+                else
+                {
+                    Console.WriteLine("Не готовы к полету");
+                }
+
+                foreach (var plane in ready)
+                {
+
+                    if (plane.IsFlyReady)
+                    {
+                        Console.WriteLine($"Name plane - {plane.ModelName}");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Name plane - {plane.ModelName}");
+                    }
+                }
+            }
         }
     }
 }
