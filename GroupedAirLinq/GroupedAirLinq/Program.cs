@@ -10,10 +10,10 @@ namespace GroupedAirLinq
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("1.1"); // ГОТОВ 
+            Console.WriteLine("1.1");
 
             var groupCitizenship = from client in Clients
-                                   orderby client.Citizenship,client.LastName,client.FirstName
+                                   orderby client.LastName, client.FirstName
                                    group client by client.Citizenship;
             foreach (var citizen in groupCitizenship)
             {
@@ -23,10 +23,10 @@ namespace GroupedAirLinq
                     Console.WriteLine($" {client.LastName} {client.FirstName}");
                 }
             }
+            Console.WriteLine("///////////////////////////////////////////////");
+            Console.WriteLine("1.2");
 
-            Console.WriteLine("1.2"); // ГОТОВ 
-
-            var groupCitezenship1 = (Clients.OrderBy(c => c.Citizenship)).ThenBy(c => c.LastName).ThenBy(c => c.FirstName).GroupBy(a => a.Citizenship);
+            var groupCitezenship1 = Clients.OrderBy(c => c.LastName).ThenBy(c => c.FirstName).GroupBy(a => a.Citizenship);
             foreach (var citizen in groupCitezenship1)
             {
                 Console.WriteLine(citizen.Key);
@@ -35,11 +35,13 @@ namespace GroupedAirLinq
                     Console.WriteLine($" {client.LastName} {client.FirstName}");
                 }
             }
-
+            Console.WriteLine("///////////////////////////////////////////////");
             Console.WriteLine("2.1");
+
             var groupTicketViaRow = from ticket in Tickets
                                      orderby ticket.Cost
                                      group ticket by ticket.Row;
+
             var groupTicketViaPlace = from ticket in groupTicketViaRow
                                     select new
                                     {
@@ -59,7 +61,9 @@ namespace GroupedAirLinq
                     }
                 }
             }
+            Console.WriteLine("///////////////////////////////////////////////");
             Console.WriteLine("2.2");
+
             var groupTicketViaPlace1 = Tickets.OrderBy(ticket => ticket.Cost).GroupBy(ticket => ticket.Row).Select(ticket => new
             {
                 ticket.Key,
@@ -78,134 +82,130 @@ namespace GroupedAirLinq
                     }
                 }
             }
+            Console.WriteLine("///////////////////////////////////////////////");
             Console.WriteLine("3.1");
 
             int n = 1000;
-            var groupReadyFlyPlane = from CountPlaneHours in Planes
-                                     where CountPlaneHours.FlightHours < n
-                                     select CountPlaneHours;
+            var groupReadyFlyPlane = from countPlaneHours in Planes
+                                     where countPlaneHours.FlightHours < n
+                                     select countPlaneHours;
             var groupReadyIsFly = from groupReady in groupReadyFlyPlane
                                   group groupReady by groupReady.IsFlyReady;
+                                  
 
             foreach (var ready in groupReadyIsFly)
             {
-                if (ready.Key)
-                {
-                    Console.WriteLine("Готовы к полету");
-                }
-                else
-                {
-                    Console.WriteLine("Не готовы к полету");
-                }
-                
+                Console.WriteLine(ready.Key);   
                 foreach (var plane in ready)
                 {
-                    
-                    if (plane.IsFlyReady)
-                    {
                         Console.WriteLine($"Name plane - {plane.ModelName}");
-                    }
-                    else
-                    {
-                        Console.WriteLine($"Name plane - {plane.ModelName}");
-                    }
                 }
             }
-            
+            Console.WriteLine("///////////////////////////////////////////////");
             Console.WriteLine("3.2");
 
             var groupReadyIsFly1 = Planes.Where(p => p.FlightHours < n).GroupBy(f => f.IsFlyReady);
             foreach (var ready in groupReadyIsFly1)
             {
-                if (ready.Key)
-                {
-                    Console.WriteLine("Готовы к полету");
-                }
-                else
-                {
-                    Console.WriteLine("Не готовы к полету");
-                }
-
+                Console.WriteLine(ready.Key);
                 foreach (var plane in ready)
                 {
-
-                    if (plane.IsFlyReady)
-                    {
-                        Console.WriteLine($"Name plane - {plane.ModelName}");
-                    }
-                    else
-                    {
-                        Console.WriteLine($"Name plane - {plane.ModelName}");
-                    }
+                    Console.WriteLine($"Name plane - {plane.ModelName}");
                 }
             }
+            //Не сделано.
             //Console.WriteLine("4.1");
-            //var allInfo = from flightcrew in FlightCrews
-            //              group flightcrew by flightcrew.FlightId;
+
+            //var allInfo = (from flightcrew in FlightCrews
+            //               group flightcrew by flightcrew.FlightId into f
+            //               {
+            //                   f.Key,
+            //                   GroupedEmp = from flightcrew in f
+            //                                group flightcrew.FlightId by f
+            //               }).ToList();
             //foreach (var item in allInfo)
             //{
             //    Console.WriteLine("Рейс: " + item.Key);
-            //    foreach (var item1 in item)
+            //    foreach (var item1 in item.GroupedEmp)
             //    {
-            //        Console.WriteLine(item1.EmployeeId);
+            //        Console.WriteLine(item1.Key);
+            //        foreach (var item2 in item1)
+            //        {
+            //            Console.WriteLine(item2);
+            //        }
             //    }
             //}
-
-            //Console.WriteLine();
-
             //Console.WriteLine("4.2");
-            Console.WriteLine("5.1"); // ГОТОВО 
+            Console.WriteLine("///////////////////////////////////////////////");
+            Console.WriteLine("5.1");
+
             var countPalneCity = from planeCountry in Airports
-                                 group planeCountry by planeCountry.Country into c
+                                 group planeCountry by planeCountry.Country into country
                                  select new
                                  {
-                                     Id = c.Key,
-                                     Count = c.Count()
+                                     Id = country.Key,
+                                     Count = country.Count()
                                  };
             foreach (var item in countPalneCity)
             {
                 Console.WriteLine($"Country - {item.Id} Count plane {item.Count}");
             }
+            Console.WriteLine("///////////////////////////////////////////////");
+            Console.WriteLine("5.2");
 
-            Console.WriteLine("5.2"); // ГОТОВО 
-
-            var countPalneCity1 = Airports.GroupBy(c => c.Country).Select(g => new
+            var countPalneCity1 = Airports.GroupBy(airport => airport.Country).Select(country => new
             {
-                Id = g.Key,
-                Count = g.Count()
+                Id = country.Key,
+                Count = country.Count()
             });
             foreach (var item in countPalneCity1)
             {
                 Console.WriteLine($"Country - {item.Id}, Count plane {item.Count}");
             }
             Console.WriteLine();
-
+            Console.WriteLine("///////////////////////////////////////////////");
             Console.WriteLine("6.1");
 
             var numberTicketsIsClients = from client in Clients
-                                         group client by client.Tickets.Count;
+                                         join ticket in Tickets on client.Id equals ticket.ClientId
+                                         group ticket by client into t
+                                         select new
+                                         {
+                                             FullName = t.Key.FirstName + " " + t.Key.LastName,
+                                             Count = t.Count(),
+                                             Tickets = from c in t
+                                                       select c
+                                         };
+
             foreach (var item in numberTicketsIsClients)
             {
-                foreach (var item1 in item)
+                Console.WriteLine($"{item.FullName} count {item.Count}");
+
+                foreach (var item1 in item.Tickets)
                 {
-                    Console.WriteLine($"Full name {item1.LastName} {item1.FirstName}, count {item.Key}, билеты:");
-                    foreach (var item2 in item1.Tickets)
-                    {
-                        Console.WriteLine(item2.Id);
-                    }
+                    Console.WriteLine(item1.Id);
                 }
             }
+            Console.WriteLine("///////////////////////////////////////////////");
             Console.WriteLine("6.2");
-            var numberTicketsIsClients1 = Clients.GroupBy(client => client.Tickets.Count);
-            foreach (var item in numberTicketsIsClients)
+
+            var numberTicketsIsClients1 = Clients.Join(Tickets, c => c.Id, t => t.ClientId, (c, t) => new
             {
-                foreach (var item1 in item)
+                Tickets = t,
+                Clients = c
+            }).GroupBy(ticket => ticket.Clients).Select(t => new
+            {
+                FullName = t.Key.FirstName + " " + t.Key.LastName,
+                Count = t.Count(),
+                Tickets = t.Select(c => c.Tickets)
+            });
+            foreach (var item in numberTicketsIsClients1)
+            {
+                Console.WriteLine($"{item.FullName} count {item.Count}");
+
+                foreach (var item1 in item.Tickets)
                 {
-                    Console.WriteLine($"Full name {item1.LastName} {item1.FirstName}, count {item.Key}, билеты:");
-                    foreach (var item2 in item1.Tickets)
-                    {
-                        Console.WriteLine(item2.Id);
-                    }
+                    Console.WriteLine(item1.Id);
                 }
             }
         }
