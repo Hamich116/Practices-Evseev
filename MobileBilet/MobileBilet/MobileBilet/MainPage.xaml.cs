@@ -77,6 +77,11 @@ namespace MobileBilet
             }));
             this.Content = rl;
 
+
+
+
+
+
         }
     }
 }
