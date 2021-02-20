@@ -39,22 +39,22 @@ namespace GroupedAirLinq
             Console.WriteLine("2.1");
 
             var groupTicketViaRow = from ticket in Tickets
-                                    group ticket by ticket.Row into ticket
+                                    group ticket by ticket.Row into groupTicket
                                     select new
                                     {
-                                        ticket.Key,
-                                        averageSum = ticket.Average(ticket => ticket.Cost),
-                                        groupTicketviaPlace = from ticketPlace in ticket
+                                        groupTicket.Key,
+                                        AverageSum = groupTicket.Average(t => t.Cost),
+                                        GroupTicketviaPlace = from ticketPlace in groupTicket
                                                               group ticketPlace by ticketPlace.Place
                                     };
             var groupTicketViaRowSorted = from ticket in groupTicketViaRow
-                                          orderby ticket.averageSum
+                                          orderby ticket.AverageSum
                                           select ticket;
 
             foreach (var row in groupTicketViaRowSorted)
             {
                 Console.WriteLine("Ряд: " + row.Key);
-                foreach (var place in row.groupTicketviaPlace)
+                foreach (var place in row.GroupTicketviaPlace)
                 {
                     Console.WriteLine("Место: " + place.Key);
                     foreach (var ticket in place)
@@ -66,11 +66,11 @@ namespace GroupedAirLinq
             Console.WriteLine("///////////////////////////////////////////////");
             Console.WriteLine("2.2");
 
-            var groupTicketViaPlace1 = Tickets.GroupBy(ticket => ticket.Row).Select(ticket => new
+            var groupTicketViaPlace1 = Tickets.GroupBy(ticket => ticket.Row).Select(groupTicket => new
             {
-                ticket.Key,
-                averageSum = ticket.Average(ticket => ticket.Cost),
-                groupPlace = ticket.GroupBy(ticket => ticket.Place)
+                groupTicket.Key,
+                averageSum = groupTicket.Average(ticket => ticket.Cost),
+                groupPlace = groupTicket.GroupBy(ticket => ticket.Place)
             }).OrderBy(ticket => ticket.averageSum);
 
             foreach (var row in groupTicketViaPlace1)
@@ -93,39 +93,30 @@ namespace GroupedAirLinq
                                      where countPlaneHours.FlightHours < n
                                      select countPlaneHours;
             var groupReadyIsFly = from groupReady in groupReadyFlyPlane
-                                  group groupReady by groupReady.IsFlyReady into ready
+                                  group groupReady by groupReady.IsFlyReady into readyGroup
                                   select new
                                   {
-                                      Key = ready.Key ? "К полету готовы:" : "К полету не готовы:",
-                                      Planes = from plane in ready
-                                               select plane
+                                      Key = readyGroup.Key ? "К полету готовы:" : "К полету не готовы:",
+                                      CountPlane = readyGroup.Count()
                                   };
                                   
 
 
             foreach (var ready in groupReadyIsFly)
             {
-                Console.WriteLine(ready.Key);
-                foreach (var plane in ready.Planes)
-                {
-                    Console.WriteLine($"Name plane - {plane.ModelName}");
-                }
+                Console.WriteLine(ready.Key + ready.CountPlane);
             }
             Console.WriteLine("///////////////////////////////////////////////");
             Console.WriteLine("3.2");
 
-            var groupReadyIsFly1 = Planes.Where(plane => plane.FlightHours < n).GroupBy(fly => fly.IsFlyReady).Select(ready => new
+            var groupReadyIsFly1 = Planes.Where(plane => plane.FlightHours < n).GroupBy(fly => fly.IsFlyReady).Select(readyGroup => new
             {
-                Key = ready.Key ? "К полету готовы:" : "К полету не готовы:",
-                Planes = ready.Select(plane => plane)
+                Key = readyGroup.Key ? "К полету готовы:" : "К полету не готовы:",
+                CountPlane = readyGroup.Count()
             });
-            foreach (var ready in groupReadyIsFly1)
+            foreach (var ready in groupReadyIsFly)
             {
-                Console.WriteLine(ready.Key);
-                foreach (var plane in ready.Planes)
-                {
-                    Console.WriteLine($"Name plane - {plane.ModelName}");
-                }
+                Console.WriteLine(ready.Key + ready.CountPlane);
             }
             //Не сделано.
             //Console.WriteLine("4.1");
@@ -153,26 +144,26 @@ namespace GroupedAirLinq
             Console.WriteLine("///////////////////////////////////////////////");
             Console.WriteLine("5.1");
 
-            var countPalneCity = from planeCountry in Airports
-                                 group planeCountry by planeCountry.Country into country
+            var countPlaneCity = from planeCountry in Airports
+                                 group planeCountry by planeCountry.Country into countryGroup
                                  select new
                                  {
-                                     Id = country.Key,
-                                     Count = country.Count()
+                                     Id = countryGroup.Key,
+                                     Count = countryGroup.Count()
                                  };
-            foreach (var item in countPalneCity)
+            foreach (var item in countPlaneCity)
             {
                 Console.WriteLine($"Country - {item.Id} Count plane {item.Count}");
             }
             Console.WriteLine("///////////////////////////////////////////////");
             Console.WriteLine("5.2");
 
-            var countPalneCity1 = Airports.GroupBy(airport => airport.Country).Select(country => new
+            var countPlaneCity1 = Airports.GroupBy(airport => airport.Country).Select(countryGroup => new
             {
-                Id = country.Key,
-                Count = country.Count()
+                Id = countryGroup.Key,
+                Count = countryGroup.Count()
             });
-            foreach (var item in countPalneCity1)
+            foreach (var item in countPlaneCity1)
             {
                 Console.WriteLine($"Country - {item.Id}, Count plane {item.Count}");
             }
@@ -182,19 +173,18 @@ namespace GroupedAirLinq
 
             var numberTicketsIsClients = from client in Clients
                                          join ticket in Tickets on client.Id equals ticket.ClientId
-                                         group ticket by client into client
+                                         group ticket by client into clientWithTickets
                                          select new
                                          {
-                                             FullName = client.Key.FirstName + " " + client.Key.LastName,
-                                             Count = client.Count(),
-                                             Tickets = from c in client
-                                                       select c
+                                             FullName = clientWithTickets.Key.FirstName + " " + clientWithTickets.Key.LastName,
+                                             Count = clientWithTickets.Count(),
+                                             Tickets = clientWithTickets
                                          };
 
             foreach (var item in numberTicketsIsClients)
             {
                 Console.WriteLine($"{item.FullName} count {item.Count}");
-
+                
                 foreach (var item1 in item.Tickets)
                 {
                     Console.WriteLine(item1.Id);
@@ -207,11 +197,11 @@ namespace GroupedAirLinq
             {
                 Tickets = ticket,
                 Clients = client
-            }).GroupBy(ticket => ticket.Clients).Select(t => new
+            }).GroupBy(ticket => ticket.Clients).Select(clientWithTickets => new
             {
-                FullName = t.Key.FirstName + " " + t.Key.LastName,
-                Count = t.Count(),
-                Tickets = t.Select(c => c.Tickets)
+                FullName = clientWithTickets.Key.FirstName + " " + clientWithTickets.Key.LastName,
+                Count = clientWithTickets.Count(),
+                Tickets = clientWithTickets
             });
             foreach (var item in numberTicketsIsClients1)
             {
@@ -219,7 +209,7 @@ namespace GroupedAirLinq
 
                 foreach (var item1 in item.Tickets)
                 {
-                    Console.WriteLine(item1.Id);
+                    Console.WriteLine(item1.Tickets.Id);
                 }
             }
         }

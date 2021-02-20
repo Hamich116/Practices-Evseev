@@ -1,0 +1,51 @@
+{
+  "version": 2,
+  "dgSpecHash": "VgS5RHSv5B0w5f8kwT4sRcuzxQD3FKdKjXPpjReOoK7ud2fLtnVOXlQF1j8yVCqtgpxq0e3lAMfbZxLEYzof+w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Hamich\\Documents\\GitHub\\Practices-Evseev\\MobileBilet\\MobileBilet\\MobileBilet.UWP\\MobileBilet.UWP.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Hamich\\.nuget\\packages\\microsoft.net.native.compiler\\2.1.8\\microsoft.net.native.compiler.2.1.8.nupkg.sha512",
+    "C:\\Users\\Hamich\\.nuget\\packages\\microsoft.net.uwpcoreruntimesdk\\2.1.2\\microsoft.net.uwpcoreruntimesdk.2.1.2.nupkg.sha512",
+    "C:\\Users\\Hamich\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "C:\\Users\\Hamich\\.nuget\\packages\\microsoft.netcore.universalwindowsplatform\\6.1.9\\microsoft.netcore.universalwindowsplatform.6.1.9.nupkg.sha512",
+    "C:\\Users\\Hamich\\.nuget\\packages\\microsoft.ui.xaml\\2.3.191211002\\microsoft.ui.xaml.2.3.191211002.nupkg.sha512",
+    "C:\\Users\\Hamich\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Hamich\\.nuget\\packages\\runtime.win10-arm-aot.microsoft.netcore.universalwindowsplatform\\6.1.9\\runtime.win10-arm-aot.microsoft.netcore.universalwindowsplatform.6.1.9.nupkg.sha512",
+    "C:\\Users\\Hamich\\.nuget\\packages\\runtime.win10-arm.microsoft.net.native.compiler\\2.1.8\\runtime.win10-arm.microsoft.net.native.compiler.2.1.8.nupkg.sha512",
+    "C:\\Users\\Hamich\\.nuget\\packages\\runtime.win10-arm.microsoft.net.native.sharedlibrary\\2.1.8\\runtime.win10-arm.microsoft.net.native.sharedlibrary.2.1.8.nupkg.sha512",
+    "C:\\Users\\Hamich\\.nuget\\packages\\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\\2.1.2\\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk.2.1.2.nupkg.sha512",
+    "C:\\Users\\Hamich\\.nuget\\packages\\runtime.win10-arm.microsoft.netcore.universalwindowsplatform\\6.1.9\\runtime.win10-arm.microsoft.netcore.universalwindowsplatform.6.1.9.nupkg.sha512",
+    "C:\\Users\\Hamich\\.nuget\\packages\\runtime.win10-x64-aot.microsoft.netcore.universalwindowsplatform\\6.1.9\\runtime.win10-x64-aot.microsoft.netcore.universalwindowsplatform.6.1.9.nupkg.sha512",
+    "C:\\Users\\Hamich\\.nuget\\packages\\runtime.win10-x64.microsoft.net.native.compiler\\2.1.8\\runtime.win10-x64.microsoft.net.native.compiler.2.1.8.nupkg.sha512",
+    "C:\\Users\\Hamich\\.nuget\\packages\\runtime.win10-x64.microsoft.net.native.sharedlibrary\\2.1.8\\runtime.win10-x64.microsoft.net.native.sharedlibrary.2.1.8.nupkg.sha512",
+    "C:\\Users\\Hamich\\.nuget\\packages\\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\\2.1.2\\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk.2.1.2.nupkg.sha512",
+    "C:\\Users\\Hamich\\.nuget\\packages\\runtime.win10-x64.microsoft.netcore.universalwindowsplatform\\6.1.9\\runtime.win10-x64.microsoft.netcore.universalwindowsplatform.6.1.9.nupkg.sha512",
+    "C:\\Users\\Hamich\\.nuget\\packages\\runtime.win10-x86-aot.microsoft.netcore.universalwindowsplatform\\6.1.9\\runtime.win10-x86-aot.microsoft.netcore.universalwindowsplatform.6.1.9.nupkg.sha512",
+    "C:\\Users\\Hamich\\.nuget\\packages\\runtime.win10-x86.microsoft.net.native.compiler\\2.1.8\\runtime.win10-x86.microsoft.net.native.compiler.2.1.8.nupkg.sha512",
+    "C:\\Users\\Hamich\\.nuget\\packages\\runtime.win10-x86.microsoft.net.native.sharedlibrary\\2.1.8\\runtime.win10-x86.microsoft.net.native.sharedlibrary.2.1.8.nupkg.sha512",
+    "C:\\Users\\Hamich\\.nuget\\packages\\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\\2.1.2\\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk.2.1.2.nupkg.sha512",
+    "C:\\Users\\Hamich\\.nuget\\packages\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\\6.1.9\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform.6.1.9.nupkg.sha512",
+    "C:\\Users\\Hamich\\.nuget\\packages\\win2d.uwp\\1.20.0\\win2d.uwp.1.20.0.nupkg.sha512",
+    "D:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "D:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.6.0.1141\\xamarin.forms.4.6.0.1141.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Обнаружено понижение версии пакета Microsoft.NETCore.UniversalWindowsPlatform с 6.2.9 на 6.1.9. Чтобы выбрать другую версию, создайте ссылку на пакет напрямую из проекта. \r\n MobileBilet.UWP -> Xamarin.Essentials 1.5.3.2 -> Microsoft.NETCore.UniversalWindowsPlatform (>= 6.2.9) \r\n MobileBilet.UWP -> Microsoft.NETCore.UniversalWindowsPlatform (>= 6.1.9)",
+      "libraryId": "Microsoft.NETCore.UniversalWindowsPlatform",
+      "targetGraphs": [
+        "UAP,Version=v10.0.16299",
+        "UAP,Version=v10.0.16299/win10-arm",
+        "UAP,Version=v10.0.16299/win10-arm-aot",
+        "UAP,Version=v10.0.16299/win10-arm64-aot",
+        "UAP,Version=v10.0.16299/win10-x64",
+        "UAP,Version=v10.0.16299/win10-x64-aot",
+        "UAP,Version=v10.0.16299/win10-x86",
+        "UAP,Version=v10.0.16299/win10-x86-aot"
+      ]
+    }
+  ]
+}

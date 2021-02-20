@@ -1,0 +1,14 @@
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\MobileBilet\MobileBilet\MobileBilet\bin\Debug\netstandard2.0\MobileBilet.deps.json
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\MobileBilet\MobileBilet\MobileBilet\bin\Debug\netstandard2.0\MobileBilet.dll
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\MobileBilet\MobileBilet\MobileBilet\bin\Debug\netstandard2.0\ref\MobileBilet.dll
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\MobileBilet\MobileBilet\MobileBilet\bin\Debug\netstandard2.0\MobileBilet.pdb
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\MobileBilet\MobileBilet\MobileBilet\obj\Debug\netstandard2.0\MobileBilet.csprojAssemblyReference.cache
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\MobileBilet\MobileBilet\MobileBilet\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\MobileBilet\MobileBilet\MobileBilet\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\MobileBilet\MobileBilet\MobileBilet\obj\Debug\netstandard2.0\MobileBilet.AssemblyInfoInputs.cache
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\MobileBilet\MobileBilet\MobileBilet\obj\Debug\netstandard2.0\MobileBilet.AssemblyInfo.cs
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\MobileBilet\MobileBilet\MobileBilet\obj\Debug\netstandard2.0\MobileBilet.csproj.CoreCompileInputs.cache
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\MobileBilet\MobileBilet\MobileBilet\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\MobileBilet\MobileBilet\MobileBilet\obj\Debug\netstandard2.0\MobileBilet.dll
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\MobileBilet\MobileBilet\MobileBilet\obj\Debug\netstandard2.0\ref\MobileBilet.dll
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\MobileBilet\MobileBilet\MobileBilet\obj\Debug\netstandard2.0\MobileBilet.pdb
