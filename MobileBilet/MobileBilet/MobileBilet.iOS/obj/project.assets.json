@@ -978,24 +978,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Hamich\\.nuget\\packages\\": {},
-    "D:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\PC\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hamich\\Documents\\GitHub\\Practices-Evseev\\MobileBilet\\MobileBilet\\MobileBilet.iOS\\MobileBilet.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\PC\\Documents\\GitHub\\Practices-Evseev\\MobileBilet\\MobileBilet\\MobileBilet.iOS\\MobileBilet.iOS.csproj",
       "projectName": "MobileBilet.iOS",
-      "projectPath": "C:\\Users\\Hamich\\Documents\\GitHub\\Practices-Evseev\\MobileBilet\\MobileBilet\\MobileBilet.iOS\\MobileBilet.iOS.csproj",
-      "packagesPath": "C:\\Users\\Hamich\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hamich\\Documents\\GitHub\\Practices-Evseev\\MobileBilet\\MobileBilet\\MobileBilet.iOS\\obj\\",
+      "projectPath": "C:\\Users\\PC\\Documents\\GitHub\\Practices-Evseev\\MobileBilet\\MobileBilet\\MobileBilet.iOS\\MobileBilet.iOS.csproj",
+      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\PC\\Documents\\GitHub\\Practices-Evseev\\MobileBilet\\MobileBilet\\MobileBilet.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
-        "D:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Hamich\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -1009,8 +1009,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\Hamich\\Documents\\GitHub\\Practices-Evseev\\MobileBilet\\MobileBilet\\MobileBilet\\MobileBilet.csproj": {
-              "projectPath": "C:\\Users\\Hamich\\Documents\\GitHub\\Practices-Evseev\\MobileBilet\\MobileBilet\\MobileBilet\\MobileBilet.csproj"
+            "C:\\Users\\PC\\Documents\\GitHub\\Practices-Evseev\\MobileBilet\\MobileBilet\\MobileBilet\\MobileBilet.csproj": {
+              "projectPath": "C:\\Users\\PC\\Documents\\GitHub\\Practices-Evseev\\MobileBilet\\MobileBilet\\MobileBilet\\MobileBilet.csproj"
             }
           }
         }

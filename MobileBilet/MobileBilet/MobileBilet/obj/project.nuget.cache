@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "6VtCtQv9YvgrVGCzhZog7FuTJ5QC4CAAmVQzP30jKl7uIHTGJJ4wjRXJyb8jLocSEHrwRcnFOXm2IhHfLakSrg==",
+  "dgSpecHash": "jXu9Ns3LU47REuf0VRp0Lk5IQJ6xytFRbxy4IfTvOv8gAEP2rgEJM26/a//bppxN1oKCL7lRD+/9y+gLzvEPVQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Hamich\\Documents\\GitHub\\Practices-Evseev\\MobileBilet\\MobileBilet\\MobileBilet\\MobileBilet.csproj",
+  "projectFilePath": "C:\\Users\\PC\\Documents\\GitHub\\Practices-Evseev\\MobileBilet\\MobileBilet\\MobileBilet\\MobileBilet.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Hamich\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Hamich\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\Hamich\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "D:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
-    "D:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.6.0.1141\\xamarin.forms.4.6.0.1141.nupkg.sha512"
+    "C:\\Users\\PC\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.6.0.1141\\xamarin.forms.4.6.0.1141.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "f6dxPsn8XQmTWb0Jrtjq1A7RQs05v/Cp89ZEVKo6rdGuk+Oljce4OvfbodEjnRQi/pX/zwkQsrDiVVlNNoPzQg==",
+  "dgSpecHash": "T5gdmHbK/OZqt8ftNPJ1aruprB5DYLDKYMmtUp6aupgXgbdU1fmav1JAdZiVObPm0B7gP08/pYXCR60tmxyj5w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Hamich\\Documents\\GitHub\\Practices-Evseev\\MobileBilet\\MobileBilet\\MobileBilet.iOS\\MobileBilet.iOS.csproj",
+  "projectFilePath": "C:\\Users\\PC\\Documents\\GitHub\\Practices-Evseev\\MobileBilet\\MobileBilet\\MobileBilet.iOS\\MobileBilet.iOS.csproj",
   "expectedPackageFiles": [
-    "D:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
-    "D:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.6.0.1141\\xamarin.forms.4.6.0.1141.nupkg.sha512"
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.6.0.1141\\xamarin.forms.4.6.0.1141.nupkg.sha512"
   ],
   "logs": []
 }

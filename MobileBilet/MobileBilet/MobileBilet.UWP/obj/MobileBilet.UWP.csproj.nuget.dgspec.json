@@ -1,25 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Hamich\\Documents\\GitHub\\Practices-Evseev\\MobileBilet\\MobileBilet\\MobileBilet.UWP\\MobileBilet.UWP.csproj": {}
+    "C:\\Users\\PC\\Documents\\GitHub\\Practices-Evseev\\MobileBilet\\MobileBilet\\MobileBilet.UWP\\MobileBilet.UWP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Hamich\\Documents\\GitHub\\Practices-Evseev\\MobileBilet\\MobileBilet\\MobileBilet.UWP\\MobileBilet.UWP.csproj": {
+    "C:\\Users\\PC\\Documents\\GitHub\\Practices-Evseev\\MobileBilet\\MobileBilet\\MobileBilet.UWP\\MobileBilet.UWP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hamich\\Documents\\GitHub\\Practices-Evseev\\MobileBilet\\MobileBilet\\MobileBilet.UWP\\MobileBilet.UWP.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\Documents\\GitHub\\Practices-Evseev\\MobileBilet\\MobileBilet\\MobileBilet.UWP\\MobileBilet.UWP.csproj",
         "projectName": "MobileBilet.UWP",
-        "projectPath": "C:\\Users\\Hamich\\Documents\\GitHub\\Practices-Evseev\\MobileBilet\\MobileBilet\\MobileBilet.UWP\\MobileBilet.UWP.csproj",
-        "packagesPath": "C:\\Users\\Hamich\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hamich\\Documents\\GitHub\\Practices-Evseev\\MobileBilet\\MobileBilet\\MobileBilet.UWP\\obj\\",
+        "projectPath": "C:\\Users\\PC\\Documents\\GitHub\\Practices-Evseev\\MobileBilet\\MobileBilet\\MobileBilet.UWP\\MobileBilet.UWP.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PC\\Documents\\GitHub\\Practices-Evseev\\MobileBilet\\MobileBilet\\MobileBilet.UWP\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
-          "D:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Hamich\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -33,8 +33,8 @@
         "frameworks": {
           "uap10.0.16299": {
             "projectReferences": {
-              "C:\\Users\\Hamich\\Documents\\GitHub\\Practices-Evseev\\MobileBilet\\MobileBilet\\MobileBilet\\MobileBilet.csproj": {
-                "projectPath": "C:\\Users\\Hamich\\Documents\\GitHub\\Practices-Evseev\\MobileBilet\\MobileBilet\\MobileBilet\\MobileBilet.csproj"
+              "C:\\Users\\PC\\Documents\\GitHub\\Practices-Evseev\\MobileBilet\\MobileBilet\\MobileBilet\\MobileBilet.csproj": {
+                "projectPath": "C:\\Users\\PC\\Documents\\GitHub\\Practices-Evseev\\MobileBilet\\MobileBilet\\MobileBilet\\MobileBilet.csproj"
               }
             }
           }
@@ -87,20 +87,20 @@
         }
       }
     },
-    "C:\\Users\\Hamich\\Documents\\GitHub\\Practices-Evseev\\MobileBilet\\MobileBilet\\MobileBilet\\MobileBilet.csproj": {
+    "C:\\Users\\PC\\Documents\\GitHub\\Practices-Evseev\\MobileBilet\\MobileBilet\\MobileBilet\\MobileBilet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hamich\\Documents\\GitHub\\Practices-Evseev\\MobileBilet\\MobileBilet\\MobileBilet\\MobileBilet.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\Documents\\GitHub\\Practices-Evseev\\MobileBilet\\MobileBilet\\MobileBilet\\MobileBilet.csproj",
         "projectName": "MobileBilet",
-        "projectPath": "C:\\Users\\Hamich\\Documents\\GitHub\\Practices-Evseev\\MobileBilet\\MobileBilet\\MobileBilet\\MobileBilet.csproj",
-        "packagesPath": "C:\\Users\\Hamich\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hamich\\Documents\\GitHub\\Practices-Evseev\\MobileBilet\\MobileBilet\\MobileBilet\\obj\\",
+        "projectPath": "C:\\Users\\PC\\Documents\\GitHub\\Practices-Evseev\\MobileBilet\\MobileBilet\\MobileBilet\\MobileBilet.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PC\\Documents\\GitHub\\Practices-Evseev\\MobileBilet\\MobileBilet\\MobileBilet\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Hamich\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -150,7 +150,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.405\\RuntimeIdentifierGraph.json"
         }
       }
     }
