@@ -22,7 +22,7 @@ namespace MobileBilet
                 BackgroundColor = Color.Blue,
 
             };
-            rl.Children.Add(menu, Constraint.Constant(30));
+            rl.Children.Add(menu, Constraint.Constant(50));
 
             BoxView circle1 = new BoxView
             {
@@ -36,7 +36,7 @@ namespace MobileBilet
             {
                 BackgroundColor = Color.Green,
             };
-            menu.Children.Add(circle1, Constraint.RelativeToParent(r => r.Width - circle1.Width - 15), Constraint.RelativeToParent(r => r.Height * 0 + 15),
+            rl.Children.Add(circle1, Constraint.RelativeToParent(r => r.Width - circle1.Width - 15), Constraint.RelativeToParent(r => r.Height * 0 + 15),
             Constraint.RelativeToParent(r => r.Width * 0.01), Constraint.RelativeToParent(r =>
             {
                 circle1.WidthRequest = r.Width * 0.05;
