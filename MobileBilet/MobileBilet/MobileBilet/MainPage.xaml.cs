@@ -15,67 +15,64 @@ namespace MobileBilet
             //InitializeComponent();
             RelativeLayout menu = new RelativeLayout()
             {
-                BackgroundColor = Color.Red,
+                BackgroundColor = Color.AliceBlue,
             };
             RelativeLayout rl = new RelativeLayout()
             {
                 BackgroundColor = Color.Blue,
+
             };
             rl.Children.Add(menu, Constraint.Constant(30));
 
             BoxView circle1 = new BoxView
             {
-                WidthRequest = 10,
-                HeightRequest = 10,
-                CornerRadius = 5,
                 BackgroundColor = Color.Green,
             };
             BoxView circle2 = new BoxView
             {
-                WidthRequest = 10,
-                HeightRequest = 10,
-                CornerRadius = 5,
                 BackgroundColor = Color.Green,
             };
             BoxView circle3 = new BoxView
             {
-                WidthRequest = 10,
-                HeightRequest = 10,
-                CornerRadius = 5,
                 BackgroundColor = Color.Green,
             };
-            menu.Children.Add(circle1, Constraint.RelativeToParent(r => r.Height));
-            menu.Children.Add(circle2, Constraint.RelativeToView(circle1, (parent, sibling) =>
+            menu.Children.Add(circle1, Constraint.RelativeToParent(r => r.Width - circle1.Width - 15), Constraint.RelativeToParent(r => r.Height * 0 + 15),
+            Constraint.RelativeToParent(r => r.Width * 0.01), Constraint.RelativeToParent(r =>
             {
-                return Height * 0;
-            }), Constraint.RelativeToView(circle1, (parent, sibling) =>
+                circle1.WidthRequest = r.Width * 0.05;
+                circle1.HeightRequest = r.Height * 0.05;
+                circle1.CornerRadius = r.Height * 0.05;
+                return r.Height * 0.01;
+            }));
+
+            menu.Children.Add(circle2, Constraint.RelativeToParent(r =>
             {
-                return circle1.Width;
-            }),
-            Constraint.RelativeToView(circle1, (parent, sibling) =>
-            {
-                return circle2.WidthRequest;
+                return r.Width - circle2.Width - 15;
             }), 
-            Constraint.RelativeToView(circle1, (parent, sibling) =>
+            Constraint.RelativeToParent(r => r.Height * 0 + circle2.Height + 16),
+            Constraint.RelativeToParent(r => r.Width * 0.01), Constraint.RelativeToParent(r =>
             {
-                return circle2.HeightRequest;
+                circle2.WidthRequest = r.Width * 0.05;
+                circle2.HeightRequest = r.Height * 0.05;
+                circle2.CornerRadius = r.Height * 0.025;
+                return r.Height * 0.01;
             }));
-            menu.Children.Add(circle3, Constraint.RelativeToView(circle2, (parent, sibling) =>
+
+            menu.Children.Add(circle3, Constraint.RelativeToParent(r =>
             {
-                return Height * 0;
-            }), Constraint.RelativeToView(circle1, (parent, sibling) =>
-            {
-                return circle2.Height * 2;
+                return r.Width - circle3.Width - 15;
             }),
-            Constraint.RelativeToView(circle1, (parent, sibling) =>
+            Constraint.RelativeToParent(r => r.Height * 0 + circle3.Height + circle3.Height + 18),
+            Constraint.RelativeToParent(r => r.Width * 0.01), Constraint.RelativeToParent(r =>
             {
-                return circle3.WidthRequest;
-            }),
-            Constraint.RelativeToView(circle1, (parent, sibling) =>
-            {
-                return circle3.HeightRequest;
+                circle3.WidthRequest = r.Width * 0.05;
+                circle3.HeightRequest = r.Height * 0.05;
+                circle3.CornerRadius = r.Height * 0.025;
+                return r.Height * 0.01;
             }));
-            this.Content = rl;
+
+            Content = menu;
+            
 
 
 

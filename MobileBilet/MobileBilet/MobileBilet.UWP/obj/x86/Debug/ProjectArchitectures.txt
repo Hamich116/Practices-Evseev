@@ -1,1 +1,1 @@
-C:\Users\Hamich\Documents\GitHub\Practices-Evseev\MobileBilet\MobileBilet\MobileBilet.UWP\MobileBilet.UWP.csproj;x86
+C:\Users\PC\Documents\GitHub\Practices-Evseev\MobileBilet\MobileBilet\MobileBilet.UWP\MobileBilet.UWP.csproj;x86
