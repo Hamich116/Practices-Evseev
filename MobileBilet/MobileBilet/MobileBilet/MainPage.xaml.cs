@@ -172,7 +172,7 @@ namespace MobileBilet
             {
                 Text = "KZN14MSC02D321",
                 FontSize = 11,
-                TextColor = Color.Black,
+                TextColor = Color.FromHex("#6EBDEA"),
                 Rotation = 270,
             }, new Rectangle(0.99, 0.4, 0.1, 0.25), AbsoluteLayoutFlags.All);
 
