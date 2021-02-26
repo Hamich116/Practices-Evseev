@@ -53,12 +53,12 @@ namespace MobileBilet
 
             Frame ImageGearWheel = new Frame
             {
-                Content = new Image { Source = "Vector.png" },
+                Content = new ImageButton { Source = "Vector.png" },
                 BackgroundColor = Color.FromHex("#3C9DD4"),
-                CornerRadius = 50,
-                Margin = -20,
+                CornerRadius = 90,
+                Padding = 10,
                 HeightRequest = 3,
-                WidthRequest = 3
+                WidthRequest = 3,
             };
 
             menu.Children.Add(circle1, Constraint.RelativeToParent(r => r.Width - circle1.Width - 15),
@@ -108,6 +108,25 @@ namespace MobileBilet
                     profile.HeightRequest = r.Height * 0.05;
                     return r.Height * 0.05;
                 }));
+
+            menu.Children.Add(ImageGearWheel,
+            Constraint.RelativeToParent(r =>
+            {
+                return r.Width * 0.01;
+            }),
+            Constraint.RelativeToParent(r =>
+            {
+                return r.Height * 0.01;
+            }),
+            Constraint.RelativeToParent(r => 
+            {
+                return r.Width * 0.06;
+            }),
+            Constraint.RelativeToParent(r => 
+            {
+                return r.Width * 0.06;
+            }));
+
             Content = menu;
 
         }
