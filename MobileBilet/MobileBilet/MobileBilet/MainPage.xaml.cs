@@ -159,7 +159,7 @@ namespace MobileBilet
 
             absolute.Children.Add(new BoxView 
             { BackgroundColor = Color.FromHex("99CFEE") },
-            new Rectangle(0.7, 0.2, 0.005, 0.98), AbsoluteLayoutFlags.All);
+            new Rectangle(0.7, 0.2, 0.001, 0.98), AbsoluteLayoutFlags.All);
 
             absolute.Children.Add(new Label
             {

@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\Hamich\Documents\GitHub\Practices-Evseev\MobileBilet\MobileBilet\MobileBilet.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-02-26T06:22:00.221</Modified>
+      <Modified>2021-02-26T07:09:34.314</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Hamich\Documents\GitHub\Practices-Evseev\MobileBilet\MobileBilet\MobileBilet.UWP\bin\x86\Debug\MobileBilet.UWP.exe">
       <PackagePath>entrypoint\MobileBilet.UWP.exe</PackagePath>
-      <Modified>2021-02-26T06:15:47.292</Modified>
+      <Modified>2021-02-26T07:09:30.815</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hamich\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.1.9\runtimes\win10-x86\nativeassets\uap10.0.15138\clrcompression.dll">
       <PackagePath>clrcompression.dll</PackagePath>
@@ -720,7 +720,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hamich\Documents\GitHub\Practices-Evseev\MobileBilet\MobileBilet\MobileBilet\bin\Debug\netstandard2.0\MobileBilet.dll">
       <PackagePath>MobileBilet.dll</PackagePath>
-      <Modified>2021-02-26T06:15:36.117</Modified>
+      <Modified>2021-02-26T07:09:21.897</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hamich\.nuget\packages\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
@@ -883,11 +883,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hamich\Documents\GitHub\Practices-Evseev\MobileBilet\MobileBilet\MobileBilet.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-02-26T06:15:46.992</Modified>
+      <Modified>2021-02-26T07:09:30.608</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hamich\Documents\GitHub\Practices-Evseev\MobileBilet\MobileBilet\MobileBilet.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2021-02-26T06:15:46.993</Modified>
+      <Modified>2021-02-26T07:09:30.609</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.18362.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -907,7 +907,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hamich\Documents\GitHub\Practices-Evseev\MobileBilet\MobileBilet\MobileBilet.UWP\bin\x86\Debug\Core\MobileBilet.UWP.exe">
       <PackagePath>MobileBilet.UWP.exe</PackagePath>
-      <Modified>2021-02-26T06:22:00.210</Modified>
+      <Modified>2021-02-26T07:09:34.287</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
