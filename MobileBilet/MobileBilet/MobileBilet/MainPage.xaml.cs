@@ -13,7 +13,7 @@ namespace MobileBilet
         public MainPage()
         {
             //InitializeComponent();
-            RelativeLayout menu = new RelativeLayout()
+            RelativeLayout main = new RelativeLayout()
             {
                 BackgroundColor = Color.FromHex("#080D17"),
             };
@@ -34,7 +34,7 @@ namespace MobileBilet
             {
                 BackgroundColor = Color.FromHex("#EFF9FF")
             };
-            menu.Children.Add(circle1, Constraint.RelativeToParent(r => r.Width - circle1.Width - 15),
+            main.Children.Add(circle1, Constraint.RelativeToParent(r => r.Width - circle1.Width - 15),
             Constraint.RelativeToParent(r => 15),
             Constraint.RelativeToParent(r => r.Width * 0.01), Constraint.RelativeToParent(r =>
             {
@@ -44,7 +44,7 @@ namespace MobileBilet
                 return r.Height * 0.01;
             }));
 
-            menu.Children.Add(circle2, Constraint.RelativeToParent(r =>
+            main.Children.Add(circle2, Constraint.RelativeToParent(r =>
             {
                 return r.Width - circle2.Width - 15;
             }),
@@ -57,7 +57,7 @@ namespace MobileBilet
                 return r.Height * 0.01;
             }));
 
-            menu.Children.Add(circle3, Constraint.RelativeToParent(r =>
+            main.Children.Add(circle3, Constraint.RelativeToParent(r =>
             {
                 return r.Width - circle3.Width - 15;
             }),
@@ -86,25 +86,32 @@ namespace MobileBilet
 
             Frame ImageGearWheel = new Frame
             {
-                Content = new Image { Source = "Vector.png" },
+                Content = new ImageButton { Source = "Vector.png" },
                 BackgroundColor = Color.FromHex("#3C9DD4"),
-                CornerRadius = 30,
-                Margin = -30,
-                HeightRequest = 20,
-                WidthRequest = 20
+                CornerRadius = 90,
+                Padding = 10,
+                HeightRequest = 3,
+                WidthRequest = 3,
             };
-            menu.Children.Add(ImageGearWheel,
-            Constraint.RelativeToParent((parent) =>
+            main.Children.Add(ImageGearWheel,
+            Constraint.RelativeToParent(r =>
             {
-                return parent.Width * 0.05;
+                return r.Width * 0.01;
             }),
-            Constraint.RelativeToParent((parent) =>
+            Constraint.RelativeToParent(r =>
             {
-                return parent.Height * 0.05;
+                return r.Height * 0.01;
             }),
-            Constraint.Constant(2),
-            Constraint.Constant(2));
-            menu.Children.Add(profile,
+            Constraint.RelativeToParent(r =>
+            {
+                return r.Width * 0.06;
+            }),
+            Constraint.RelativeToParent(r =>
+            {
+                return r.Width * 0.06;
+            }));
+
+            main.Children.Add(profile,
             Constraint.RelativeToParent(r => r.Width - profile.Width - 45),
             Constraint.RelativeToParent(r => 10),
             Constraint.RelativeToParent(r => r.Width * 0.3),
@@ -130,7 +137,7 @@ namespace MobileBilet
                 Text = "14.02 21:25",
                 FontSize = 10,
                 HorizontalOptions = LayoutOptions.Start,
-                TextColor = Color.Black
+                TextColor = Color.FromHex("#99CFEE")
             }, new Rectangle(0.4, 0.2, 0.85, 0.186), AbsoluteLayoutFlags.All);
 
             absolute.Children.Add(new Label
@@ -138,7 +145,7 @@ namespace MobileBilet
                 Text = "14.02 22:55",
                 FontSize = 10,
                 HorizontalOptions = LayoutOptions.Start,
-                TextColor = Color.Black
+                TextColor = Color.FromHex("#99CFEE")
             }, new Rectangle(0.4, 0.7, 0.85, 0.186), AbsoluteLayoutFlags.All);
 
             absolute.Children.Add(new Label
@@ -170,7 +177,7 @@ namespace MobileBilet
             }, new Rectangle(0.99, 0.4, 0.1, 0.25), AbsoluteLayoutFlags.All);
 
             //absolute ticket
-            menu.Children.Add(new Frame
+            main.Children.Add(new Frame
             {
                 BackgroundColor = Color.FromHex("EFF9FF"),
                 CornerRadius = 10,
@@ -200,7 +207,7 @@ namespace MobileBilet
             //    Constraint.RelativeToParent(r => r.Width * 0.3),
             //    Constraint.RelativeToParent(r => r.Height * 0.2));
             //ticket.Content = rl;
-            this.Content = menu;
+            this.Content = main;
 
         }
     }
