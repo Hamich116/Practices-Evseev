@@ -30,10 +30,6 @@ namespace MobileBilet
             {
                 BackgroundColor = Color.FromHex("#FFFFFF"),
             };
-            Frame ticket = new Frame
-            {
-                BackgroundColor = Color.FromHex("#EFF9FF")
-            };
             main.Children.Add(circle1, Constraint.RelativeToParent(r => r.Width - circle1.Width - 15),
             Constraint.RelativeToParent(r => 15),
             Constraint.RelativeToParent(r => r.Width * 0.01), Constraint.RelativeToParent(r =>
@@ -121,16 +117,6 @@ namespace MobileBilet
                 profile.HeightRequest = r.Height * 0.05;
                 return r.Height * 0.05;
             }));
-            // relative ticket
-            //menu.Children.Add(ticket, Constraint.RelativeToParent(r => r.Width * 0.15),
-            //    Constraint.RelativeToParent(r => r.Height * 0.2),
-            //    Constraint.RelativeToParent(r => r.Width * 0.75),
-            //    Constraint.RelativeToParent(r =>
-            //    {
-            //        ticket.WidthRequest = r.Width * 0.8;
-            //        ticket.HeightRequest = r.Height * 0.2;
-            //        return r.Height * 0.2;
-            //    }));
             AbsoluteLayout absolute = new AbsoluteLayout();
             absolute.Children.Add(new Label
             {
@@ -166,7 +152,7 @@ namespace MobileBilet
 
             absolute.Children.Add(new BoxView 
             { BackgroundColor = Color.FromHex("99CFEE") },
-            new Rectangle(0.7, 0.2, 0.001, 0.98), AbsoluteLayoutFlags.All);
+            new Rectangle(0.7, 0.2, 0.005, 0.98), AbsoluteLayoutFlags.All);
 
             absolute.Children.Add(new Label
             {
@@ -177,36 +163,107 @@ namespace MobileBilet
             }, new Rectangle(0.99, 0.4, 0.1, 0.25), AbsoluteLayoutFlags.All);
 
             //absolute ticket
-            main.Children.Add(new Frame
+            //main.Children.Add(new Frame
+            //{
+            //    BackgroundColor = Color.FromHex("EFF9FF"),
+            //    CornerRadius = 10,
+            //    Padding = 0,
+            //    HorizontalOptions = LayoutOptions.Fill,
+            //    VerticalOptions = LayoutOptions.Fill,
+            //    Content = absolute,
+            //},
+            //Constraint.RelativeToParent(r => r.Width * 0.15),
+            //Constraint.RelativeToParent(r => r.Height * 0.2),
+            //Constraint.RelativeToParent(r => r.Width * 0.75),
+            //Constraint.RelativeToParent(r =>
+            //{
+            //    ticket.WidthRequest = r.Width * 0.8;
+            //    ticket.HeightRequest = r.Height * 0.2;
+            //    return r.Height * 0.2;
+            //}));
+            RelativeLayout rl = new RelativeLayout();
+            Frame ticket = new Frame
             {
-                BackgroundColor = Color.FromHex("EFF9FF"),
+                BackgroundColor = Color.FromHex("#EFF9FF"),
                 CornerRadius = 10,
                 Padding = 0,
                 HorizontalOptions = LayoutOptions.Fill,
                 VerticalOptions = LayoutOptions.Fill,
-                Content = absolute,
-            }, 
-            Constraint.RelativeToParent(r => r.Width * 0.15),
-            Constraint.RelativeToParent(r => r.Height * 0.2),
-            Constraint.RelativeToParent(r => r.Width * 0.75),
-            Constraint.RelativeToParent(r =>
+                Content = rl
+            };
+            Label flights1 = new Label()
             {
+                Text = "Saint Petersburg - Pulkovo",
+                TextColor = Color.FromHex("#000000"),
+                FontSize = 17,
+                HorizontalOptions = LayoutOptions.Start,
+            };
+            Label flights2 = new Label()
+            {
+                Text = "Moscow - Domodevo",
+                TextColor = Color.FromHex("#000000"),
+                FontSize = 17,
+                HorizontalOptions = LayoutOptions.Start,
+            };
+            Label data1 = new Label()
+            {
+                Text = "14.02 21:25",
+                FontSize = 10,
+                HorizontalOptions = LayoutOptions.Start,
+                TextColor = Color.FromHex("#99CFEE")
+            };
+            Label data2 = new Label()
+            {
+                Text = "14.02 22:55",
+                FontSize = 10,
+                HorizontalOptions = LayoutOptions.Start,
+                TextColor = Color.FromHex("#99CFEE")
+            };
+            BoxView stick = new BoxView()
+            {
+                BackgroundColor = Color.FromHex("99CFEE"),
+            };
+            Label strokeText = new Label()
+            {
+                Text = "KZN14MSC02D321",
+                FontSize = 11,
+                TextColor = Color.FromHex("#6EBDEA"),
+                Rotation = 270,
+            };
+            rl.Children.Add(flights1, Constraint.RelativeToParent(r => r.Width * 0.05),
+                Constraint.RelativeToParent(r => r.Height * 0.2),
+                Constraint.RelativeToParent(r => r.Width * 0.3),
+                Constraint.RelativeToParent(r => r.Height * 0.2));
+            rl.Children.Add(flights2, Constraint.RelativeToParent(r => r.Width * 0.05),
+                Constraint.RelativeToView(flights1, (parent, sibling) => { return sibling.Y * 3; }),
+                Constraint.RelativeToParent(r => r.Width * 0.3),
+                Constraint.RelativeToParent(r => r.Height * 0.2));
+            rl.Children.Add(data1, Constraint.RelativeToParent(r => r.Width * 0.05),
+                Constraint.RelativeToView(flights1, (parent, sibling) => { return sibling.Y * 0.5; }),
+                Constraint.RelativeToParent(r => r.Width * 0.3),
+                Constraint.RelativeToParent(r => r.Height * 0.2));
+            rl.Children.Add(data2, Constraint.RelativeToParent(r => r.Width * 0.05),
+                Constraint.RelativeToView(flights2, (parent, sibling) => { return sibling.Y * 0.8; }),
+                Constraint.RelativeToParent(r => r.Width * 0.3),
+                Constraint.RelativeToParent(r => r.Height * 0.2));
+            rl.Children.Add(stick, Constraint.RelativeToParent(r => r.Width * 0.7),
+                Constraint.RelativeToParent(r => r.Height * 0.01),
+                Constraint.RelativeToParent(r => r.Width * 0.005),
+                Constraint.RelativeToParent(r => r.Height * 1));
+            rl.Children.Add(strokeText, Constraint.RelativeToView(stick,(parent,sibling) => { return sibling.X * 1.2; }),
+                Constraint.RelativeToParent(r => r.Height * 0.35),
+                Constraint.RelativeToParent(r => r.Width * 0.1),
+                Constraint.RelativeToParent(r => r.Height * 0.25));
+            //relative ticket
+            main.Children.Add(ticket, Constraint.RelativeToParent(r => r.Width * 0.15),
+                Constraint.RelativeToParent(r => r.Height * 0.2),
+                Constraint.RelativeToParent(r => r.Width * 0.75),
+                Constraint.RelativeToParent(r =>
+                {
                     ticket.WidthRequest = r.Width * 0.8;
                     ticket.HeightRequest = r.Height * 0.2;
                     return r.Height * 0.2;
-             }));
-
-            //RelativeLayout rl = new RelativeLayout();
-            //Label flights1 = new Label()
-            //{
-            //    Text = "Saint Petersburg - Pulkovo",
-            //    TextColor = Color.FromHex("#000000"),
-            //};
-            //rl.Children.Add(flights1, Constraint.RelativeToParent(r => r.Width * 0.05),
-            //    Constraint.RelativeToParent(r => r.Height * 0.2),
-            //    Constraint.RelativeToParent(r => r.Width * 0.3),
-            //    Constraint.RelativeToParent(r => r.Height * 0.2));
-            //ticket.Content = rl;
+                }));
             this.Content = main;
 
         }
