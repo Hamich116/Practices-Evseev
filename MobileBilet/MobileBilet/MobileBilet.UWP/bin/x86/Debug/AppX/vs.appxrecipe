@@ -720,7 +720,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hamich\Documents\GitHub\Practices-Evseev\MobileBilet\MobileBilet\MobileBilet\bin\Debug\netstandard2.0\MobileBilet.dll">
       <PackagePath>MobileBilet.dll</PackagePath>
-      <Modified>2021-02-26T07:15:12.481</Modified>
+      <Modified>2021-02-26T07:19:25.906</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hamich\.nuget\packages\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>

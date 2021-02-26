@@ -104,11 +104,11 @@ namespace MobileBilet
             }),
             Constraint.RelativeToParent(r =>
             {
-                return r.Width * 0.06;
+                return r.Width * 0.04;
             }),
             Constraint.RelativeToParent(r =>
             {
-                return r.Width * 0.06;
+                return r.Width * 0.04;
             }));
 
             main.Children.Add(profile,
