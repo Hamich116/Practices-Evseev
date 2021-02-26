@@ -13,6 +13,8 @@ namespace MobileBilet
         public MainPage()
         {
             //InitializeComponent();
+           
+            
             RelativeLayout main = new RelativeLayout()
             {
                 BackgroundColor = Color.FromHex("#080D17"),
@@ -65,19 +67,20 @@ namespace MobileBilet
                 circle3.CornerRadius = r.Height * 0.025;
                 return r.Height * 0.01;
             }));
+            Label profileText = new Label()
+            {
+                FontSize = 16,
+                VerticalOptions = LayoutOptions.Center,
+                HorizontalOptions = LayoutOptions.Center,
+                Text = "Привет, Ильхам и Эмиль",
+                TextColor = Color.FromHex("#FFFFFF"),
+            };
             Frame profile = new Frame()
             {
                 Padding = new Thickness(0),
                 BackgroundColor = Color.FromHex("#3C9DD4"),
                 HasShadow = false,
-                Content = new Label()
-                {
-                    FontSize = 16,
-                    VerticalOptions = LayoutOptions.Center,
-                    HorizontalOptions = LayoutOptions.Center,
-                    Text = "Привет, Ильхам и Эмиль",
-                    TextColor = Color.FromHex("#FFFFFF"),
-                }
+                Content = profileText,
             };
 
             Frame ImageGearWheel = new Frame
@@ -115,6 +118,8 @@ namespace MobileBilet
             {
                 profile.WidthRequest = r.Width * 0.05;
                 profile.HeightRequest = r.Height * 0.05;
+                profileText.FontSize = r.Height * 0.03;
+                
                 return r.Height * 0.05;
             }));
             AbsoluteLayout absolute = new AbsoluteLayout();
@@ -161,7 +166,16 @@ namespace MobileBilet
                 TextColor = Color.FromHex("#6EBDEA"),
                 Rotation = 270,
             }, new Rectangle(0.99, 0.4, 0.1, 0.25), AbsoluteLayoutFlags.All);
-
+            RelativeLayout relative = new RelativeLayout();
+            Frame ticket = new Frame
+            {
+                BackgroundColor = Color.FromHex("#EFF9FF"),
+                CornerRadius = 10,
+                Padding = 0,
+                HorizontalOptions = LayoutOptions.Fill,
+                VerticalOptions = LayoutOptions.Fill,
+                Content = relative
+            };
             //absolute ticket
             //main.Children.Add(new Frame
             //{
@@ -181,16 +195,8 @@ namespace MobileBilet
             //    ticket.HeightRequest = r.Height * 0.2;
             //    return r.Height * 0.2;
             //}));
-            RelativeLayout rl = new RelativeLayout();
-            Frame ticket = new Frame
-            {
-                BackgroundColor = Color.FromHex("#EFF9FF"),
-                CornerRadius = 10,
-                Padding = 0,
-                HorizontalOptions = LayoutOptions.Fill,
-                VerticalOptions = LayoutOptions.Fill,
-                Content = rl
-            };
+            
+            
             Label flights1 = new Label()
             {
                 Text = "Saint Petersburg - Pulkovo",
@@ -230,30 +236,50 @@ namespace MobileBilet
                 TextColor = Color.FromHex("#6EBDEA"),
                 Rotation = 270,
             };
-            rl.Children.Add(flights1, Constraint.RelativeToParent(r => r.Width * 0.05),
+            relative.Children.Add(flights1, Constraint.RelativeToParent(r => r.Width * 0.05),
                 Constraint.RelativeToParent(r => r.Height * 0.2),
                 Constraint.RelativeToParent(r => r.Width * 0.3),
-                Constraint.RelativeToParent(r => r.Height * 0.2));
-            rl.Children.Add(flights2, Constraint.RelativeToParent(r => r.Width * 0.05),
+                Constraint.RelativeToParent(r => 
+                {
+                    flights1.FontSize = r.Height * 0.15;
+                    return r.Height * 0.2;
+                }));
+            relative.Children.Add(flights2, Constraint.RelativeToParent(r => r.Width * 0.05),
                 Constraint.RelativeToView(flights1, (parent, sibling) => { return sibling.Y * 3; }),
                 Constraint.RelativeToParent(r => r.Width * 0.3),
-                Constraint.RelativeToParent(r => r.Height * 0.2));
-            rl.Children.Add(data1, Constraint.RelativeToParent(r => r.Width * 0.05),
+                Constraint.RelativeToParent(r =>
+                {
+                    flights2.FontSize = r.Height * 0.15;
+                    return r.Height * 0.2;
+                }));
+            relative.Children.Add(data1, Constraint.RelativeToParent(r => r.Width * 0.05),
                 Constraint.RelativeToView(flights1, (parent, sibling) => { return sibling.Y * 0.5; }),
                 Constraint.RelativeToParent(r => r.Width * 0.3),
-                Constraint.RelativeToParent(r => r.Height * 0.2));
-            rl.Children.Add(data2, Constraint.RelativeToParent(r => r.Width * 0.05),
+                Constraint.RelativeToParent(r =>
+                {
+                    data1.FontSize = r.Height * 0.1;
+                    return r.Height * 0.2;
+                }));
+            relative.Children.Add(data2, Constraint.RelativeToParent(r => r.Width * 0.05),
                 Constraint.RelativeToView(flights2, (parent, sibling) => { return sibling.Y * 0.8; }),
                 Constraint.RelativeToParent(r => r.Width * 0.3),
-                Constraint.RelativeToParent(r => r.Height * 0.2));
-            rl.Children.Add(stick, Constraint.RelativeToParent(r => r.Width * 0.7),
+                Constraint.RelativeToParent(r =>
+                {
+                    data2.FontSize = r.Height * 0.1;
+                    return r.Height * 0.2;
+                }));
+            relative.Children.Add(stick, Constraint.RelativeToParent(r => r.Width * 0.7),
                 Constraint.RelativeToParent(r => r.Height * 0.01),
                 Constraint.RelativeToParent(r => r.Width * 0.005),
                 Constraint.RelativeToParent(r => r.Height * 1));
-            rl.Children.Add(strokeText, Constraint.RelativeToView(stick,(parent,sibling) => { return sibling.X * 1.2; }),
+            relative.Children.Add(strokeText, Constraint.RelativeToView(stick,(parent,sibling) => { return sibling.X * 1.2; }),
                 Constraint.RelativeToParent(r => r.Height * 0.35),
                 Constraint.RelativeToParent(r => r.Width * 0.1),
-                Constraint.RelativeToParent(r => r.Height * 0.25));
+                Constraint.RelativeToParent(r =>
+                {
+                    strokeText.FontSize = r.Height * 0.08;
+                    return r.Height * 0.25;
+                }));
             //relative ticket
             main.Children.Add(ticket, Constraint.RelativeToParent(r => r.Width * 0.15),
                 Constraint.RelativeToParent(r => r.Height * 0.2),
@@ -265,7 +291,6 @@ namespace MobileBilet
                     return r.Height * 0.2;
                 }));
             this.Content = main;
-
         }
     }
 }
