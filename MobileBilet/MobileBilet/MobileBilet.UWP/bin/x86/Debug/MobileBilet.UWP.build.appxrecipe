@@ -658,6 +658,9 @@
       <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hamich\Documents\GitHub\Practices-Evseev\MobileBilet\MobileBilet\MobileBilet.UWP\Vector.png">
+      <PackagePath>Vector.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hamich\Documents\GitHub\Practices-Evseev\MobileBilet\MobileBilet\MobileBilet.UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
