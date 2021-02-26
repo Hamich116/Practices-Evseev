@@ -26,3 +26,5 @@ C:\Users\PC\Documents\GitHub\Practices-Evseev\MobileBilet\MobileBilet\MobileBile
 C:\Users\PC\Documents\GitHub\Practices-Evseev\MobileBilet\MobileBilet\MobileBilet\obj\Debug\netstandard2.0\MobileBilet.dll
 C:\Users\PC\Documents\GitHub\Practices-Evseev\MobileBilet\MobileBilet\MobileBilet\obj\Debug\netstandard2.0\ref\MobileBilet.dll
 C:\Users\PC\Documents\GitHub\Practices-Evseev\MobileBilet\MobileBilet\MobileBilet\obj\Debug\netstandard2.0\MobileBilet.pdb
+C:\Users\PC\Documents\GitHub\Practices-Evseev\MobileBilet\MobileBilet\MobileBilet\bin\Debug\netstandard2.0\Windows.Foundation.UniversalApiContract.winmd
+C:\Users\PC\Documents\GitHub\Practices-Evseev\MobileBilet\MobileBilet\MobileBilet\obj\Debug\netstandard2.0\MobileBilet.csproj.CopyComplete
