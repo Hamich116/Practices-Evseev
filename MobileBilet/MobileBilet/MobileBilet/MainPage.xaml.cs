@@ -15,25 +15,27 @@ namespace MobileBilet
     {
         public MainPage()
         {
-            //InitializeComponent();
             RelativeLayout menu = new RelativeLayout()
             {
-                BackgroundColor = Color.Black,
+                BackgroundColor = Color.FromHex("#080D17"),
             };
 
             BoxView circle1 = new BoxView
             {
-                BackgroundColor = Color.White,
+                BackgroundColor = Color.FromHex("#FFFFFF")
             };
-
             BoxView circle2 = new BoxView
             {
-                BackgroundColor = Color.White,
+                BackgroundColor = Color.FromHex("#FFFFFF")
             };
-
             BoxView circle3 = new BoxView
             {
-                BackgroundColor = Color.White,
+                BackgroundColor = Color.FromHex("#FFFFFF"),
+            };
+
+            Frame ticket = new Frame
+            {
+                BackgroundColor = Color.FromHex("#EFF9FF")
             };
 
             Frame profile = new Frame()
@@ -62,27 +64,25 @@ namespace MobileBilet
             };
 
             menu.Children.Add(circle1, Constraint.RelativeToParent(r => r.Width - circle1.Width - 15),
-                Constraint.RelativeToParent(r => r.Height * 0 + 15),
-                Constraint.RelativeToParent(r => r.Width * 0.01),
-                Constraint.RelativeToParent(r =>
-                {
-                    circle1.WidthRequest = r.Width * 0.05;
-                    circle1.HeightRequest = r.Height * 0.05;
-                    circle1.CornerRadius = r.Height * 0.05;
-                    return r.Height * 0.01;
-                }));
+             Constraint.RelativeToParent(r => 15),
+             Constraint.RelativeToParent(r => r.Width * 0.01), Constraint.RelativeToParent(r =>
+             {
+                 circle1.WidthRequest = r.Width * 0.05;
+                 circle1.HeightRequest = r.Height * 0.05;
+                 circle1.CornerRadius = r.Height * 0.05;
+                 return r.Height * 0.01;
+             }));
 
             menu.Children.Add(circle2, Constraint.RelativeToParent(r =>
             {
                 return r.Width - circle2.Width - 15;
-            }), 
-            Constraint.RelativeToParent(r => r.Height * 0 + circle1.Height + 15),
-            Constraint.RelativeToParent(r => r.Width * 0.01), 
-            Constraint.RelativeToParent(r =>
+            }),
+            Constraint.RelativeToParent(r => circle2.Height + 16),
+            Constraint.RelativeToParent(r => r.Width * 0.01), Constraint.RelativeToParent(r =>
             {
                 circle2.WidthRequest = r.Width * 0.05;
                 circle2.HeightRequest = r.Height * 0.05;
-                circle2.CornerRadius = r.Height * 0.05;
+                circle2.CornerRadius = r.Height * 0.025;
                 return r.Height * 0.01;
             }));
 
@@ -90,12 +90,12 @@ namespace MobileBilet
             {
                 return r.Width - circle3.Width - 15;
             }),
-            Constraint.RelativeToParent(r => r.Height * 0  + circle1.Height + circle2.Height + 15),
+            Constraint.RelativeToParent(r => circle3.Height + circle3.Height + 17),
             Constraint.RelativeToParent(r => r.Width * 0.01), Constraint.RelativeToParent(r =>
             {
                 circle3.WidthRequest = r.Width * 0.05;
                 circle3.HeightRequest = r.Height * 0.05;
-                circle3.CornerRadius = r.Height * 0.05;
+                circle3.CornerRadius = r.Height * 0.025;
                 return r.Height * 0.01;
             }));
 
@@ -112,22 +112,88 @@ namespace MobileBilet
             menu.Children.Add(ImageGearWheel,
             Constraint.RelativeToParent(r =>
             {
-                return r.Width * 0.01;
+                return r.Width * 0.02;
             }),
             Constraint.RelativeToParent(r =>
             {
-                return r.Height * 0.01;
+                return r.Height * 0.02;
             }),
             Constraint.RelativeToParent(r => 
             {
-                return r.Width * 0.06;
+                return r.Width * 0.04;
             }),
             Constraint.RelativeToParent(r => 
             {
-                return r.Width * 0.06;
+                return r.Width * 0.04;
+            }));
+            AbsoluteLayout absolute = new AbsoluteLayout();
+            absolute.Children.Add(new Label
+            {
+                Text = "14.02 21:25",
+                FontSize = 10,
+                HorizontalOptions = LayoutOptions.Start,
+                TextColor = Color.Black
+            }, new Rectangle(0.4, 0.2, 0.85, 0.186), AbsoluteLayoutFlags.All);
+
+            absolute.Children.Add(new Label
+            {
+                Text = "14.02 22:55",
+                FontSize = 10,
+                HorizontalOptions = LayoutOptions.Start,
+                TextColor = Color.Black
+            }, new Rectangle(0.4, 0.7, 0.85, 0.186), AbsoluteLayoutFlags.All);
+
+            absolute.Children.Add(new Label
+            {
+                Text = "Saint Peterburg - Pulkovo",
+                FontSize = 17,
+                HorizontalOptions = LayoutOptions.Start,
+                TextColor = Color.Black
+            }, new Rectangle(0.4, 0.35, 0.85, 0.186), AbsoluteLayoutFlags.All);
+
+            absolute.Children.Add(new Label
+            {
+                Text = "Moscow - Domodedovo",
+                FontSize = 17,
+                HorizontalOptions = LayoutOptions.Start,
+                TextColor = Color.Black
+            }, new Rectangle(0.4, 0.85, 0.85, 0.186), AbsoluteLayoutFlags.All);
+
+            absolute.Children.Add(new BoxView
+            { BackgroundColor = Color.FromHex("99CFEE") },
+            new Rectangle(0.7, 0.2, 0.005, 0.98), AbsoluteLayoutFlags.All);
+
+            absolute.Children.Add(new Label
+            {
+                Text = "KZN14MSC02D321",
+                FontSize = 11,
+                TextColor = Color.Black,
+                Rotation = 270,
+            }, new Rectangle(0.99, 0.4, 0.1, 0.25), AbsoluteLayoutFlags.All);
+
+            //absolute ticket
+            menu.Children.Add(new Frame
+            {
+                BackgroundColor = Color.FromHex("EFF9FF"),
+                CornerRadius = 10,
+                Padding = 0,
+                HorizontalOptions = LayoutOptions.Fill,
+                VerticalOptions = LayoutOptions.Fill,
+                Content = absolute,
+            },
+            Constraint.RelativeToParent(r => r.Width * 0.15),
+            Constraint.RelativeToParent(r => r.Height * 0.2),
+            Constraint.RelativeToParent(r => r.Width * 0.75),
+            Constraint.RelativeToParent(r =>
+            {
+                ticket.WidthRequest = r.Width * 0.8;
+                ticket.HeightRequest = r.Height * 0.2;
+                return r.Height * 0.2;
             }));
 
             Content = menu;
+
+            //InitializeComponent();
 
         }
     }

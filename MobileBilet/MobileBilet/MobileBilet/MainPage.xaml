@@ -3,22 +3,55 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MobileBilet.MainPage">
 
-    <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-        </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Learn more at "/>
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
+    <AbsoluteLayout HeightRequest="100" WidthRequest="100">
+        <Label Text="14.02 21:25"
+               FontSize="10"
+               HorizontalOptions="Start" 
+               TextColor="#99CFEE"
+               AbsoluteLayout.LayoutBounds="0.4, 0.2, 0.85, 0.186" 
+               AbsoluteLayout.LayoutFlags="All">
         </Label>
-    </StackLayout>
+
+        <Label Text="14.02 22:55"
+               FontSize="10"
+               HorizontalOptions="Start"
+               TextColor="#99CFEE"
+               AbsoluteLayout.LayoutBounds="0.4, 0.35, 0.85, 0.186"
+               AbsoluteLayout.LayoutFlags="All">
+        </Label>
+
+        <Label Text="Saint Peterburg - Pulkovo"
+               FontSize="17"
+               HorizontalOptions="Start"
+               TextColor="Black"
+               AbsoluteLayout.LayoutBounds="0.4, 0.35, 0.85, 0.186"
+               AbsoluteLayout.LayoutFlags="All"               >
+        </Label>
+
+        <Label Text="Moscow - Domodedovo"
+               FontSize="17"
+               HorizontalOptions="Start"
+               TextColor="Black"
+               AbsoluteLayout.LayoutBounds="0.4, 0.85, 0.85, 0.186"
+               AbsoluteLayout.LayoutFlags="All">
+        </Label>
+
+        <BoxView BackgroundColor="#99CFEE"
+                 
+                 AbsoluteLayout.LayoutBounds="0.7, 0.2, 0.01, 0.98"
+                 AbsoluteLayout.LayoutFlags="All">
+        </BoxView>
+
+        <Label Text="KZN14MSC02D321"
+               FontSize="11"
+               TextColor="#6EBDEA"
+               Rotation="270"
+               AbsoluteLayout.LayoutBounds="0.99, 0.4, 0.1, 0.25"
+               AbsoluteLayout.LayoutFlags="All"
+               >
+        </Label>
+        
+        
+    </AbsoluteLayout>
 
 </ContentPage>
