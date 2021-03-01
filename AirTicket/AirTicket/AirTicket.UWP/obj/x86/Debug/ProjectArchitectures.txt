@@ -1,0 +1,1 @@
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\AirTicket\AirTicket\AirTicket.UWP\AirTicket.UWP.csproj;x86

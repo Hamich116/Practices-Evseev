@@ -1,0 +1,14 @@
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\AirTicket\AirTicket\AirTicket\bin\Debug\netstandard2.0\AirTicket.deps.json
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\AirTicket\AirTicket\AirTicket\bin\Debug\netstandard2.0\AirTicket.dll
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\AirTicket\AirTicket\AirTicket\bin\Debug\netstandard2.0\ref\AirTicket.dll
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\AirTicket\AirTicket\AirTicket\bin\Debug\netstandard2.0\AirTicket.pdb
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\AirTicket\AirTicket\AirTicket\obj\Debug\netstandard2.0\AirTicket.csprojAssemblyReference.cache
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\AirTicket\AirTicket\AirTicket\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\AirTicket\AirTicket\AirTicket\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\AirTicket\AirTicket\AirTicket\obj\Debug\netstandard2.0\AirTicket.AssemblyInfoInputs.cache
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\AirTicket\AirTicket\AirTicket\obj\Debug\netstandard2.0\AirTicket.AssemblyInfo.cs
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\AirTicket\AirTicket\AirTicket\obj\Debug\netstandard2.0\AirTicket.csproj.CoreCompileInputs.cache
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\AirTicket\AirTicket\AirTicket\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\AirTicket\AirTicket\AirTicket\obj\Debug\netstandard2.0\AirTicket.dll
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\AirTicket\AirTicket\AirTicket\obj\Debug\netstandard2.0\ref\AirTicket.dll
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\AirTicket\AirTicket\AirTicket\obj\Debug\netstandard2.0\AirTicket.pdb
