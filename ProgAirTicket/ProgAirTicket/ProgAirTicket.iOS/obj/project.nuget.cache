@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "gOLO26XYH5kKpWT1QRbTWIv/J36mbSdvNHrESX/gGTC+XYrLSfkzaP/knIwnIUtN4/+c/oP2YmXDNmL7s1rB/A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\PC\\Documents\\GitHub\\Practices-Evseev\\ProgAirTicket\\ProgAirTicket\\ProgAirTicket.iOS\\ProgAirTicket.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.6.0.1141\\xamarin.forms.4.6.0.1141.nupkg.sha512"
+  ],
+  "logs": []
+}
