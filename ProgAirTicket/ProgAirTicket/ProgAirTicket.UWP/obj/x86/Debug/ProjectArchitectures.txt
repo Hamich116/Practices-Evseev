@@ -1,0 +1,1 @@
+C:\Users\PC\Documents\GitHub\Practices-Evseev\ProgAirTicket\ProgAirTicket\ProgAirTicket.UWP\ProgAirTicket.UWP.csproj;x86

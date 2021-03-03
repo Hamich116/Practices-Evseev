@@ -3,22 +3,113 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProgAirTicket.MainPage">
 
-    <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-        </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Learn more at "/>
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
+    <StackLayout BackgroundColor="#080D17">
+        <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+            <StackLayout VerticalOptions="Start" Margin="4, 4, 240, 0">
+                <Frame CornerRadius="50"
+                       HeightRequest="2"
+                       WidthRequest="2">
+                       <Image Source="Vector.png"
+                            HeightRequest="2"
+                            WidthRequest="2"/>
+                </Frame>
+            </StackLayout>
+            <StackLayout>
+                <BoxView BackgroundColor="#3C9DD4"
+                     Margin="0, 4, 4, 0"
+                         HeightRequest="36"
+                         WidthRequest="100"
+                         CornerRadius="15">
+                </BoxView>
+            </StackLayout>
+
+
+
+            <StackLayout HorizontalOptions="End" Margin="0, 4, 4, 0"  >
+                <BoxView BackgroundColor="#FFFFFF" 
+                     HeightRequest="7"
+
+                     WidthRequest="7"
+                     CornerRadius="5">
+                </BoxView>
+                <BoxView BackgroundColor="#FFFFFF"
+                     HeightRequest="7"
+                     WidthRequest="7"
+
+                     CornerRadius="5">
+                </BoxView>
+                <BoxView BackgroundColor="#FFFFFF"
+                     HeightRequest="7"
+                     WidthRequest="7"
+                     CornerRadius="5">
+                </BoxView>
+            </StackLayout>
+
+            
+        </StackLayout>
+
+        
+
+
+
+        <AbsoluteLayout BackgroundColor="#080D17" >
+            <Frame x:Name="ticketabsl" 
+            BackgroundColor="#EFF9FF" 
+            AbsoluteLayout.LayoutBounds="0.5, 0.335, 0.85, 0.168" 
+            AbsoluteLayout.LayoutFlags="All" 
+            CornerRadius="13" 
+            Padding="0">
+
+                <AbsoluteLayout BackgroundColor="White" >
+                    <Label Text="14.02 21:25"
+               FontSize="7"
+               HorizontalOptions="Start" 
+               TextColor="#99CFEE"
+               AbsoluteLayout.LayoutBounds="0.4, 0.2, 0.85, 0.186" 
+               AbsoluteLayout.LayoutFlags="All">
+                    </Label>
+
+                    <Label Text="14.02 22:55"
+               FontSize="7"
+               HorizontalOptions="Start"
+               TextColor="#99CFEE"
+               AbsoluteLayout.LayoutBounds="0.4, 0.7, 0.85, 0.186"
+               AbsoluteLayout.LayoutFlags="All">
+                    </Label>
+
+                    <Label Text="Saint Peterburg - Pulkovo"
+               FontSize="10"
+               HorizontalOptions="Start"
+               TextColor="Black"
+               AbsoluteLayout.LayoutBounds="0.4, 0.35, 0.85, 0.186"
+               AbsoluteLayout.LayoutFlags="All"               >
+                    </Label>
+
+                    <Label Text="Moscow - Domodedovo"
+               FontSize="10"
+               HorizontalOptions="Start"
+               TextColor="Black"
+               AbsoluteLayout.LayoutBounds="0.4, 0.85, 0.85, 0.186"
+               AbsoluteLayout.LayoutFlags="All">
+                    </Label>
+
+                    <BoxView BackgroundColor="#99CFEE"
+                 
+                 AbsoluteLayout.LayoutBounds="0.7, 0.2, 0.01, 0.98"
+                 AbsoluteLayout.LayoutFlags="All">
+                    </BoxView>
+
+                    <Label Text="KZN14MSC02D321"
+               FontSize="8"
+               TextColor="#6EBDEA"
+               Rotation="270"
+               AbsoluteLayout.LayoutBounds="0.99, 0.4, 0.1, 0.25"
+               AbsoluteLayout.LayoutFlags="All">
+                    </Label>
+                </AbsoluteLayout>
+            </Frame>
+        </AbsoluteLayout>
     </StackLayout>
+    
 
 </ContentPage>
