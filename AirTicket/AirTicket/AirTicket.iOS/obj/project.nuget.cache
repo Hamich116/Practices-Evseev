@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "KN7keLUU57fAGuYp4qDnQXdl6r/992mu1+LUF67vgSjbDwG72n51dOBuLlc7iUZ4X8gJc+VFWz1y/bvah7eYfQ==",
+  "dgSpecHash": "Jw2rNmZ79vIvWmqv1tZAALttTyW8NDAaEKxC7oGH3AlX7VUNo4h9bn3ISp1/rNnCRHSVCCzOI7hITSIHNCZpRA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Hamich\\Documents\\GitHub\\Practices-Evseev\\AirTicket\\AirTicket\\AirTicket.iOS\\AirTicket.iOS.csproj",
   "expectedPackageFiles": [
-    "D:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
-    "D:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.6.0.1141\\xamarin.forms.4.6.0.1141.nupkg.sha512"
+    "C:\\Users\\Hamich\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Users\\Hamich\\.nuget\\packages\\xamarin.forms\\4.6.0.1141\\xamarin.forms.4.6.0.1141.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "JUtrx/MayIWNdcSD6/jO/dl/BV/aGw3oSL2giJma0GGYaZuet24Do9fP1pF3p0YcUPOMWryaKKv56rcyPH9CKQ==",
+  "dgSpecHash": "Tc+UfoZX2hILVpbOSlpLKVsBe2/qb27wybRnZgvb10CD1PppEDIWCtToBLeJbHejJiZZIxS9JQqn5yLfSLdBeg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Hamich\\Documents\\GitHub\\Practices-Evseev\\AirTicket\\AirTicket\\AirTicket.UWP\\AirTicket.UWP.csproj",
   "expectedPackageFiles": [
@@ -26,8 +26,8 @@
     "C:\\Users\\Hamich\\.nuget\\packages\\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\\2.1.2\\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk.2.1.2.nupkg.sha512",
     "C:\\Users\\Hamich\\.nuget\\packages\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\\6.1.9\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform.6.1.9.nupkg.sha512",
     "C:\\Users\\Hamich\\.nuget\\packages\\win2d.uwp\\1.20.0\\win2d.uwp.1.20.0.nupkg.sha512",
-    "D:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
-    "D:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.6.0.1141\\xamarin.forms.4.6.0.1141.nupkg.sha512"
+    "C:\\Users\\Hamich\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Users\\Hamich\\.nuget\\packages\\xamarin.forms\\4.6.0.1141\\xamarin.forms.4.6.0.1141.nupkg.sha512"
   ],
   "logs": [
     {
