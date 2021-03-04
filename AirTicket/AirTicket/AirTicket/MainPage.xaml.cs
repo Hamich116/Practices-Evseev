@@ -100,6 +100,34 @@ namespace AirTicket
                         }
 
 
+                    },
+                    new StackLayout
+                    {
+                        BackgroundColor = Color.Green,
+                        Orientation = StackOrientation.Horizontal,
+                        Padding = new Thickness(20,10,20,10),
+                        Spacing = 10,
+                        Children =
+                        {
+                            new Label
+                            {
+
+                                TextColor = Color.White,
+                                Text = "Скоро полетим",
+                                HorizontalOptions = LayoutOptions.Start,
+                                VerticalOptions = LayoutOptions.Center,
+                            },
+                            new Frame
+                            {
+                                HorizontalOptions = LayoutOptions.EndAndExpand,
+                                VerticalOptions = LayoutOptions.Center,
+                                BackgroundColor = Color.FromHex("#3C9DD4"),
+                                CornerRadius = 90,
+                                Padding = 0,
+                                HeightRequest = 50,
+                                WidthRequest = 50,
+                            }
+                        }
                     }
 
                 }
