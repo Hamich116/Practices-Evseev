@@ -464,3 +464,6 @@ C:\Users\PC\Documents\GitHub\Practices-Evseev\ProgAirTicket\ProgAirTicket\ProgAi
 C:\Users\PC\Documents\GitHub\Practices-Evseev\ProgAirTicket\ProgAirTicket\ProgAirTicket.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\PC\Documents\GitHub\Practices-Evseev\ProgAirTicket\ProgAirTicket\ProgAirTicket.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
 C:\Users\PC\Documents\GitHub\Practices-Evseev\ProgAirTicket\ProgAirTicket\ProgAirTicket.Android\obj\Debug\90\res\drawable\vector.jpg
+C:\Users\PC\Documents\GitHub\Practices-Evseev\ProgAirTicket\ProgAirTicket\ProgAirTicket.Android\obj\Debug\90\res\drawable\cod.jpg
+C:\Users\PC\Documents\GitHub\Practices-Evseev\ProgAirTicket\ProgAirTicket\ProgAirTicket.Android\obj\Debug\90\res\drawable\backplane.jpg
+C:\Users\PC\Documents\GitHub\Practices-Evseev\ProgAirTicket\ProgAirTicket\ProgAirTicket.Android\obj\Debug\90\res\drawable\upplane.jpg
