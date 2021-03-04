@@ -13,6 +13,7 @@ namespace AirTicket
         public MainPage()
         {
             //InitializeComponent();
+
             StackLayout main = new StackLayout
             {
                 Spacing = 15,
@@ -39,8 +40,10 @@ namespace AirTicket
                                 HasShadow = false,
                                 Content = new Image
                                 {
-                                    Scale = 0.6,
+                                    Scale = 1,
                                     Source = "Vector.png",
+                                    HorizontalOptions = LayoutOptions.Center,
+                                    VerticalOptions = LayoutOptions.Center,
                                 }
                             },
                             new Frame
@@ -126,11 +129,18 @@ namespace AirTicket
                             {
                                 HorizontalOptions = LayoutOptions.EndAndExpand,
                                 VerticalOptions = LayoutOptions.Center,
-                                BackgroundColor = Color.FromHex("#3C9DD4"),
+                                BackgroundColor = Color.FromHex("#F6FEFF"),
                                 CornerRadius = 90,
                                 Padding = 0,
                                 HeightRequest = 50,
                                 WidthRequest = 50,
+                                Content = new Image
+                                {
+                                    Scale = 1,
+                                    Source = "plane.png",
+                                    HorizontalOptions = LayoutOptions.Center,
+                                    VerticalOptions = LayoutOptions.Center,
+                                }
                             }
                         }
                     },
@@ -148,7 +158,7 @@ namespace AirTicket
                                     BackgroundColor = Color.White,
                                     Padding = 0,
                                     WidthRequest = 100,
-                                    HeightRequest = 30,
+                                    HeightRequest = 40,
                                     CornerRadius = 40,
                                     Content = new Label
                                     {
@@ -163,7 +173,7 @@ namespace AirTicket
                                     BackgroundColor = Color.FromHex("#3C9DD4"),
                                     Padding = 0,
                                     WidthRequest = 100,
-                                    HeightRequest = 30,
+                                    HeightRequest = 40,
                                     CornerRadius = 40,
                                     Content = new Label
                                     {
@@ -178,7 +188,7 @@ namespace AirTicket
                                     BackgroundColor = Color.White,
                                     Padding = 0,
                                     WidthRequest = 100,
-                                    HeightRequest = 30,
+                                    HeightRequest = 40,
                                     CornerRadius = 40,
                                     Content = new Label
                                     {
@@ -193,7 +203,7 @@ namespace AirTicket
                                     BackgroundColor = Color.White,
                                     Padding = 0,
                                     WidthRequest = 100,
-                                    HeightRequest = 30,
+                                    HeightRequest = 40,
                                     CornerRadius = 40,
                                     Content = new Label
                                     {
@@ -208,7 +218,7 @@ namespace AirTicket
                                     BackgroundColor = Color.White,
                                     Padding = 0,
                                     WidthRequest = 100,
-                                    HeightRequest = 30,
+                                    HeightRequest = 40,
                                     CornerRadius = 40,
                                     Content = new Label
                                     {
@@ -223,7 +233,7 @@ namespace AirTicket
                                     BackgroundColor = Color.White,
                                     Padding = 0,
                                     WidthRequest = 100,
-                                    HeightRequest = 30,
+                                    HeightRequest = 40,
                                     CornerRadius = 40,
                                     Content = new Label
                                     {
@@ -507,10 +517,930 @@ namespace AirTicket
                             },
 
                         }
+                    },
+                    new StackLayout
+                    {
+                        Orientation = StackOrientation.Horizontal,
+                        Padding = new Thickness(20,10,20,10),
+                        Spacing = 10,
+                        Children =
+                        {
+                            new Label
+                            {
+
+                                TextColor = Color.White,
+                                Text = "Было - летали",
+                                HorizontalOptions = LayoutOptions.Start,
+                                VerticalOptions = LayoutOptions.Center,
+                                FontSize = 27
+                            },
+                            new Frame
+                            {
+                                HorizontalOptions = LayoutOptions.EndAndExpand,
+                                VerticalOptions = LayoutOptions.Center,
+                                BackgroundColor = Color.FromHex("#F6FEFF"),
+                                CornerRadius = 90,
+                                Padding = 0,
+                                HeightRequest = 50,
+                                WidthRequest = 50,
+                                Content = new Image
+                                {
+                                    Scale = 1,
+                                    Source = "planereverse.png",
+                                    HorizontalOptions = LayoutOptions.Center,
+                                    VerticalOptions = LayoutOptions.Center,
+                                }
+                            }
+                        }
+                    },
+                    new StackLayout
+                        {
+                            Spacing = 25,
+                            Children =
+                            {
+                                new Frame
+                                {
+                                    Padding = 10,
+                                    WidthRequest = 300,
+                                    HeightRequest = 30,
+                                    CornerRadius = 30,
+                                    BackgroundColor = Color.FromHex("#3C9DD4"),
+                                    Content = new StackLayout
+                                    {
+                                        Padding = 5,
+                                        Spacing = 15,
+                                        Orientation = StackOrientation.Horizontal,
+                                        Children =
+                                        {
+                                            new Label
+                                            {
+                                                Text = "22.12",
+                                                HorizontalOptions = LayoutOptions.Start,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            },
+                                            new BoxView
+                                            {
+                                                HeightRequest = 5,
+                                                WidthRequest = 5,
+                                                CornerRadius = 5,
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                BackgroundColor = Color.White,
+                                            },
+                                            new Label
+                                            {
+                                                Text = "KZN",
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            },
+                                            new Image
+                                            {
+                                                Source = "strelka.png",
+                                                Scale = 1,
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+
+                                            },
+                                            new Label
+                                            {
+                                                Text = "MSC",
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            },
+                                            new Label
+                                            {
+                                                Text = "9999 руб.",
+                                                HorizontalOptions = LayoutOptions.EndAndExpand,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            }
+                                        }
+                                    }
+
+                                },
+                                new Frame
+                                {
+                                    Padding = 10,
+                                    WidthRequest = 300,
+                                    HeightRequest = 30,
+                                    CornerRadius = 30,
+                                    BackgroundColor = Color.FromHex("#3C9DD4"),
+                                    Content = new StackLayout
+                                    {
+                                        Padding = 5,
+                                        Spacing = 15,
+                                        Orientation = StackOrientation.Horizontal,
+                                        Children =
+                                        {
+                                            new Label
+                                            {
+                                                Text = "04.12",
+                                                HorizontalOptions = LayoutOptions.Start,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            },
+                                            new BoxView
+                                            {
+                                                HeightRequest = 5,
+                                                WidthRequest = 5,
+                                                CornerRadius = 5,
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                BackgroundColor = Color.White,
+                                            },
+                                            new Label
+                                            {
+                                                Text = "IZH",
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            },
+                                            new Image
+                                            {
+                                                Source = "strelkareverse.png",
+                                                Scale = 1,
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+
+                                            },
+                                            new Label
+                                            {
+                                                Text = "SPB",
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            },
+                                            new Label
+                                            {
+                                                Text = "7122 руб.",
+                                                HorizontalOptions = LayoutOptions.EndAndExpand,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            }
+                                        }
+                                    }
+
+                                },
+                                new Frame
+                                {
+                                    Padding = 10,
+                                    WidthRequest = 300,
+                                    HeightRequest = 30,
+                                    CornerRadius = 30,
+                                    BackgroundColor = Color.FromHex("#3C9DD4"),
+                                    Content = new StackLayout
+                                    {
+                                        Padding = 5,
+                                        Spacing = 15,
+                                        Orientation = StackOrientation.Horizontal,
+                                        Children =
+                                        {
+                                            new Label
+                                            {
+                                                Text = "03.12",
+                                                HorizontalOptions = LayoutOptions.Start,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            },
+                                            new BoxView
+                                            {
+                                                HeightRequest = 5,
+                                                WidthRequest = 5,
+                                                CornerRadius = 5,
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                BackgroundColor = Color.White,
+                                            },
+                                            new Label
+                                            {
+                                                Text = "IZH",
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            },
+                                            new Image
+                                            {
+                                                Source = "strelka.png",
+                                                Scale = 1,
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+
+                                            },
+                                            new Label
+                                            {
+                                                Text = "SPB",
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            },
+                                            new Label
+                                            {
+                                                Text = "7126 руб.",
+                                                HorizontalOptions = LayoutOptions.EndAndExpand,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            }
+                                        }
+                                    }
+
+                                },
+                                new Frame
+                                {
+                                    Padding = 10,
+                                    WidthRequest = 300,
+                                    HeightRequest = 30,
+                                    CornerRadius = 30,
+                                    BackgroundColor = Color.FromHex("#3C9DD4"),
+                                    Content = new StackLayout
+                                    {
+                                        Padding = 5,
+                                        Spacing = 15,
+                                        Orientation = StackOrientation.Horizontal,
+                                        Children =
+                                        {
+                                            new Label
+                                            {
+                                                Text = "10.11",
+                                                HorizontalOptions = LayoutOptions.Start,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            },
+                                            new BoxView
+                                            {
+                                                HeightRequest = 5,
+                                                WidthRequest = 5,
+                                                CornerRadius = 5,
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                BackgroundColor = Color.White,
+                                            },
+                                            new Label
+                                            {
+                                                Text = "MSC",
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            },
+                                            new Image
+                                            {
+                                                Source = "strelka.png",
+                                                Scale = 1,
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+
+                                            },
+                                            new Label
+                                            {
+                                                Text = "LON",
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            },
+                                            new Label
+                                            {
+                                                Text = "2122 руб.",
+                                                HorizontalOptions = LayoutOptions.EndAndExpand,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            }
+                                        }
+                                    }
+
+                                },
+                                new Frame
+                                {
+                                    Padding = 10,
+                                    WidthRequest = 300,
+                                    HeightRequest = 30,
+                                    CornerRadius = 30,
+                                    BackgroundColor = Color.FromHex("#3C9DD4"),
+                                    Content = new StackLayout
+                                    {
+                                        Padding = 5,
+                                        Spacing = 15,
+                                        Orientation = StackOrientation.Horizontal,
+                                        Children =
+                                        {
+                                            new Label
+                                            {
+                                                Text = "07.10",
+                                                HorizontalOptions = LayoutOptions.Start,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            },
+                                            new BoxView
+                                            {
+                                                HeightRequest = 5,
+                                                WidthRequest = 5,
+                                                CornerRadius = 5,
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                BackgroundColor = Color.White,
+                                            },
+                                            new Label
+                                            {
+                                                Text = "MSC",
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            },
+                                            new Image
+                                            {
+                                                Source = "strelka.png",
+                                                Scale = 1,
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+
+                                            },
+                                            new Label
+                                            {
+                                                Text = "ANT",
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            },
+                                            new Label
+                                            {
+                                                Text = "12050 руб.",
+                                                HorizontalOptions = LayoutOptions.EndAndExpand,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            }
+                                        }
+                                    }
+
+                                },
+                                new Frame
+                                {
+                                    Padding = 10,
+                                    WidthRequest = 300,
+                                    HeightRequest = 30,
+                                    CornerRadius = 30,
+                                    BackgroundColor = Color.FromHex("#3C9DD4"),
+                                    Content = new StackLayout
+                                    {
+                                        Padding = 5,
+                                        Spacing = 15,
+                                        Orientation = StackOrientation.Horizontal,
+                                        Children =
+                                        {
+                                            new Label
+                                            {
+                                                Text = "14.09",
+                                                HorizontalOptions = LayoutOptions.Start,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            },
+                                            new BoxView
+                                            {
+                                                HeightRequest = 5,
+                                                WidthRequest = 5,
+                                                CornerRadius = 5,
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                BackgroundColor = Color.White,
+                                            },
+                                            new Label
+                                            {
+                                                Text = "ANT",
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            },
+                                            new Image
+                                            {
+                                                Source = "strelka.png",
+                                                Scale = 1,
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+
+                                            },
+                                            new Label
+                                            {
+                                                Text = "MSC",
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            },
+                                            new Label
+                                            {
+                                                Text = "8182 руб.",
+                                                HorizontalOptions = LayoutOptions.EndAndExpand,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            }
+                                        }
+                                    }
+
+                                },
+                                new Frame
+                                {
+                                    Padding = 10,
+                                    WidthRequest = 300,
+                                    HeightRequest = 30,
+                                    CornerRadius = 30,
+                                    BackgroundColor = Color.FromHex("#3C9DD4"),
+                                    Content = new StackLayout
+                                    {
+                                        Padding = 5,
+                                        Spacing = 15,
+                                        Orientation = StackOrientation.Horizontal,
+                                        Children =
+                                        {
+                                            new Label
+                                            {
+                                                Text = "04.12",
+                                                HorizontalOptions = LayoutOptions.Start,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            },
+                                            new BoxView
+                                            {
+                                                HeightRequest = 5,
+                                                WidthRequest = 5,
+                                                CornerRadius = 5,
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                BackgroundColor = Color.White,
+                                            },
+                                            new Label
+                                            {
+                                                Text = "IZH",
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            },
+                                            new Image
+                                            {
+                                                Source = "strelkareverse.png",
+                                                Scale = 1,
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+
+                                            },
+                                            new Label
+                                            {
+                                                Text = "SPB",
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            },
+                                            new Label
+                                            {
+                                                Text = "7122 руб.",
+                                                HorizontalOptions = LayoutOptions.EndAndExpand,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            }
+                                        }
+                                    }
+
+                                },
+                                new Frame
+                                {
+                                    Padding = 10,
+                                    WidthRequest = 300,
+                                    HeightRequest = 30,
+                                    CornerRadius = 30,
+                                    BackgroundColor = Color.FromHex("#3C9DD4"),
+                                    Content = new StackLayout
+                                    {
+                                        Padding = 5,
+                                        Spacing = 15,
+                                        Orientation = StackOrientation.Horizontal,
+                                        Children =
+                                        {
+                                            new Label
+                                            {
+                                                Text = "04.12",
+                                                HorizontalOptions = LayoutOptions.Start,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            },
+                                            new BoxView
+                                            {
+                                                HeightRequest = 5,
+                                                WidthRequest = 5,
+                                                CornerRadius = 5,
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                BackgroundColor = Color.White,
+                                            },
+                                            new Label
+                                            {
+                                                Text = "IZH",
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            },
+                                            new Image
+                                            {
+                                                Source = "strelkareverse.png",
+                                                Scale = 1,
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+
+                                            },
+                                            new Label
+                                            {
+                                                Text = "SPB",
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            },
+                                            new Label
+                                            {
+                                                Text = "7122 руб.",
+                                                HorizontalOptions = LayoutOptions.EndAndExpand,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            }
+                                        }
+                                    }
+
+                                },
+                                new Frame
+                                {
+                                    Padding = 10,
+                                    WidthRequest = 300,
+                                    HeightRequest = 30,
+                                    CornerRadius = 30,
+                                    BackgroundColor = Color.FromHex("#3C9DD4"),
+                                    Content = new StackLayout
+                                    {
+                                        Padding = 5,
+                                        Spacing = 15,
+                                        Orientation = StackOrientation.Horizontal,
+                                        Children =
+                                        {
+                                            new Label
+                                            {
+                                                Text = "04.12",
+                                                HorizontalOptions = LayoutOptions.Start,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            },
+                                            new BoxView
+                                            {
+                                                HeightRequest = 5,
+                                                WidthRequest = 5,
+                                                CornerRadius = 5,
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                BackgroundColor = Color.White,
+                                            },
+                                            new Label
+                                            {
+                                                Text = "IZH",
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            },
+                                            new Image
+                                            {
+                                                Source = "strelkareverse.png",
+                                                Scale = 1,
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+
+                                            },
+                                            new Label
+                                            {
+                                                Text = "SPB",
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            },
+                                            new Label
+                                            {
+                                                Text = "7122 руб.",
+                                                HorizontalOptions = LayoutOptions.EndAndExpand,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            }
+                                        }
+                                    }
+
+                                },
+                                new Frame
+                                {
+                                    Padding = 10,
+                                    WidthRequest = 300,
+                                    HeightRequest = 30,
+                                    CornerRadius = 30,
+                                    BackgroundColor = Color.FromHex("#3C9DD4"),
+                                    Content = new StackLayout
+                                    {
+                                        Padding = 5,
+                                        Spacing = 15,
+                                        Orientation = StackOrientation.Horizontal,
+                                        Children =
+                                        {
+                                            new Label
+                                            {
+                                                Text = "04.12",
+                                                HorizontalOptions = LayoutOptions.Start,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            },
+                                            new BoxView
+                                            {
+                                                HeightRequest = 5,
+                                                WidthRequest = 5,
+                                                CornerRadius = 5,
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                BackgroundColor = Color.White,
+                                            },
+                                            new Label
+                                            {
+                                                Text = "IZH",
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            },
+                                            new Image
+                                            {
+                                                Source = "strelkareverse.png",
+                                                Scale = 1,
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+
+                                            },
+                                            new Label
+                                            {
+                                                Text = "SPB",
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            },
+                                            new Label
+                                            {
+                                                Text = "7122 руб.",
+                                                HorizontalOptions = LayoutOptions.EndAndExpand,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            }
+                                        }
+                                    }
+
+                                },
+                                new Frame
+                                {
+                                    Padding = 10,
+                                    WidthRequest = 300,
+                                    HeightRequest = 30,
+                                    CornerRadius = 30,
+                                    BackgroundColor = Color.FromHex("#3C9DD4"),
+                                    Content = new StackLayout
+                                    {
+                                        Padding = 5,
+                                        Spacing = 15,
+                                        Orientation = StackOrientation.Horizontal,
+                                        Children =
+                                        {
+                                            new Label
+                                            {
+                                                Text = "04.12",
+                                                HorizontalOptions = LayoutOptions.Start,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            },
+                                            new BoxView
+                                            {
+                                                HeightRequest = 5,
+                                                WidthRequest = 5,
+                                                CornerRadius = 5,
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                BackgroundColor = Color.White,
+                                            },
+                                            new Label
+                                            {
+                                                Text = "IZH",
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            },
+                                            new Image
+                                            {
+                                                Source = "strelkareverse.png",
+                                                Scale = 1,
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+
+                                            },
+                                            new Label
+                                            {
+                                                Text = "SPB",
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            },
+                                            new Label
+                                            {
+                                                Text = "7122 руб.",
+                                                HorizontalOptions = LayoutOptions.EndAndExpand,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            }
+                                        }
+                                    }
+
+                                },
+                                new Frame
+                                {
+                                    Padding = 10,
+                                    WidthRequest = 300,
+                                    HeightRequest = 30,
+                                    CornerRadius = 30,
+                                    BackgroundColor = Color.FromHex("#3C9DD4"),
+                                    Content = new StackLayout
+                                    {
+                                        Padding = 5,
+                                        Spacing = 15,
+                                        Orientation = StackOrientation.Horizontal,
+                                        Children =
+                                        {
+                                            new Label
+                                            {
+                                                Text = "04.12",
+                                                HorizontalOptions = LayoutOptions.Start,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            },
+                                            new BoxView
+                                            {
+                                                HeightRequest = 5,
+                                                WidthRequest = 5,
+                                                CornerRadius = 5,
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                BackgroundColor = Color.White,
+                                            },
+                                            new Label
+                                            {
+                                                Text = "IZH",
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            },
+                                            new Image
+                                            {
+                                                Source = "strelkareverse.png",
+                                                Scale = 1,
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+
+                                            },
+                                            new Label
+                                            {
+                                                Text = "SPB",
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            },
+                                            new Label
+                                            {
+                                                Text = "7122 руб.",
+                                                HorizontalOptions = LayoutOptions.EndAndExpand,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            }
+                                        }
+                                    }
+
+                                },
+                                new Frame
+                                {
+                                    Padding = 10,
+                                    WidthRequest = 300,
+                                    HeightRequest = 30,
+                                    CornerRadius = 30,
+                                    BackgroundColor = Color.FromHex("#3C9DD4"),
+                                    Content = new StackLayout
+                                    {
+                                        Padding = 5,
+                                        Spacing = 15,
+                                        Orientation = StackOrientation.Horizontal,
+                                        Children =
+                                        {
+                                            new Label
+                                            {
+                                                Text = "04.12",
+                                                HorizontalOptions = LayoutOptions.Start,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            },
+                                            new BoxView
+                                            {
+                                                HeightRequest = 5,
+                                                WidthRequest = 5,
+                                                CornerRadius = 5,
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                BackgroundColor = Color.White,
+                                            },
+                                            new Label
+                                            {
+                                                Text = "IZH",
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            },
+                                            new Image
+                                            {
+                                                Source = "strelkareverse.png",
+                                                Scale = 1,
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+
+                                            },
+                                            new Label
+                                            {
+                                                Text = "SPB",
+                                                HorizontalOptions = LayoutOptions.Center,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            },
+                                            new Label
+                                            {
+                                                Text = "7122 руб.",
+                                                HorizontalOptions = LayoutOptions.EndAndExpand,
+                                                VerticalOptions = LayoutOptions.Center,
+                                                TextColor = Color.White,
+                                                FontSize = 16,
+                                            }
+                                        }
+                                    }
+
+                                },
+
+
+                            }
+                        }
                     }
-                }
             };
-            Content = main;
+            ScrollView scroll = new ScrollView
+            {
+                Content = main
+            };
+            
+            Content = scroll;
         }
 
     }
