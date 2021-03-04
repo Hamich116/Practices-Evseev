@@ -15,6 +15,7 @@ namespace AirTicket
             //InitializeComponent();
             StackLayout main = new StackLayout
             {
+                Spacing = 15,
                 Padding = 20,
                 BackgroundColor = Color.FromHex("#080D17"),
                 Children =
@@ -22,7 +23,6 @@ namespace AirTicket
                     new StackLayout
                     {
                         Orientation = StackOrientation.Horizontal,
-                        BackgroundColor = Color.Red,
                         HorizontalOptions = LayoutOptions.FillAndExpand,
                         VerticalOptions = LayoutOptions.Start,
                         Children =
@@ -43,21 +43,21 @@ namespace AirTicket
                                 Padding = 0,
                                 BackgroundColor = Color.FromHex("#3C9DD4"),
                                 CornerRadius = 30,
-                                WidthRequest = 180,
+                                WidthRequest = 160,
                                 HeightRequest = 55,
                                 HorizontalOptions = LayoutOptions.EndAndExpand,
                                 VerticalOptions = LayoutOptions.Center,
                                 Content = new Label
                                 {
-                                    Text = "Привет,Ильхам",
+                                    Text = "Привет, Ильхам",
                                     TextColor = Color.White,
                                     HorizontalOptions = LayoutOptions.Center,
                                     VerticalOptions = LayoutOptions.Center,
+                                    FontSize = 16
                                 },
                             },
                             new StackLayout
                             {
-                                BackgroundColor = Color.Blue,
                                 Padding = 10,
                                 Spacing = 5,
                                 HorizontalOptions = LayoutOptions.End,
@@ -102,7 +102,6 @@ namespace AirTicket
                     },
                     new StackLayout
                     {
-                        BackgroundColor = Color.Green,
                         Orientation = StackOrientation.Horizontal,
                         Padding = new Thickness(20,10,20,10),
                         Spacing = 10,
@@ -115,6 +114,7 @@ namespace AirTicket
                                 Text = "Скоро полетим",
                                 HorizontalOptions = LayoutOptions.Start,
                                 VerticalOptions = LayoutOptions.Center,
+                                FontSize = 27
                             },
                             new Frame
                             {
@@ -133,7 +133,6 @@ namespace AirTicket
                         Orientation = ScrollOrientation.Horizontal,
                         Content = new StackLayout
                         {
-                            BackgroundColor = Color.DeepPink,
                             Orientation = StackOrientation.Horizontal,
                             Spacing = 10,
                             Children =
@@ -229,6 +228,278 @@ namespace AirTicket
                                     }
                                 },
                             }
+                        }
+                    },
+                    new Frame
+                    {
+                        Padding = 0,
+                        WidthRequest = 300,
+                        HeightRequest = 150,
+                        CornerRadius = 15,
+                        Content = new StackLayout
+                        {
+                            Orientation = StackOrientation.Horizontal,
+                            Children =
+                            {
+                                new StackLayout
+                                {
+                                    MinimumWidthRequest = 240,
+                                    VerticalOptions = LayoutOptions.FillAndExpand,
+                                    HorizontalOptions = LayoutOptions.FillAndExpand,
+                                    Spacing = 5,
+                                    Padding = 20,
+                                    Children =
+                                    {
+                                        new Label
+                                        {
+                                            Text = "14.02 21:25",
+                                            TextColor = Color.FromHex("#99CFEE"),
+                                            FontSize = 12,
+                                        },
+                                        new Label
+                                        {
+                                            Text = "Saint Petersburg - Pulkovo",
+                                            TextColor = Color.Black,
+                                            FontSize = 17,
+                                        },
+                                        new Label
+                                        {
+                                            Text = "14.02 22:55",
+                                            TextColor = Color.FromHex("#99CFEE"),
+                                            FontSize = 12,
+                                        },
+                                        new Label
+                                        {
+                                            Text = "Moscow - Domodevo",
+                                            TextColor = Color.Black,
+                                            FontSize = 17,
+                                        },
+                                    }
+                                },
+                                new StackLayout
+                                {
+                                    Orientation = StackOrientation.Horizontal,
+                                    Children =
+                                    {
+                                        new BoxView
+                                        {
+                                            Margin = 10,
+                                            WidthRequest = 2,
+                                            HeightRequest = 130,
+                                            BackgroundColor = Color.FromHex("#99CFEE"),
+                                            HorizontalOptions = LayoutOptions.EndAndExpand,
+                                        },
+                                        new StackLayout
+                                        {
+                                            HorizontalOptions = LayoutOptions.End,
+                                            VerticalOptions = LayoutOptions.Center,
+                                            Children =
+                                            {
+                                                new BoxView
+                                                {
+                                                    WidthRequest = 30,
+                                                    HeightRequest = 2,
+                                                    BackgroundColor = Color.FromHex("#6EBDEA"),
+                                                },
+                                                new BoxView
+                                                {
+                                                    WidthRequest = 30,
+                                                    HeightRequest = 2,
+                                                    BackgroundColor = Color.FromHex("#6EBDEA"),
+                                                },
+                                                new BoxView
+                                                {
+                                                    WidthRequest = 30,
+                                                    HeightRequest = 2,
+                                                    BackgroundColor = Color.FromHex("#6EBDEA"),
+                                                },
+                                                new BoxView
+                                                {
+                                                    WidthRequest = 30,
+                                                    HeightRequest = 2,
+                                                    BackgroundColor = Color.FromHex("#6EBDEA"),
+                                                },
+                                                new BoxView
+                                                {
+                                                    WidthRequest = 30,
+                                                    HeightRequest = 2,
+                                                    BackgroundColor = Color.FromHex("#6EBDEA"),
+                                                },
+                                                new BoxView
+                                                {
+                                                    WidthRequest = 30,
+                                                    HeightRequest = 2,
+                                                    BackgroundColor = Color.FromHex("#6EBDEA"),
+                                                },
+                                                new BoxView
+                                                {
+                                                    WidthRequest = 30,
+                                                    HeightRequest = 2,
+                                                    BackgroundColor = Color.FromHex("#6EBDEA"),
+                                                },
+                                                new BoxView
+                                                {
+                                                    WidthRequest = 30,
+                                                    HeightRequest = 2,
+                                                    BackgroundColor = Color.FromHex("#6EBDEA"),
+                                                },
+                                                new BoxView
+                                                {
+                                                    WidthRequest = 30,
+                                                    HeightRequest = 2,
+                                                    BackgroundColor = Color.FromHex("#6EBDEA"),
+                                                },
+                                                new BoxView
+                                                {
+                                                    WidthRequest = 30,
+                                                    HeightRequest = 2,
+                                                    BackgroundColor = Color.FromHex("#6EBDEA"),
+                                                },
+                                                new BoxView
+                                                {
+                                                    WidthRequest = 30,
+                                                    HeightRequest = 2,
+                                                    BackgroundColor = Color.FromHex("#6EBDEA"),
+                                                },
+                                                new BoxView
+                                                {
+                                                    WidthRequest = 30,
+                                                    HeightRequest = 2,
+                                                    BackgroundColor = Color.FromHex("#6EBDEA"),
+                                                },
+                                                new BoxView
+                                                {
+                                                    WidthRequest = 30,
+                                                    HeightRequest = 2,
+                                                    BackgroundColor = Color.FromHex("#6EBDEA"),
+                                                },
+                                                new BoxView
+                                                {
+                                                    WidthRequest = 30,
+                                                    HeightRequest = 2,
+                                                    BackgroundColor = Color.FromHex("#6EBDEA"),
+                                                },
+
+
+                                            }
+                                        },
+                                        new Label
+                                        {
+                                            Text = "KZN14MSC02D321",
+                                            TextColor = Color.FromHex("#6EBDEA"),
+                                            Rotation = -90,
+                                            HorizontalOptions = LayoutOptions.EndAndExpand,
+                                            VerticalOptions = LayoutOptions.End,
+                                            FontSize = 13,
+                                            LineBreakMode = LineBreakMode.NoWrap,
+                                            MinimumWidthRequest = 120,
+                                            AnchorX = 0,
+                                            AnchorY = 0
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    new StackLayout
+                    {
+                        Orientation = StackOrientation.Horizontal,
+                        VerticalOptions = LayoutOptions.Center,
+                        HorizontalOptions = LayoutOptions.Center,
+                        Children =
+                        {
+                            new BoxView
+                            {
+                                HeightRequest = 5,
+                                WidthRequest = 5,
+                                BackgroundColor = Color.FromHex("#99CFEE"),
+                                CornerRadius = 5,
+                            },
+                            new BoxView
+                            {
+                                HeightRequest = 5,
+                                WidthRequest = 5,
+                                BackgroundColor = Color.White,
+                                CornerRadius = 5,
+                            },
+                            new BoxView
+                            {
+                                HeightRequest = 5,
+                                WidthRequest = 5,
+                                BackgroundColor = Color.White,
+                                CornerRadius = 5,
+                            },
+                            new BoxView
+                            {
+                                HeightRequest = 5,
+                                WidthRequest = 5,
+                                BackgroundColor = Color.White,
+                                CornerRadius = 5,
+                            },
+                            new BoxView
+                            {
+                                HeightRequest = 5,
+                                WidthRequest = 5,
+                                BackgroundColor = Color.White,
+                                CornerRadius = 5,
+                            },
+                            new BoxView
+                            {
+                                HeightRequest = 5,
+                                WidthRequest = 5,
+                                BackgroundColor = Color.White,
+                                CornerRadius = 5,
+                            },
+                            new BoxView
+                            {
+                                HeightRequest = 5,
+                                WidthRequest = 5,
+                                BackgroundColor = Color.White,
+                                CornerRadius = 5,
+                            },
+                            new BoxView
+                            {
+                                HeightRequest = 5,
+                                WidthRequest = 5,
+                                BackgroundColor = Color.White,
+                                CornerRadius = 5,
+                            },
+                            new BoxView
+                            {
+                                HeightRequest = 5,
+                                WidthRequest = 5,
+                                BackgroundColor = Color.White,
+                                CornerRadius = 5,
+                            },
+                            new BoxView
+                            {
+                                HeightRequest = 5,
+                                WidthRequest = 5,
+                                BackgroundColor = Color.White,
+                                CornerRadius = 5,
+                            },
+                            new BoxView
+                            {
+                                HeightRequest = 5,
+                                WidthRequest = 5,
+                                BackgroundColor = Color.White,
+                                CornerRadius = 5,
+                            },
+                            new BoxView
+                            {
+                                HeightRequest = 5,
+                                WidthRequest = 5,
+                                BackgroundColor = Color.White,
+                                CornerRadius = 5,
+                            },
+                            new BoxView
+                            {
+                                HeightRequest = 5,
+                                WidthRequest = 5,
+                                BackgroundColor = Color.White,
+                                CornerRadius = 5,
+                            },
+
                         }
                     }
                 }
