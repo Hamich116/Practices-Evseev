@@ -13,13 +13,6 @@ namespace AirTicket
         public MainPage()
         {
             //InitializeComponent();
-            Label profileText = new Label
-            {
-                Text = "Привет,Ильхам",
-                TextColor = Color.White,
-                HorizontalOptions = LayoutOptions.Center,
-                VerticalOptions = LayoutOptions.Center,
-            };
             StackLayout main = new StackLayout
             {
                 Padding = 20,
@@ -46,7 +39,7 @@ namespace AirTicket
                             },
                             new Frame
                             {
-                                
+
                                 Padding = 0,
                                 BackgroundColor = Color.FromHex("#3C9DD4"),
                                 CornerRadius = 30,
@@ -54,7 +47,13 @@ namespace AirTicket
                                 HeightRequest = 55,
                                 HorizontalOptions = LayoutOptions.EndAndExpand,
                                 VerticalOptions = LayoutOptions.Center,
-                                Content = profileText,
+                                Content = new Label
+                                {
+                                    Text = "Привет,Ильхам",
+                                    TextColor = Color.White,
+                                    HorizontalOptions = LayoutOptions.Center,
+                                    VerticalOptions = LayoutOptions.Center,
+                                },
                             },
                             new StackLayout
                             {
@@ -95,7 +94,7 @@ namespace AirTicket
 
                                 }
                             },
- 
+
 
                         }
 
@@ -128,8 +127,110 @@ namespace AirTicket
                                 WidthRequest = 50,
                             }
                         }
+                    },
+                    new ScrollView
+                    {
+                        Orientation = ScrollOrientation.Horizontal,
+                        Content = new StackLayout
+                        {
+                            BackgroundColor = Color.DeepPink,
+                            Orientation = StackOrientation.Horizontal,
+                            Spacing = 10,
+                            Children =
+                            {
+                                new Frame
+                                {
+                                    BackgroundColor = Color.White,
+                                    Padding = 0,
+                                    WidthRequest = 100,
+                                    HeightRequest = 30,
+                                    CornerRadius = 40,
+                                    Content = new Label
+                                    {
+                                        Text = "KMP-MSC",
+                                        TextColor = Color.FromHex("#3C9DD4"),
+                                        HorizontalOptions = LayoutOptions.Center,
+                                        VerticalOptions = LayoutOptions.Center,
+                                    }
+                                },
+                                new Frame
+                                {
+                                    BackgroundColor = Color.FromHex("#3C9DD4"),
+                                    Padding = 0,
+                                    WidthRequest = 100,
+                                    HeightRequest = 30,
+                                    CornerRadius = 40,
+                                    Content = new Label
+                                    {
+                                        Text = "SPB-MSC",
+                                        TextColor = Color.White,
+                                        HorizontalOptions = LayoutOptions.Center,
+                                        VerticalOptions = LayoutOptions.Center,
+                                    }
+                                },
+                                new Frame
+                                {
+                                    BackgroundColor = Color.White,
+                                    Padding = 0,
+                                    WidthRequest = 100,
+                                    HeightRequest = 30,
+                                    CornerRadius = 40,
+                                    Content = new Label
+                                    {
+                                        Text = "SPB-MSC",
+                                        TextColor = Color.FromHex("#3C9DD4"),
+                                        HorizontalOptions = LayoutOptions.Center,
+                                        VerticalOptions = LayoutOptions.Center,
+                                    }
+                                },
+                                new Frame
+                                {
+                                    BackgroundColor = Color.White,
+                                    Padding = 0,
+                                    WidthRequest = 100,
+                                    HeightRequest = 30,
+                                    CornerRadius = 40,
+                                    Content = new Label
+                                    {
+                                        Text = "SPB-MSC",
+                                        TextColor = Color.FromHex("#3C9DD4"),
+                                        HorizontalOptions = LayoutOptions.Center,
+                                        VerticalOptions = LayoutOptions.Center,
+                                    }
+                                },
+                                new Frame
+                                {
+                                    BackgroundColor = Color.White,
+                                    Padding = 0,
+                                    WidthRequest = 100,
+                                    HeightRequest = 30,
+                                    CornerRadius = 40,
+                                    Content = new Label
+                                    {
+                                        Text = "SPB-MSC",
+                                        TextColor = Color.FromHex("#3C9DD4"),
+                                        HorizontalOptions = LayoutOptions.Center,
+                                        VerticalOptions = LayoutOptions.Center,
+                                    }
+                                },
+                                new Frame
+                                {
+                                    BackgroundColor = Color.White,
+                                    Padding = 0,
+                                    WidthRequest = 100,
+                                    HeightRequest = 30,
+                                    CornerRadius = 40,
+                                    Content = new Label
+                                    {
+                                        Text = "SPB-MSC",
+                                        TextColor = Color.FromHex("#3C9DD4"),
+                                        HorizontalOptions = LayoutOptions.Center,
+                                        VerticalOptions = LayoutOptions.Center,
+                                    }
+                                },
+                            }
+                        }
                     }
-
                 }
             };
             Content = main;
