@@ -36,6 +36,12 @@ namespace AirTicket
                                 Padding = 0,
                                 HeightRequest = 50,
                                 WidthRequest = 50,
+                                HasShadow = false,
+                                Content = new Image
+                                {
+                                    Scale = 0.6,
+                                    Source = "Vector.png",
+                                }
                             },
                             new Frame
                             {

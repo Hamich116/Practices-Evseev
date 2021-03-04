@@ -474,3 +474,4 @@ C:\Users\Hamich\Documents\GitHub\Practices-Evseev\AirTicket\AirTicket\AirTicket.
 C:\Users\Hamich\Documents\GitHub\Practices-Evseev\AirTicket\AirTicket\AirTicket.Android\obj\Debug\90\lp\34\jl\files.cache
 C:\Users\Hamich\Documents\GitHub\Practices-Evseev\AirTicket\AirTicket\AirTicket.Android\obj\Debug\90\lp\38\jl\files.cache
 C:\Users\Hamich\Documents\GitHub\Practices-Evseev\AirTicket\AirTicket\AirTicket.Android\obj\Debug\90\lp\39\jl\files.cache
+C:\Users\Hamich\Documents\GitHub\Practices-Evseev\AirTicket\AirTicket\AirTicket.Android\obj\Debug\90\res\drawable\vector.png
