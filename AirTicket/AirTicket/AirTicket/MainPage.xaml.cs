@@ -13,249 +13,28 @@ namespace AirTicket
         public MainPage()
         {
             //InitializeComponent();
-
-            StackLayout main = new StackLayout
+            Label Super = new Label
             {
-                Spacing = 15,
-                Padding = 20,
-                BackgroundColor = Color.FromHex("#080D17"),
-                Children =
+                Text = "KZN14MSC02D321",
+                TextColor = Color.FromHex("#6EBDEA"),
+                HorizontalOptions = LayoutOptions.EndAndExpand,
+                VerticalOptions = LayoutOptions.End,
+                FontSize = 13,
+                MinimumWidthRequest = 120,
+                LineBreakMode = LineBreakMode.NoWrap,
+
+                AnchorX = 0,
+                AnchorY = 0,
+            };
+            Super.RotateTo(-90, 0);
+            ScrollView fake = new ScrollView
+            {
+                Orientation = ScrollOrientation.Neither,
+                HorizontalScrollBarVisibility = ScrollBarVisibility.Never,
+                Content = new StackLayout
                 {
-                    new StackLayout
-                    {
-                        Orientation = StackOrientation.Horizontal,
-                        HorizontalOptions = LayoutOptions.FillAndExpand,
-                        VerticalOptions = LayoutOptions.Start,
-                        Children =
-                        {
-                            new Frame
-                            {
-                                HorizontalOptions = LayoutOptions.Start,
-                                VerticalOptions = LayoutOptions.Center,
-                                BackgroundColor = Color.FromHex("#3C9DD4"),
-                                CornerRadius = 90,
-                                Padding = 0,
-                                HeightRequest = 50,
-                                WidthRequest = 50,
-                                HasShadow = false,
-                                Content = new Image
-                                {
-                                    Scale = 1,
-                                    Source = "Vector.png",
-                                    HorizontalOptions = LayoutOptions.Center,
-                                    VerticalOptions = LayoutOptions.Center,
-                                }
-                            },
-                            new Frame
-                            {
-
-                                Padding = 0,
-                                BackgroundColor = Color.FromHex("#3C9DD4"),
-                                CornerRadius = 30,
-                                WidthRequest = 160,
-                                HeightRequest = 55,
-                                HorizontalOptions = LayoutOptions.EndAndExpand,
-                                VerticalOptions = LayoutOptions.Center,
-                                Content = new Label
-                                {
-                                    Text = "Привет, Ильхам",
-                                    TextColor = Color.White,
-                                    HorizontalOptions = LayoutOptions.Center,
-                                    VerticalOptions = LayoutOptions.Center,
-                                    FontSize = 16
-                                },
-                            },
-                            new StackLayout
-                            {
-                                Padding = 10,
-                                Spacing = 5,
-                                HorizontalOptions = LayoutOptions.End,
-                                VerticalOptions = LayoutOptions.Center,
-                                Children =
-                                {
-                                    new BoxView
-                                    {
-                                        HeightRequest = 5,
-                                        WidthRequest = 5,
-                                        Color = Color.White,
-                                        CornerRadius = 50,
-                                        HorizontalOptions = LayoutOptions.Center,
-                                        VerticalOptions = LayoutOptions.Center,
-                                    },
-                                    new BoxView
-                                    {
-                                        HeightRequest = 5,
-                                        WidthRequest = 5,
-                                        Color = Color.White,
-                                        CornerRadius = 50,
-                                        HorizontalOptions = LayoutOptions.Center,
-                                        VerticalOptions = LayoutOptions.Center,
-                                    },
-                                    new BoxView
-                                    {
-                                        HeightRequest = 5,
-                                        WidthRequest = 5,
-                                        Color = Color.White,
-                                        CornerRadius = 50,
-                                        HorizontalOptions = LayoutOptions.Center,
-                                        VerticalOptions = LayoutOptions.Center,
-                                    },
-
-                                }
-                            },
-
-
-                        }
-
-
-                    },
-                    new StackLayout
-                    {
-                        Orientation = StackOrientation.Horizontal,
-                        Padding = new Thickness(20,10,20,10),
-                        Spacing = 10,
-                        Children =
-                        {
-                            new Label
-                            {
-
-                                TextColor = Color.White,
-                                Text = "Скоро полетим",
-                                HorizontalOptions = LayoutOptions.Start,
-                                VerticalOptions = LayoutOptions.Center,
-                                FontSize = 27
-                            },
-                            new Frame
-                            {
-                                HorizontalOptions = LayoutOptions.EndAndExpand,
-                                VerticalOptions = LayoutOptions.Center,
-                                BackgroundColor = Color.FromHex("#F6FEFF"),
-                                CornerRadius = 90,
-                                Padding = 0,
-                                HeightRequest = 50,
-                                WidthRequest = 50,
-                                Content = new Image
-                                {
-                                    Scale = 1,
-                                    Source = "plane.png",
-                                    HorizontalOptions = LayoutOptions.Center,
-                                    VerticalOptions = LayoutOptions.Center,
-                                }
-                            }
-                        }
-                    },
-                    new ScrollView
-                    {
-                        Orientation = ScrollOrientation.Horizontal,
-                        Content = new StackLayout
-                        {
-                            Orientation = StackOrientation.Horizontal,
-                            Spacing = 10,
-                            Children =
-                            {
-                                new Frame
-                                {
-                                    BackgroundColor = Color.White,
-                                    Padding = 0,
-                                    WidthRequest = 100,
-                                    HeightRequest = 40,
-                                    CornerRadius = 40,
-                                    Content = new Label
-                                    {
-                                        Text = "KMP-MSC",
-                                        TextColor = Color.FromHex("#3C9DD4"),
-                                        HorizontalOptions = LayoutOptions.Center,
-                                        VerticalOptions = LayoutOptions.Center,
-                                    }
-                                },
-                                new Frame
-                                {
-                                    BackgroundColor = Color.FromHex("#3C9DD4"),
-                                    Padding = 0,
-                                    WidthRequest = 100,
-                                    HeightRequest = 40,
-                                    CornerRadius = 40,
-                                    Content = new Label
-                                    {
-                                        Text = "SPB-MSC",
-                                        TextColor = Color.White,
-                                        HorizontalOptions = LayoutOptions.Center,
-                                        VerticalOptions = LayoutOptions.Center,
-                                    }
-                                },
-                                new Frame
-                                {
-                                    BackgroundColor = Color.White,
-                                    Padding = 0,
-                                    WidthRequest = 100,
-                                    HeightRequest = 40,
-                                    CornerRadius = 40,
-                                    Content = new Label
-                                    {
-                                        Text = "SPB-MSC",
-                                        TextColor = Color.FromHex("#3C9DD4"),
-                                        HorizontalOptions = LayoutOptions.Center,
-                                        VerticalOptions = LayoutOptions.Center,
-                                    }
-                                },
-                                new Frame
-                                {
-                                    BackgroundColor = Color.White,
-                                    Padding = 0,
-                                    WidthRequest = 100,
-                                    HeightRequest = 40,
-                                    CornerRadius = 40,
-                                    Content = new Label
-                                    {
-                                        Text = "SPB-MSC",
-                                        TextColor = Color.FromHex("#3C9DD4"),
-                                        HorizontalOptions = LayoutOptions.Center,
-                                        VerticalOptions = LayoutOptions.Center,
-                                    }
-                                },
-                                new Frame
-                                {
-                                    BackgroundColor = Color.White,
-                                    Padding = 0,
-                                    WidthRequest = 100,
-                                    HeightRequest = 40,
-                                    CornerRadius = 40,
-                                    Content = new Label
-                                    {
-                                        Text = "SPB-MSC",
-                                        TextColor = Color.FromHex("#3C9DD4"),
-                                        HorizontalOptions = LayoutOptions.Center,
-                                        VerticalOptions = LayoutOptions.Center,
-                                    }
-                                },
-                                new Frame
-                                {
-                                    BackgroundColor = Color.White,
-                                    Padding = 0,
-                                    WidthRequest = 100,
-                                    HeightRequest = 40,
-                                    CornerRadius = 40,
-                                    Content = new Label
-                                    {
-                                        Text = "SPB-MSC",
-                                        TextColor = Color.FromHex("#3C9DD4"),
-                                        HorizontalOptions = LayoutOptions.Center,
-                                        VerticalOptions = LayoutOptions.Center,
-                                    }
-                                },
-                            }
-                        }
-                    },
-                    new Frame
-                    {
-                        Padding = 0,
-                        WidthRequest = 300,
-                        HeightRequest = 150,
-                        CornerRadius = 15,
-                        Content = new StackLayout
-                        {
-                            Orientation = StackOrientation.Horizontal,
-                            Children =
+                    Orientation = StackOrientation.Horizontal,
+                    Children =
                             {
                                 new StackLayout
                                 {
@@ -399,26 +178,262 @@ namespace AirTicket
 
                                             }
                                         },
-                                        new Label
-                                        {
-                                            Text = "KZN14MSC02D321",
-                                            TextColor = Color.FromHex("#6EBDEA"),
-                                            Rotation = -90,
-                                            HorizontalOptions = LayoutOptions.EndAndExpand,
-                                            VerticalOptions = LayoutOptions.End,
-                                            FontSize = 13,
-                                            LineBreakMode = LineBreakMode.NoWrap,
-                                            MinimumWidthRequest = 120,
-                                            AnchorX = 0,
-                                            AnchorY = 0
-                                        }
+                                        Super,
                                     }
+                                }
+                    }
+                }
+            };
+            
+            StackLayout main = new StackLayout
+            {
+                Spacing = 0,
+                
+                BackgroundColor = Color.FromHex("#080D17"),
+                Children =
+                {
+                    new StackLayout
+                    {
+                        Padding = 20,
+                        Orientation = StackOrientation.Horizontal,
+                        HorizontalOptions = LayoutOptions.FillAndExpand,
+                        VerticalOptions = LayoutOptions.Start,
+                        Children =
+                        {
+                            new Frame
+                            {
+                                HorizontalOptions = LayoutOptions.Start,
+                                VerticalOptions = LayoutOptions.Center,
+                                BackgroundColor = Color.FromHex("#3C9DD4"),
+                                CornerRadius = 90,
+                                Padding = 0,
+                                HeightRequest = 50,
+                                WidthRequest = 50,
+                                HasShadow = false,
+                                Content = new Image
+                                {
+                                    Scale = 1,
+                                    Source = "Vector.png",
+                                    HorizontalOptions = LayoutOptions.Center,
+                                    VerticalOptions = LayoutOptions.Center,
+                                }
+                            },
+                            new Frame
+                            {
+
+                                Padding = 0,
+                                BackgroundColor = Color.FromHex("#3C9DD4"),
+                                CornerRadius = 30,
+                                WidthRequest = 160,
+                                HeightRequest = 55,
+                                HorizontalOptions = LayoutOptions.EndAndExpand,
+                                VerticalOptions = LayoutOptions.Center,
+                                Content = new Label
+                                {
+                                    Text = "Привет, Ильхам",
+                                    TextColor = Color.White,
+                                    HorizontalOptions = LayoutOptions.Center,
+                                    VerticalOptions = LayoutOptions.Center,
+                                    FontSize = 16
+                                },
+                            },
+                            new StackLayout
+                            {
+                                Padding = 10,
+                                Spacing = 5,
+                                HorizontalOptions = LayoutOptions.End,
+                                VerticalOptions = LayoutOptions.Center,
+                                Children =
+                                {
+                                    new BoxView
+                                    {
+                                        HeightRequest = 5,
+                                        WidthRequest = 5,
+                                        Color = Color.White,
+                                        CornerRadius = 50,
+                                        HorizontalOptions = LayoutOptions.Center,
+                                        VerticalOptions = LayoutOptions.Center,
+                                    },
+                                    new BoxView
+                                    {
+                                        HeightRequest = 5,
+                                        WidthRequest = 5,
+                                        Color = Color.White,
+                                        CornerRadius = 50,
+                                        HorizontalOptions = LayoutOptions.Center,
+                                        VerticalOptions = LayoutOptions.Center,
+                                    },
+                                    new BoxView
+                                    {
+                                        HeightRequest = 5,
+                                        WidthRequest = 5,
+                                        Color = Color.White,
+                                        CornerRadius = 50,
+                                        HorizontalOptions = LayoutOptions.Center,
+                                        VerticalOptions = LayoutOptions.Center,
+                                    },
+
+                                }
+                            },
+
+
+                        }
+
+
+                    },
+                    new StackLayout
+                    {
+                        Orientation = StackOrientation.Horizontal,
+                        Padding = new Thickness(20,10,20,20),
+                        Spacing = 30,
+                        Children =
+                        {
+                            new Label
+                            {
+
+                                TextColor = Color.White,
+                                Text = "Скоро полетим",
+                                HorizontalOptions = LayoutOptions.Start,
+                                VerticalOptions = LayoutOptions.Center,
+                                FontSize = 27
+                            },
+                            new Frame
+                            {
+                                HorizontalOptions = LayoutOptions.EndAndExpand,
+                                VerticalOptions = LayoutOptions.Center,
+                                BackgroundColor = Color.FromHex("#F6FEFF"),
+                                CornerRadius = 90,
+                                Padding = 0,
+                                HeightRequest = 50,
+                                WidthRequest = 50,
+                                Content = new Image
+                                {
+                                    Scale = 1,
+                                    Source = "plane.png",
+                                    HorizontalOptions = LayoutOptions.Center,
+                                    VerticalOptions = LayoutOptions.Center,
                                 }
                             }
                         }
                     },
+                    new ScrollView
+                    {
+                        Orientation = ScrollOrientation.Horizontal,
+                        HorizontalScrollBarVisibility = ScrollBarVisibility.Never,
+
+                        Content = new StackLayout
+                        {
+                            
+                            Orientation = StackOrientation.Horizontal,
+                            Spacing = 10,
+                            Children =
+                            {
+                                new Frame
+                                {
+                                    
+                                    BackgroundColor = Color.White,
+                                    Padding = 0,
+                                    WidthRequest = 100,
+                                    HeightRequest = 40,
+                                    CornerRadius = 40,
+                                    Content = new Label
+                                    {
+                                        Text = "KMP-MSC",
+                                        TextColor = Color.FromHex("#3C9DD4"),
+                                        HorizontalOptions = LayoutOptions.Center,
+                                        VerticalOptions = LayoutOptions.Center,
+                                    }
+                                },
+                                new Frame
+                                {
+                                    BackgroundColor = Color.FromHex("#3C9DD4"),
+                                    Padding = 0,
+                                    WidthRequest = 100,
+                                    HeightRequest = 40,
+                                    CornerRadius = 40,
+                                    Content = new Label
+                                    {
+                                        Text = "SPB-MSC",
+                                        TextColor = Color.White,
+                                        HorizontalOptions = LayoutOptions.Center,
+                                        VerticalOptions = LayoutOptions.Center,
+                                    }
+                                },
+                                new Frame
+                                {
+                                    BackgroundColor = Color.White,
+                                    Padding = 0,
+                                    WidthRequest = 100,
+                                    HeightRequest = 40,
+                                    CornerRadius = 40,
+                                    Content = new Label
+                                    {
+                                        Text = "SPB-MSC",
+                                        TextColor = Color.FromHex("#3C9DD4"),
+                                        HorizontalOptions = LayoutOptions.Center,
+                                        VerticalOptions = LayoutOptions.Center,
+                                    }
+                                },
+                                new Frame
+                                {
+                                    BackgroundColor = Color.White,
+                                    Padding = 0,
+                                    WidthRequest = 100,
+                                    HeightRequest = 40,
+                                    CornerRadius = 40,
+                                    Content = new Label
+                                    {
+                                        Text = "SPB-MSC",
+                                        TextColor = Color.FromHex("#3C9DD4"),
+                                        HorizontalOptions = LayoutOptions.Center,
+                                        VerticalOptions = LayoutOptions.Center,
+                                    }
+                                },
+                                new Frame
+                                {
+                                    BackgroundColor = Color.White,
+                                    Padding = 0,
+                                    WidthRequest = 100,
+                                    HeightRequest = 40,
+                                    CornerRadius = 40,
+                                    Content = new Label
+                                    {
+                                        Text = "SPB-MSC",
+                                        TextColor = Color.FromHex("#3C9DD4"),
+                                        HorizontalOptions = LayoutOptions.Center,
+                                        VerticalOptions = LayoutOptions.Center,
+                                    }
+                                },
+                                new Frame
+                                {
+                                    BackgroundColor = Color.White,
+                                    Padding = 0,
+                                    WidthRequest = 100,
+                                    HeightRequest = 40,
+                                    CornerRadius = 40,
+                                    Content = new Label
+                                    {
+                                        Text = "SPB-MSC",
+                                        TextColor = Color.FromHex("#3C9DD4"),
+                                        HorizontalOptions = LayoutOptions.Center,
+                                        VerticalOptions = LayoutOptions.Center,
+                                    }
+                                },
+                            }
+                        }
+                    },
+                    new Frame
+                    {
+
+                        Margin = 15,
+                        Padding = 20,
+                        HeightRequest = 140,
+                        CornerRadius = 15,
+                        Content = fake,
+                    },
                     new StackLayout
                     {
+                        Padding = 15,
                         Orientation = StackOrientation.Horizontal,
                         VerticalOptions = LayoutOptions.Center,
                         HorizontalOptions = LayoutOptions.Center,
@@ -520,8 +535,9 @@ namespace AirTicket
                     },
                     new StackLayout
                     {
+
                         Orientation = StackOrientation.Horizontal,
-                        Padding = new Thickness(20,10,20,10),
+                        Padding = new Thickness(40,10,40,10),
                         Spacing = 10,
                         Children =
                         {
@@ -555,6 +571,7 @@ namespace AirTicket
                     },
                     new StackLayout
                         {
+                            Padding = 20,
                             Spacing = 25,
                             Children =
                             {
@@ -1442,6 +1459,7 @@ namespace AirTicket
             
             Content = scroll;
         }
+         
 
     }
 }
