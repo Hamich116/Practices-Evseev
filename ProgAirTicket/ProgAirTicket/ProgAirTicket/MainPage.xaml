@@ -2,154 +2,156 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProgAirTicket.MainPage">
+    <ScrollView>
+        <StackLayout BackgroundColor="#080D17">
 
-    <StackLayout BackgroundColor="#080D17">
-
-        <StackLayout VerticalOptions="Start" 
+            <StackLayout VerticalOptions="Start" 
                          Orientation="Horizontal"
                          Margin="15">
 
-            <Frame BackgroundColor="#3C9DD4"
+                <Frame BackgroundColor="#3C9DD4"
                        HorizontalOptions="Start"
                        CornerRadius="100"
                        Padding="0"
                        Margin="15, 15, 0, 10" 
                        HeightRequest="50" 
                        WidthRequest="50">
-                <Image Source="Vector.png"
+                    <Image Source="Vector.png"
                            Scale="1"
                            HorizontalOptions="Center"
                            VerticalOptions="Center"/>
-            </Frame>
+                </Frame>
 
-            <Frame Margin="0, 17, 0, 5" 
+                <Frame Margin="0, 17, 0, 5" 
                        Padding="0"
                        BackgroundColor="#3C9DD4" 
                        CornerRadius="30" 
                        WidthRequest="120" 
                        HeightRequest="10" 
                        HorizontalOptions="EndAndExpand">
-                <Label Text="Привет, Эм Ха"
+                    <Label Text="Привет, Эм Ха"
                            VerticalOptions="Center"
                            HorizontalOptions="Center" 
                            TextColor="#FFFFFF" 
                            FontSize="15">
-                </Label>
-            </Frame>
+                    </Label>
+                </Frame>
 
-            <StackLayout HorizontalOptions="End"
+                <StackLayout HorizontalOptions="End"
                              VerticalOptions="Start" 
                              Orientation="Vertical" 
                              Margin="10, 27, 15, 0">
-                <BoxView Color="White"
+                    <BoxView Color="White"
                              HeightRequest="5"
                              WidthRequest="5" 
                              BackgroundColor="#FFFFFF" 
                              CornerRadius="5">
-                </BoxView>
-                <BoxView Color="White"
+                    </BoxView>
+                    <BoxView Color="White"
                              HeightRequest="5"
                              WidthRequest="5"
                              BackgroundColor="#FFFFFF" 
                              CornerRadius="5">
-                </BoxView>
-                <BoxView Color="White"
+                    </BoxView>
+                    <BoxView Color="White"
                              HeightRequest="5"
                              WidthRequest="5" 
                              BackgroundColor="#FFFFFF" 
                              CornerRadius="5">
-                </BoxView>
+                    </BoxView>
+                </StackLayout>
+
             </StackLayout>
 
-        </StackLayout>
-
-        <StackLayout VerticalOptions="Start"
+            <StackLayout VerticalOptions="Start"
                          Orientation="Horizontal" 
                          Margin="45, 0, 45, 0">
-            <Label Text="Скоро полетим" 
+                <Label Text="Скоро полетим" 
                        TextColor="White" 
                        FontSize="25" 
                        FontAttributes="Bold">
-            </Label>
-            <Frame BackgroundColor="#FFFFFF"
+                </Label>
+                <Frame BackgroundColor="#FFFFFF"
                        VerticalOptions="Center"
                        HorizontalOptions="EndAndExpand" 
                        CornerRadius="50" 
                        HeightRequest="40" 
                        WidthRequest="40"
                        Padding="0">
-                <Image Source="UpPlane.jpg"
+                    <Image Source="UpPlane.jpg"
                            Scale="1"
                            HorizontalOptions="Center"
                            VerticalOptions="Center"/>
-            </Frame>
-        </StackLayout>
+                </Frame>
+            </StackLayout>
 
-        <!--Выбор билета-->
-        <StackLayout Orientation="Horizontal" 
+            <!--Выбор билета-->
+            <ScrollView>
+                <StackLayout Orientation="Horizontal" 
                          Margin="20, 0, 20, 0">
-            <Frame Margin="9, 9, 0, 9" 
+                    <Frame Margin="9, 9, 0, 9" 
                        BackgroundColor="#FFFFFF"
                        CornerRadius="30" 
                        WidthRequest="600" 
                        HeightRequest="50" 
                        HorizontalOptions="Start"
                        Padding="0">
-                <Label Text="KMP-MSC"
+                        <Label Text="KMP-MSC"
                            
                            VerticalOptions="Center" 
                            HorizontalOptions="Center" 
                            TextColor="#3C9DD4">
-                </Label>
-            </Frame>
-            <Frame Margin="0, 9, 0, 9" 
+                        </Label>
+                    </Frame>
+                    <Frame Margin="0, 9, 0, 9" 
                        BackgroundColor="#3C9DD4" 
                        CornerRadius="30" 
                        WidthRequest="600" 
                        HeightRequest="50"
                        Padding="0"
                        HorizontalOptions="Start">
-                <Label Text="SPB-MSC" 
+                        <Label Text="SPB-MSC" 
                            VerticalOptions="Center"
                            HorizontalOptions="Center" 
                            TextColor="#FFFFFF">
-                </Label>
-            </Frame>
-            <Frame Margin="0, 9, 0, 9"
+                        </Label>
+                    </Frame>
+                    <Frame Margin="0, 9, 0, 9"
                        BackgroundColor="#FFFFFF" 
                        CornerRadius="30" 
                        WidthRequest="600" 
                        HeightRequest="50" 
                        Padding="0"
                        HorizontalOptions="Start">
-                <Label Text="SPB-MSC"
+                        <Label Text="SPB-MSC"
                            VerticalOptions="Center" 
                            HorizontalOptions="Center" 
                            TextColor="#3C9DD4">
-                </Label>
-            </Frame>
-            <Frame Margin="0, 9, 0, 9" 
+                        </Label>
+                    </Frame>
+                    <Frame Margin="0, 9, 0, 9" 
                        BackgroundColor="#3C9DD4"
                        CornerRadius="30" 
                        WidthRequest="600" 
                        HeightRequest="50" 
                        Padding="0"
                        HorizontalOptions="Start">
-                <Label Text="SPB-MSC" 
+                        <Label Text="SPB-MSC" 
                            VerticalOptions="Center" 
                            HorizontalOptions="Center" 
                            TextColor="#FFFFFF">
-                </Label>
-            </Frame>
-        </StackLayout>
+                        </Label>
+                    </Frame>
+                </StackLayout>
+            </ScrollView>
 
-        <StackLayout Margin="30, 0, 30, 10">
-            <Frame BackgroundColor="#EFF9FF"
+            <StackLayout Margin="30, 0, 30, 10">
+                <Frame BackgroundColor="#EFF9FF"
                        CornerRadius="20"
                        Padding="1">
-                <StackLayout VerticalOptions="Start" Orientation="Horizontal" Margin="10, 5, 10, 0">
-                    <StackLayout>
-                        <Label VerticalOptions="Start"
+                    <StackLayout VerticalOptions="Start" Orientation="Horizontal" Margin="10, 5, 10, 0">
+                        <StackLayout>
+                            <Label VerticalOptions="Start"
                                    HorizontalOptions="Start"
                                    VerticalTextAlignment="Center"
                                    Padding="15, 10, 1, 0"
@@ -158,7 +160,7 @@
                                    FontSize="11"
                                    FontAttributes ="Bold"/>
 
-                        <Label VerticalOptions="Start"
+                            <Label VerticalOptions="Start"
                                    HorizontalOptions="Start"
                                    VerticalTextAlignment="Center"
                                    Padding="15, 0, 1, 0"
@@ -167,7 +169,7 @@
                                    FontSize="15"
                                    FontAttributes ="Bold"/>
 
-                        <Label VerticalOptions="Start"
+                            <Label VerticalOptions="Start"
                                    HorizontalOptions="Start"
                                    VerticalTextAlignment="Center"
                                    Padding="15, 10, 1, 0"
@@ -176,7 +178,7 @@
                                    FontSize="11"
                                    FontAttributes ="Bold"/>
 
-                        <Label VerticalOptions="Start"
+                            <Label VerticalOptions="Start"
                                    HorizontalOptions="Start"
                                    VerticalTextAlignment="Center"
                                    Padding="15, 0, 1, 1"
@@ -184,94 +186,94 @@
                                    TextColor="#000000"
                                    FontSize="15"
                                    FontAttributes ="Bold"/>
-                    </StackLayout>
+                        </StackLayout>
 
-                    <StackLayout Margin="50, 0, 1, 0" 
+                        <StackLayout Margin="50, 0, 1, 0" 
                                      Orientation="Horizontal">
-                        <BoxView BackgroundColor="#99CFEE"
+                            <BoxView BackgroundColor="#99CFEE"
                                      HeightRequest="110"
                                      WidthRequest="2"
                                      >
-                        </BoxView>
-                        <StackLayout HorizontalOptions="End"
+                            </BoxView>
+                            <StackLayout HorizontalOptions="End"
                                          VerticalOptions="Center">
-                            <BoxView Color="#6EBDEA"
+                                <BoxView Color="#6EBDEA"
                                          HeightRequest="1"
                                          WidthRequest="30" 
                                          CornerRadius="5">
-                            </BoxView>
-                            <BoxView Color="#6EBDEA"
+                                </BoxView>
+                                <BoxView Color="#6EBDEA"
                                          HeightRequest="3"
                                          WidthRequest="30" 
                                          CornerRadius="5">
-                            </BoxView>
-                            <BoxView Color="#6EBDEA"
+                                </BoxView>
+                                <BoxView Color="#6EBDEA"
                                          HeightRequest="4"
                                          WidthRequest="30" 
                                          CornerRadius="5">
-                            </BoxView>
-                            <BoxView Color="#6EBDEA"
+                                </BoxView>
+                                <BoxView Color="#6EBDEA"
                                          HeightRequest="0.5"
                                          WidthRequest="30" 
                                          CornerRadius="5">
-                            </BoxView>
-                            <BoxView Color="#6EBDEA"
+                                </BoxView>
+                                <BoxView Color="#6EBDEA"
                                          HeightRequest="1"
                                          WidthRequest="30" 
                                          CornerRadius="5">
-                            </BoxView>
-                            <BoxView Color="#6EBDEA"
+                                </BoxView>
+                                <BoxView Color="#6EBDEA"
                                          HeightRequest="3"
                                          WidthRequest="30" 
                                          CornerRadius="5">
-                            </BoxView>
-                            <BoxView Color="#6EBDEA"
+                                </BoxView>
+                                <BoxView Color="#6EBDEA"
                                          HeightRequest="0.1"
                                          WidthRequest="30" 
                                          CornerRadius="5">
-                            </BoxView>
-                            <BoxView Color="#6EBDEA"
+                                </BoxView>
+                                <BoxView Color="#6EBDEA"
                                          HeightRequest="1"
                                          WidthRequest="30" 
                                          CornerRadius="5">
-                            </BoxView>
-                            <BoxView Color="#6EBDEA"
+                                </BoxView>
+                                <BoxView Color="#6EBDEA"
                                          HeightRequest="2"
                                          WidthRequest="30" 
                                          CornerRadius="5">
-                            </BoxView>
-                            <BoxView Color="#6EBDEA"
+                                </BoxView>
+                                <BoxView Color="#6EBDEA"
                                          HeightRequest="3"
                                          WidthRequest="30" 
                                          CornerRadius="5">
-                            </BoxView>
-                            <BoxView Color="#6EBDEA"
+                                </BoxView>
+                                <BoxView Color="#6EBDEA"
                                          HeightRequest="1"
                                          WidthRequest="30" 
                                          CornerRadius="5">
-                            </BoxView>
-                            <BoxView Color="#6EBDEA"
+                                </BoxView>
+                                <BoxView Color="#6EBDEA"
                                          HeightRequest="0.5"
                                          WidthRequest="30" 
                                          CornerRadius="5">
-                            </BoxView>
-                            <BoxView Color="#6EBDEA"
+                                </BoxView>
+                                <BoxView Color="#6EBDEA"
                                          HeightRequest="4"
                                          WidthRequest="30" 
                                          CornerRadius="5">
-                            </BoxView>
-                            <BoxView Color="#6EBDEA"
+                                </BoxView>
+                                <BoxView Color="#6EBDEA"
                                          HeightRequest="0.01"
                                          WidthRequest="30" 
                                          CornerRadius="5">
-                            </BoxView>
-                            <BoxView Color="#6EBDEA"
+                                </BoxView>
+                                <BoxView Color="#6EBDEA"
                                          HeightRequest="0.7"
                                          WidthRequest="30" 
                                          CornerRadius="5">
-                            </BoxView>
-                        </StackLayout>
-                        <Label Text="KZN14MSC02D321"
+                                </BoxView>
+                            </StackLayout>
+                            <Label Text="KZN14MSC02D321"
                                Margin="0"
                                TextColor="#6EBDEA"
                                HorizontalOptions="Center"
@@ -282,243 +284,244 @@
                                AnchorY="0"
                                FontSize="13"
                                Rotation="-90">
-                        </Label>
+                            </Label>
+                        </StackLayout>
                     </StackLayout>
-                </StackLayout>
-            </Frame>
+                </Frame>
 
-        </StackLayout>
+            </StackLayout>
 
-        <StackLayout Orientation = "Horizontal"
+            <StackLayout Orientation = "Horizontal"
                          VerticalOptions = "Center"
                          HorizontalOptions = "Center">
-            <BoxView Color="#99CFEE"
+                <BoxView Color="#99CFEE"
                          HeightRequest="5"
                          WidthRequest="5" 
                          CornerRadius="5">
-            </BoxView>
-            <BoxView Color="White"
+                </BoxView>
+                <BoxView Color="White"
                          HeightRequest="5"
                          WidthRequest="5" 
                          BackgroundColor="#FFFFFF" 
                          CornerRadius="5">
-            </BoxView>
-            <BoxView Color="White"
+                </BoxView>
+                <BoxView Color="White"
                          HeightRequest="5"
                          WidthRequest="5" 
                          CornerRadius="5">
-            </BoxView>
-            <BoxView Color="White"
+                </BoxView>
+                <BoxView Color="White"
                          HeightRequest="5"
                          WidthRequest="5" 
                          CornerRadius="5">
-            </BoxView>
-            <BoxView Color="White"
+                </BoxView>
+                <BoxView Color="White"
                          HeightRequest="5"
                          WidthRequest="5"  
                          CornerRadius="5">
-            </BoxView>
-            <BoxView Color="White"
+                </BoxView>
+                <BoxView Color="White"
                          HeightRequest="5"
                          WidthRequest="5" 
                          CornerRadius="5">
-            </BoxView>
-            <BoxView Color="White"
+                </BoxView>
+                <BoxView Color="White"
                          HeightRequest="5"
                          WidthRequest="5" 
                          CornerRadius="5">
-            </BoxView>
-            <BoxView Color="White"
+                </BoxView>
+                <BoxView Color="White"
                          HeightRequest="5"
                          WidthRequest="5" 
                          CornerRadius="5">
-            </BoxView>
-            <BoxView Color="White"
+                </BoxView>
+                <BoxView Color="White"
                          HeightRequest="5"
                          WidthRequest="5" 
                          CornerRadius="5">
-            </BoxView>
-            <BoxView Color="White"
+                </BoxView>
+                <BoxView Color="White"
                          HeightRequest="5"
                          WidthRequest="5" 
                          CornerRadius="5">
-            </BoxView>
-            <BoxView Color="White"
+                </BoxView>
+                <BoxView Color="White"
                          HeightRequest="5"
                          WidthRequest="5" 
                          CornerRadius="5">
-            </BoxView>
+                </BoxView>
 
 
-        </StackLayout>
+            </StackLayout>
 
-        <StackLayout VerticalOptions="Start" 
+            <StackLayout VerticalOptions="Start" 
                          Orientation="Horizontal" 
                          Margin="45, 10, 45, 0">
-            <Label Text="Было - летали" 
+                <Label Text="Было - летали" 
                        TextColor="White" 
                        FontSize="25" 
                        FontAttributes="Bold">
-            </Label>
-            <Frame BackgroundColor="#FFFFFF" 
+                </Label>
+                <Frame BackgroundColor="#FFFFFF" 
                    HorizontalOptions="EndAndExpand" 
                    CornerRadius="50"
                    HeightRequest="40"
                    WidthRequest="40"
                    Padding="0">
-                <Image Source="BackPlane.png"
+                    <Image Source="BackPlane.png"
                            Scale="1"
                            HorizontalOptions="Center"
                            VerticalOptions="Center"/>
-            </Frame>
-        </StackLayout>
+                </Frame>
+            </StackLayout>
 
-        <StackLayout VerticalOptions="Start" 
+            <StackLayout VerticalOptions="Start" 
                          Orientation="Horizontal" 
                          Margin="25, 0, 25, 0">
-            <Frame Margin="0, 9, 0, 0"
+                <Frame Margin="0, 9, 0, 0"
                    BackgroundColor="#3C9DD4" 
                    CornerRadius="30"
                    WidthRequest="400" 
                    HeightRequest="30"
                    Padding="10"
                    HorizontalOptions="StartAndExpand">
-                <StackLayout Orientation="Horizontal"
+                    <StackLayout Orientation="Horizontal"
                              Padding="0">
-                    <Label Text="22.12 • KZN → MSC" 
+                        <Label Text="22.12 • KZN → MSC" 
                            VerticalOptions="Center" 
                            HorizontalOptions="StartAndExpand" 
                            TextColor="#FFFFFF" 
                            FontSize="16">
-                    </Label>
-                    <Label Text="9999 руб."
+                        </Label>
+                        <Label Text="9999 руб."
                            VerticalOptions="Center"
                            HorizontalOptions="EndAndExpand"
                            TextColor="White"
                            FontSize="16">
-                    </Label>
-                </StackLayout>
-            </Frame>
+                        </Label>
+                    </StackLayout>
+                </Frame>
 
-        </StackLayout>
+            </StackLayout>
 
-        <StackLayout VerticalOptions="Start" 
+            <StackLayout VerticalOptions="Start" 
                          Orientation="Horizontal" 
                          Margin="25, 0, 25, 0">
-            <Frame Margin="0, 9, 0, 0"
+                <Frame Margin="0, 9, 0, 0"
                    BackgroundColor="#3C9DD4" 
                    CornerRadius="30"
                    WidthRequest="400" 
                    HeightRequest="30"
                    Padding="10"
                    HorizontalOptions="StartAndExpand">
-                <StackLayout Orientation="Horizontal"
+                    <StackLayout Orientation="Horizontal"
                              Padding="0">
-                    <Label Text="04.12 • IZH ← SPB" 
+                        <Label Text="04.12 • IZH ← SPB" 
                            VerticalOptions="Center" 
                            HorizontalOptions="StartAndExpand" 
                            TextColor="#FFFFFF" 
                            FontSize="16">
-                    </Label>
-                    <Label Text="7122 руб."
+                        </Label>
+                        <Label Text="7122 руб."
                            VerticalOptions="Center"
                            HorizontalOptions="EndAndExpand"
                            TextColor="White"
                            FontSize="16">
-                    </Label>
-                </StackLayout>
-            </Frame>
+                        </Label>
+                    </StackLayout>
+                </Frame>
 
-        </StackLayout>
+            </StackLayout>
 
-        <StackLayout VerticalOptions="Start" 
+            <StackLayout VerticalOptions="Start" 
                          Orientation="Horizontal" 
                          Margin="25, 0, 25, 0">
-            <Frame Margin="0, 9, 0, 0"
+                <Frame Margin="0, 9, 0, 0"
                    BackgroundColor="#3C9DD4" 
                    CornerRadius="30"
                    WidthRequest="400" 
                    HeightRequest="30"
                    Padding="10"
                    HorizontalOptions="StartAndExpand">
-                <StackLayout Orientation="Horizontal"
+                    <StackLayout Orientation="Horizontal"
                              Padding="0">
-                    <Label Text="03.12 • IZH → SPB" 
+                        <Label Text="03.12 • IZH → SPB" 
                            VerticalOptions="Center" 
                            HorizontalOptions="StartAndExpand" 
                            TextColor="#FFFFFF" 
                            FontSize="16">
-                    </Label>
-                    <Label Text="7126 руб."
+                        </Label>
+                        <Label Text="7126 руб."
                            VerticalOptions="Center"
                            HorizontalOptions="EndAndExpand"
                            TextColor="White"
                            FontSize="16">
-                    </Label>
-                </StackLayout>
-            </Frame>
+                        </Label>
+                    </StackLayout>
+                </Frame>
 
-        </StackLayout>
+            </StackLayout>
 
-        <StackLayout VerticalOptions="Start" 
+            <StackLayout VerticalOptions="Start" 
                          Orientation="Horizontal" 
                          Margin="25, 0, 25, 0">
-            <Frame Margin="0, 9, 0, 0"
+                <Frame Margin="0, 9, 0, 0"
                    BackgroundColor="#3C9DD4" 
                    CornerRadius="30"
                    WidthRequest="400" 
                    HeightRequest="30"
                    Padding="10"
                    HorizontalOptions="StartAndExpand">
-                <StackLayout Orientation="Horizontal"
+                    <StackLayout Orientation="Horizontal"
                              Padding="0">
-                    <Label Text="10.11 • MSC → LON" 
+                        <Label Text="10.11 • MSC → LON" 
                            VerticalOptions="Center" 
                            HorizontalOptions="StartAndExpand" 
                            TextColor="#FFFFFF" 
                            FontSize="16">
-                    </Label>
-                    <Label Text="2122 руб."
+                        </Label>
+                        <Label Text="2122 руб."
                            VerticalOptions="Center"
                            HorizontalOptions="EndAndExpand"
                            TextColor="White"
                            FontSize="16">
-                    </Label>
-                </StackLayout>
-            </Frame>
+                        </Label>
+                    </StackLayout>
+                </Frame>
 
-        </StackLayout>
+            </StackLayout>
 
-        <StackLayout VerticalOptions="Start" 
+            <StackLayout VerticalOptions="Start" 
                          Orientation="Horizontal" 
                          Margin="25, 0, 25, 0">
-            <Frame Margin="0, 9, 0, 0"
+                <Frame Margin="0, 9, 0, 0"
                    BackgroundColor="#3C9DD4" 
                    CornerRadius="30"
                    WidthRequest="400" 
                    HeightRequest="30"
                    Padding="10"
                    HorizontalOptions="StartAndExpand">
-                <StackLayout Orientation="Horizontal"
+                    <StackLayout Orientation="Horizontal"
                              Padding="0">
-                    <Label Text="07.10 • MSC → ANT" 
+                        <Label Text="07.10 • MSC → ANT" 
                            VerticalOptions="Center" 
                            HorizontalOptions="StartAndExpand" 
                            TextColor="#FFFFFF" 
                            FontSize="16">
-                    </Label>
-                    <Label Text="12050 руб."
+                        </Label>
+                        <Label Text="12050 руб."
                            VerticalOptions="Center"
                            HorizontalOptions="EndAndExpand"
                            TextColor="White"
                            FontSize="16">
-                    </Label>
-                </StackLayout>
-            </Frame>
+                        </Label>
+                    </StackLayout>
+                </Frame>
+
+            </StackLayout>
 
         </StackLayout>
-
-    </StackLayout>
+    </ScrollView>
 
 
 </ContentPage>
