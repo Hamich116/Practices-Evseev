@@ -1,0 +1,1 @@
+C:\Users\Hamich\Desktop\XamlCodeWithFont\XamlCode.UWP\XamlCode.UWP.csproj;x86

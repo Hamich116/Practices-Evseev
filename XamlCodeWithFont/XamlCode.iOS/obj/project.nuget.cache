@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "WyQNITACDI2315/WQuWaYUnrx9oO26lLbKYOzC3zsOfXaZtnCrRuA/s/LnKUpYe1EMrOY63DIJjgZTp570iF1A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Hamich\\Desktop\\XamlCodeWithFont\\XamlCode.iOS\\XamlCode.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Hamich\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Users\\Hamich\\.nuget\\packages\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512"
+  ],
+  "logs": []
+}
